@@ -1,0 +1,23 @@
+{
+    "metadataVersion": "1.0",
+    "id": "sap.viz.ext.helloworld",
+    "name": "Hello World",
+    "description": "Hello World",
+    "version": "1.0.0.0",
+    "vendor": {
+        "name": "SAP",
+        "url": "www.sap.com"
+    },
+    "requires": [
+        {
+            "id": "sap.viz.common.core",
+            "version": "4.0.16"
+        }
+    ],
+    "bundles": [
+        {
+            "id": "sap.viz.ext.helloworld",
+            "version": "1.0.0.0"
+        }
+    ]
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Hello World Extension</title>
+        <!-- <<deps -->
+        <script type="text/javascript" src="../../../libs/require.js"></script>
+        <script type="text/javascript" src="../../../libs/d3.v2.js"></script>
+        <script type="text/javascript" src="../../../libs/jquery.js"></script>
+        
+        <script type="text/javascript" src="../../../libs/sap.viz.js"></script>
+
+        <!-- DO NOT CHANGE THE ORDER OF THE ABOVE SCRIPTS, OR INSERT ANYTHING BETWEEN THEM -->
+
+        <!-- deps>> -->
+        <script id="prepare" type="text/javascript">
+            // Create and initialize the extension in an requireJS manner
+             // Config the baseUrl for requireJS to find the specific module or file
+            requirejs.config({
+                 baseUrl : '../bundles/sap/viz/ext/helloworld'
+            });
+            require([ 'helloworld-bundle' ], function() {
+                //chart option
+                var chartPoperties = {
+                    
+                    title : {
+                        visible : true,
+                        text : "Chart Title",
+                        alignment : 'center',
+                    }, 
+                    'Hello World Module': {
+                        borderColor: "none"
+                    },
+                    
+                };
+                //dataset used by the chart
+                /*<<data*/
+                var data =     {
+                        "analysisAxis": [{
+                            "index": 1,
+                            "data": [{
+                                "type": "Dimension",
+                                "name": "City",
+                                "values": ["Austin", "Austin", "Austin", "Boston", "Boston", "Boston", "Colorado Springs", "Colorado Springs", "Colorado Springs", "Chicago", "Chicago", "Chicago", "Dallas", "Dallas", "Dallas", "Houston", "Houston", "Houston", "Los Angeles", "Los Angeles", "Los Angeles"]
+                            }, {
+                                "type": "Dimension",
+                                "name": "Year",
+                                "values": ["2009", "2011", "2010", "2009", "2011", "2010", "2009", "2011", "2010", "2010", "2009", "2011", "2009", "2011", "2010", "2009", "2011", "2010", "2009", "2011", "2010"]
+                            }]
+                        }],
+                        "measureValuesGroup": [{
+                            "index": 1,
+                            "data": [{
+                                "type": "Measure",
+                                "name": "Margin",
+                                "values": [
+                                    [1676.7, 3097.9, 230.8, 153.6, 4092.1, 555.4, 150.7, 1741.2, 1328.2, 2116.5, 1165.8, 6944.3, 823.4, 3848.3, 2303.8, 5759, 9749.6, 19.3, 2790.2, 6571.7, 175.6]
+                                ]
+                            }, {
+                                "type": "Measure",
+                                "name": "Quantity sold",
+                                "values": [
+                                    [21, 52, 2, 2, 61, 7, 9, 38, 12, 20, 10, 79, 7, 51, 25, 71, 144, 1, 30, 82, 3]
+                                ]
+                            }, {
+                                "type": "Measure",
+                                "name": "Sales revenue",
+                                "values": [
+                                    [3930, 9861.9, 498, 422.5, 12677.1, 1656.2, 1087, 6724, 2988, 4890.4, 2281, 18406.1, 1550.9, 10994.6, 5695.6, 13332.1, 28733, 129, 5954.2, 17585.2, 527.2]
+                                ]
+                            }]
+                        }]
+                    };
+                var ds = new sap.viz.api.data.CrosstableDataset(); 
+                ds.data(data);
+                /*data>>*/
+                
+                function onTplLoad() {
+                    //create chart after applying template
+                    /*<<create*/
+                     try {
+                        var chart = sap.viz.api.core.createViz({
+                            type : 'sap.viz.ext.helloworld',
+                            data : ds,
+                            container : $("#chart"),
+                            properties : chartPoperties,
+                        });
+                    } catch (err) {
+                        console.log(err);
+                        return;
+                    }
+                    /*create>>*/
+                    //listen the barData event raised from the extension
+                    chart.on("barData", function(d) {
+                        alert("Data: " + d.join(" = "));
+                    });
+                    $(window).resize(function(){
+                        chart.size({
+                            width: $("#chart").width(),
+                            height: $("#chart").height()
+                        })
+                    });
+                };
+                function onTplFail() {
+                };
+                // set template loadPath
+                /*<<template*/
+                sap.viz.api.env.Resource.path("sap.viz.api.env.Template.loadPaths", ["../bundles/sap/viz/ext/helloworld/sap_viz_ext_helloworld-src/resources/templates"]);
+                sap.viz.api.env.Template.set("sample", onTplLoad, onTplFail);
+                    /*template>>*/
+            });
+        </script>
+    </head>
+    <body>
+        <!-- <<container -->
+        <div id="chart" style="position: absolute; left:0px; right: 0px; top:0px; bottom:0px; background-color: #ffffff"></div>
+        <!-- container>> -->
+    </body>
+</html>    
+    
