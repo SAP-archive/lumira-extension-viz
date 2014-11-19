@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+<style>
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  padding-top: 40px;
+  position: relative;
+  width: 960px;
+}
+
+button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.bullet { font: 10px sans-serif; }
+.bullet .marker { stroke: #000; stroke-width: 2px; }
+.bullet .tick line { stroke: #666; stroke-width: .5px; }
+.bullet .range.s0 { fill: #eee; }
+.bullet .range.s1 { fill: #ddd; }
+.bullet .range.s2 { fill: #ccc; }
+.bullet .measure.s0 { fill: lightsteelblue; }
+.bullet .measure.s1 { fill: steelblue; }
+.bullet .title { font-size: 14px; font-weight: bold; }
+.bullet .subtitle { fill: #999; }
+
+</style>
+</head>
+<body>
+<!-- 
+// MDL: Remove randomize as the data will be passed in instead
+<button>Update</button>
+// MDL: end
+-->
+<svg id="vis"></svg>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="bullet.js"></script>
+<script>
+
+var vis = d3.select("#vis");
+
+// MDL: embed JSON so we can test with Google Chrome locally.
+// MDL: renamed "data" to "fdata".
+// MDL: Combined "title" and "subtitle" as "Titles" array.
+// MDL: Renamed ranges to "Ranges".
+// MDL: Renamed measures to "Actuals".
+// MDL: Renamed markers to "Target".
+var fdata = [
+	  {"Titles":["Revenue","US$, in thousands"],"Ranges":[150,225,300],"Actuals":[220,270],"Target":[250]},
+	  {"Titles":["Profit","%"],"Ranges":[20,25,30],"Actuals":[21,23],"Target":[26]},
+	  {"Titles":["Order Size","US$, average"],"Ranges":[350,500,600],"Actuals":[100,320],"Target":[550]},
+	  {"Titles":["New Customers","count"],"Ranges":[1400,2000,2500],"Actuals":[1000,1650],"Target":[2100]},
+	  {"Titles":["Satisfaction","out of 5"],"Ranges":[3.5,4.25,5],"Actuals":[3.2,4.7],"Target":[4.4]}
+	];
+// MDL: end
+
+// MDL: Added bullet width to make it easier to adapt to the page width.
+// MDL: Added bullet height so can calculate the y-position for each bullet SVG.
+var bulletWidth = 960;
+var bulletHeight = 52;
+var margin = {top: 5, right: 40, bottom: 20, left: 120},
+    width = bulletWidth - margin.left - margin.right,
+    height = bulletHeight - margin.top - margin.bottom;
+// MDL: end
+
+var chart = d3.bullet()
+    .width(width)
+    .height(height);
+
+// MDL: JSON is already embedded.
+// d3.json("bullets.json", function(error, data) {
+// MDL: end
+  var svg = vis.selectAll("svg")
+// MDL: Renamed data to fdata.
+      .data(fdata)
+// MDL: end
+    .enter().append("svg")
+      .attr("class", "bullet")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+// MDL: Y position
+	  .attr("y", function(d, idx) {
+			return bulletHeight * idx;
+		})
+// MDL: end
+	  .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+      .call(chart);
+
+  var title = svg.append("g")
+      .style("text-anchor", "end")
+      .attr("transform", "translate(-6," + height / 2 + ")");
+
+  title.append("text")
+      .attr("class", "title")
+  // MDL: title is the first item in titles	  
+      .text(function(d) { return (d.Titles && d.Titles.length > 0 ? d.Titles[0] : ""); });
+  // MDL: end
+
+  title.append("text")
+      .attr("class", "subtitle")
+      .attr("dy", "1em")
+  // MDL: title is the second item in titles	  
+      .text(function(d) { return (d.Titles && d.Titles.length > 1 ? d.Titles[1] : ""); });
+  // MDL: end
+
+// MDL: Remove randomize as the data will be passed in instead
+//  d3.selectAll("button").on("click", function() {
+//    svg.datum(randomize).call(chart.duration(1000)); // TODO automatic transition
+//  });
+// MDL: end
+ 
+// MDL: JSON is already embedded.
+//});
+// MDL: end
+
+// MDL: Remove randomize as the data will be passed in instead.
+//function randomize(d) {
+//  if (!d.randomizer) d.randomizer = randomizer(d);
+//  // MDL: Renamed ranges to "Ranges", markers to "Target" and measures to "Actuals"
+//  d.Ranges = d.Ranges.map(d.randomizer);
+//  d.Target = d.Target.map(d.randomizer);
+//  d.Actuals = d.Actuals.map(d.randomizer);
+//  // MDL: end
+//  return d;
+//}
+// MDL: end
+
+// MDL: Remove randomize as the data will be passed in instead.
+//function randomizer(d) {
+//  // MDL: Renamed ranges to "Ranges"
+//  var k = d3.max(d.Ranges) * .2;
+//  // MDL: end
+//  return function(d) {
+//    return Math.max(0, d + k * (Math.random() - .5));
+//  };
+//}
+// MDL: end
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+// MDL: Convert from d3.CSV to d3.JSON as expected by the bullet chart.
+var fdata = [];
+var meta = data.meta;
+var titleFields = meta.dimensions('Titles');
+var actualFields = meta.measures('Actuals');
+var targetFields = meta.measures('Target');
+var rangeFields = meta.measures('Ranges');
+
+for (var i=0; i < data.length; i++) {
+	var titles = [];
+	var actuals = [];
+	var targets = [];
+	var ranges = [];
+	var name;
+	
+	for (var j=0; j < titleFields.length; j++) {
+		name = titleFields[j];
+		titles.push(data[i][name]);
+	}
+	
+	for (var j=0; j < actualFields.length; j++) {
+		name = actualFields[j];
+		actuals.push(data[i][name]);
+	}
+
+	for (var j=0; j < targetFields.length; j++) {
+		name = targetFields[j];
+		targets.push(data[i][name]);
+	}
+
+	for (var j=0; j < rangeFields.length; j++) {
+		name = rangeFields[j];
+		ranges.push(data[i][name]);
+	}
+
+	var row = { Titles:titles, Actuals:actuals, Target:targets, Ranges:ranges};
+	fdata.push(row);
+}
+// MDL: end
