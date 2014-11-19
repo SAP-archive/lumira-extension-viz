@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Hello World Extension</title>
+        <!-- <<deps -->
+        <script type="text/javascript" src="../../../libs/require.js"></script>
+        <script type="text/javascript" src="../../../libs/d3.v2.js"></script>
+        <script type="text/javascript" src="../../../libs/jquery.js"></script>
+        
+        <script type="text/javascript" src="../../../libs/sap.viz.js"></script>
+
+        <!-- DO NOT CHANGE THE ORDER OF THE ABOVE SCRIPTS, OR INSERT ANYTHING BETWEEN THEM -->
+
+        <!-- deps>> -->
+        <script id="prepare" type="text/javascript">
+            // Create and initialize the extension in an requireJS manner
+             // Config the baseUrl for requireJS to find the specific module or file
+            requirejs.config({
+                 baseUrl : '../bundles/com/sap/sample/d3/bulletchart'
+            });
+            require([ 'bulletchart-bundle' ], function() {
+                //chart option
+                var chartPoperties = {
+                    
+                    title : {
+                        visible : true,
+                        text : "Chart Title",
+                        alignment : 'center',
+                    }, 
+                    'Bullet Chart Module': {
+                        borderColor: "none"
+                    },
+                    
+                };
+                //dataset used by the chart
+                /*<<data*/
+                var data =     {
+                        "analysisAxis": [{
+                            "index": 1,
+                            "data": [{
+                                "type": "Dimension",
+                                "name": "Title",
+                                "values": ["Revenue", "Profit", "Order Size", "New Customers", "Satisfaction"]
+                            }, {
+                                "type": "Dimension",
+                                "name": "Subtitle",
+                                "values": ["US$, in thousands", "%", "US$, average", "count", "out of 5"]
+                            }]
+                        }],
+                        "measureValuesGroup": [{
+                            "index": 1,
+                            "data": [{
+                                "type": "Measure",
+                                "name": "Actual",
+                                "values": [
+                                    [220, 21, 100, 1000, 3.2]
+                                ]
+                            }, {
+                                "type": "Measure",
+                                "name": "Pace",
+                                "values": [
+                                    [270, 23, 320, 1650, 4.7]
+                                ]
+                            }]
+                        }, {
+                            "index": 2,
+                            "data": [{
+                                "type": "Measure",
+                                "name": "Target",
+                                "values": [
+                                    [250, 26, 550, 2100, 4.4]
+                                ]
+                            }]
+                        }, {
+                            "index": 3,
+                            "data": [{
+                                "type": "Measure",
+                                "name": "Range 1",
+                                "values": [
+                                    [150, 20, 350, 1400, 3.5]
+                                ]
+                            }, {
+                                "type": "Measure",
+                                "name": "Range 2",
+                                "values": [
+                                    [225, 35, 500, 2000, 4.25]
+                                ]
+                            }, {
+                                "type": "Measure",
+                                "name": "Range 3",
+                                "values": [
+                                    [300, 30, 600, 2500, 5]
+                                ]
+                            }]
+                        }]
+                    };
+                var ds = new sap.viz.api.data.CrosstableDataset(); 
+                ds.data(data);
+                /*data>>*/
+                
+                function onTplLoad() {
+                    //create chart after applying template
+                    /*<<create*/
+                     try {
+                        var chart = sap.viz.api.core.createViz({
+                            type : 'com.sap.sample.d3.bulletchart',
+                            data : ds,
+                            container : $("#chart"),
+                            properties : chartPoperties,
+                        });
+                    } catch (err) {
+                        console.log(err);
+                        return;
+                    }
+                    /*create>>*/
+                    //listen the barData event raised from the extension
+                    chart.on("barData", function(d) {
+                        alert("Data: " + d.join(" = "));
+                    });
+                    $(window).resize(function(){
+                        chart.size({
+                            width: $("#chart").width(),
+                            height: $("#chart").height()
+                        })
+                    });
+                };
+                function onTplFail() {
+                };
+                // set template loadPath
+                /*<<template*/
+                sap.viz.api.env.Resource.path("sap.viz.api.env.Template.loadPaths", ["../bundles/com/sap/sample/d3/bulletchart/com_sap_sample_d3_bulletchart-src/resources/templates"]);
+                sap.viz.api.env.Template.set("sample", onTplLoad, onTplFail);
+                    /*template>>*/
+            });
+        </script>
+    </head>
+    <body>
+        <!-- <<container -->
+        <div id="chart" style="position: absolute; left:0px; right: 0px; top:0px; bottom:0px; background-color: #ffffff"></div>
+        <!-- container>> -->
+    </body>
+</html>    
+    
