@@ -1,3 +1,3 @@
-Bullet Chart
+HelloWorld Chart
 -------------------------------------------
 
