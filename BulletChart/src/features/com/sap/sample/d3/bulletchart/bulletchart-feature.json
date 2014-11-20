@@ -11,7 +11,7 @@
     "requires": [
         {
             "id": "sap.viz.common.core",
-            "version": "4.0.16"
+            "version": "4.0.18"
         }
     ],
     "bundles": [

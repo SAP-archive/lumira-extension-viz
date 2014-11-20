@@ -17,7 +17,6 @@ define("com_sap_sample_d3_bulletchart-src/js/render", ["com_sap_sample_d3_bullet
 		container.selectAll('svg').remove();
         var vis = container.append('svg').attr('width', width).attr('height', height)
                     .append('g').attr('class', 'vis').attr('width', width).attr('height', height);
- 
 
 // MDL: Convert from d3.CSV to d3.JSON as expected by the bullet chart.
 var fdata = [];
@@ -58,7 +57,6 @@ for (var i=0; i < data.length; i++) {
 	fdata.push(row);
 }
 // MDL: end
-
 
 // MDL: Added bullet width to make it easier to adapt to the page width.
 // MDL: Added bullet height so can calculate the y-position for each bullet SVG.
@@ -144,8 +142,6 @@ var chart = d3_bullet()
 // MDL: end
 
     };
-
-
 
 // Chart design based on the recommendations of Stephen Few. Implementation
 // based on the work of Clint Ivy, Jamie Love, and Jason Davies.

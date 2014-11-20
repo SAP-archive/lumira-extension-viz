@@ -1,4 +1,4 @@
-.bullet { font: 10px sans-serif; }
+.bullet { font: 10px sans-serif; !important;}
 .bullet .marker { stroke: #000; stroke-width: 2px; }
 .bullet .tick line { stroke: #666; stroke-width: .5px; }
 .bullet .range.s0 { fill: #eee; }
