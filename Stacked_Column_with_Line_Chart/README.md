@@ -1,7 +1,7 @@
 Stacked Column with Line Chart - SAP Lumira visualization extension
 =================================================
  * Based on the [Stacked Column with Line chart D3 example by Bruce Durling](http://bl.ocks.org/otfrom/4754261)
- * Part of the visual effect based on Craig Buckler's article "How to Calculate Lighter or Darker Hex Colors in JavaScriptat http://www.sitepoint.com/javascript-generate-lighter-darker-color/
+ * Part of the visual effect based on Craig Buckler's article [How to Calculate Lighter or Darker Hex Colors in JavaScript]( http://www.sitepoint.com/javascript-generate-lighter-darker-color/)
 
 SAP Lumira vizPacker files
 -----------
