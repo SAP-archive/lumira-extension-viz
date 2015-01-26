@@ -10,3 +10,4 @@ List of current visualization extensions in the repo
 * Chord Diagram
 * Force Diagram
 * Stacked Column with Line Chart
+* Google Maps Heatmap
