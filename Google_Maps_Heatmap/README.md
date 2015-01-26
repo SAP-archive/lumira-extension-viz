@@ -11,3 +11,7 @@ SAP Lumira vizPacker files
 Resources
 -----------
 * Blog post - [Analyzing Global Earthquakes on Lumira with Google Heatmap Extension] (http://scn.sap.com/community/lumira/blog/2014/12/04/analyzin-world-earthquakes-on-google-heatmap-extension-for-lumira)
+
+Remarks
+-----------
+* Extension requires internet connection in order to load Google Maps. If you are using proxy, you may have trouble to load map. 
