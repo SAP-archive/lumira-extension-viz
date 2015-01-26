@@ -5,8 +5,8 @@ Google Maps Heatmap - SAP Lumira visualization extension
 
 SAP Lumira vizPacker files
 -----------
-* `sap.viz.ext.googlemapsheatmap.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
-* `sap.viz.ext.googlemapsheatmap.profile` - Load the extension back into SAP Lumira vizPacker. Async.js file must be located under "C:/LumiraFiles/" folder to run extension in vizPacker.
+* `sap.viz.ext.googlemapsheatmap.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker. Aync.js file must be located under "..\extensions\bundles\sap\viz\ext\googlemapsheatmap" folder.
+* `sap.viz.ext.googlemapsheatmap.profile` - Load the extension back into SAP Lumira vizPacker. Async.js file must be located under "C:/LumiraFiles/" folder to run extension in vizPacker. Location of Async.js in render.js must be updated after packing extension.
 
 Resources
 -----------
