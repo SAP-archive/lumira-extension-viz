@@ -16,5 +16,10 @@ expects the dataset to be complete. So, I am using the SVG path mini language di
 coordinates for the lines to be drawn. That looks something like this: M0,0L10,0L10,10L10,0L0,0 which would create a little 
 square. `d3.svg.line()` and `d3.svg.area()` are basically helper functions around this.
 
+Data files
+==========
+I included four data files, for Brazil, Greece, South Korea and the US, so you can see how the charts differ depending on the 
+data set. The data used for this is the WDI from The World Bank: http://data.worldbank.org/data-catalog/world-development-indicators  
 
+To create the data files, I used R to turn the actuals into a time series and ran an auto.arima forecast for 15 years. This analysis could also have been done with the AFL PAL library in HANA, or SAS, or any other tool that can produce such forecasts.
 
