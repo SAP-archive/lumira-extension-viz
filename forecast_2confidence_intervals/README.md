@@ -23,6 +23,10 @@ data set. The data used for this is the WDI from The World Bank: http://data.wor
 
 To create the data files, I used R to turn the actuals into a time series and ran an auto.arima forecast for 15 years. This analysis could also have been done with the AFL PAL library in HANA, or SAS, or any other tool that can produce such forecasts.
 
+Attention: version impact
+=========================
+SAP Lumira development progresses quickly, and this extension was originally built in a previous version. The extension works just fine in SAP Lumira 1.21, but VizPacker can't read this profile file anymore and returns undefined. However, you should just be able to copy the render function, upload the data file and name the canvas fields, and use the content of the .profile file to understand how the data should be included.
+
 Resources
 =========
 * http://scn.sap.com/community/lumira/blog/2015/01/27/sap-lumira-chart-extensions-with-a-predictive-flavor
