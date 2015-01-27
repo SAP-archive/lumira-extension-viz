@@ -16,3 +16,7 @@ The chart doesn't look terribly complex, but I ran into an interesting issue: if
 Data file
 =========
 The data file was given to me by a colleague who had seen the forecast chart with 80 and 95% confidence intervals and wondered if we could do the same with just a single confidence interval, and sent me a sample file. Just like with the other chart, the forecast itself would need to be produced in a predictive/statistical tool (AFL PAL, Predictive Analysis, InfiniteInsight, R, SAS, SPSS, etc.) to do the calculations. 
+
+Resources
+=========
+* http://scn.sap.com/community/lumira/blog/2015/01/27/sap-lumira-chart-extensions-with-a-predictive-flavor 
