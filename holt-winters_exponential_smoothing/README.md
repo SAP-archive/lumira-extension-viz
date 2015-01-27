@@ -9,3 +9,8 @@ Once again we're using the SVG path mini language. Since there are values missin
 Data File
 =========
 A sample data file is supplied. This is the results of some analysis in R on tomatoes sold. First a seasonal adjustment was made, and then a Holt-Winters exponential smoothing was applied. The results were then exported as CSV. Of course, if you are using HANA, you could do this through direct R integration via SQLScript that embeds R script as well.
+
+Resources
+=========
+* http://scn.sap.com/community/lumira/blog/2015/01/27/sap-lumira-chart-extensions-with-a-predictive-flavor
+
