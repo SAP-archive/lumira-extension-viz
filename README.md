@@ -11,3 +11,5 @@ List of current visualization extensions in the repo
 * Force Diagram
 * Stacked Column with Line Chart
 * Google Maps Heatmap
+* Mini Donut Chart
+* Mini Area Chart
