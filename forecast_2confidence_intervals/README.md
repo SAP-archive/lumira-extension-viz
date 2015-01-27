@@ -23,3 +23,6 @@ data set. The data used for this is the WDI from The World Bank: http://data.wor
 
 To create the data files, I used R to turn the actuals into a time series and ran an auto.arima forecast for 15 years. This analysis could also have been done with the AFL PAL library in HANA, or SAS, or any other tool that can produce such forecasts.
 
+Resources
+=========
+* http://scn.sap.com/community/lumira/blog/2015/01/27/sap-lumira-chart-extensions-with-a-predictive-flavor
