@@ -30,3 +30,4 @@ I included the original JavaScript -bundle.js file as well, as that makes for ea
 
 Resources
 ---------
+* Blog [Two unusual Lumira extensions: Extended Bars and Capacity Planning](http://scn.sap.com/community/lumira/blog/2015/02/03/two-unusual-lumira-extensions-extended-bars-and-capacity-planning)
