@@ -16,5 +16,7 @@ The extension was originally built in a prior version of VizPacker, but before p
 
 The main difference here is that in prior VizPacker versions, we may have flattened the table with the (old) built-in `_util.toFlattenTable(data)`. This is no longer necessary, as the data passed into the render function now tries as much as possible to give you the same as `d3.csv()` does, obviously with the added `meta` element. My flattened dataset was called `fdata`, and I now could simply rename every occurence of `fdata` back to `data`, and make sure the properties were identified correctly. This only affects VizPacker, by the way, old extensions keep working in newer Lumira versions. If you built your extensions with VizPacker/Lumira 1.17 or higher, you're unlikely to run into this issue.
 
+I included the original JavaScript -bundle.js file as well, as that makes for easier reading of the code online. However, to avoid having to make the adjustment yourself in VizPacker, I would recommend you use the .profile file and generate the extension for Lumira from there.
+
 Resources:
 ----------
