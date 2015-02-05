@@ -17,9 +17,11 @@ Data file
 ---------
 The data file was given to me by a colleague who had seen the forecast chart with 80 and 95% confidence intervals and wondered if we could do the same with just a single confidence interval, and sent me a sample file. Just like with the other chart, the forecast itself would need to be produced in a predictive/statistical tool (AFL PAL, Predictive Analysis, InfiniteInsight, R, SAS, SPSS, etc.) to do the calculations. 
 
-Attention: version impact for .profile file
+Versioning
 -------------------------------------------
-SAP Lumira development progresses quickly, and this extension was originally built in a previous version. The extension works just fine in SAP Lumira 1.21, but VizPacker can't read this profile file anymore and returns undefined. However, you should just be able to copy the render function, upload the data file and name the canvas fields, and use the content of the .profile file to understand how the data should be included.
+SAP Lumira development progresses quickly, and this extension was originally built in a previous version. The extension works just fine in SAP Lumira 1.21, but VizPacker can't read this original profile file anymore and returns undefined. 
+
+However, the .profile file for this has now been updated to correct this and should work just fine in newer VizPacker versions
 
 Resources
 ---------
