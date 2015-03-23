@@ -1,0 +1,5 @@
+metric ,actual,target,total
+Cost,25,40,50
+Revenue,-90,-80,-100
+Profit,35,50,50
+Margin,50,175,200
