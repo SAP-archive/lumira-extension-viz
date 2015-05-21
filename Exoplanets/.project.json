@@ -1,0 +1,110 @@
+{
+  "generation": [
+    {
+      "templateId": "vizpacker.emptyProject",
+      "templateVersion": "0.0.1",
+      "dateTimeStamp": "Wed, 20 May 2015 21:20:55 GMT"
+    }
+  ],
+  "vizprojectmanager": {
+    "modelversion": "0.0.2",
+    "id": "sap.viz.ext.exoplanets",
+    "name": "Exoplants",
+    "version": "1.0.0",
+    "vendor": {
+      "name": "Community contribution",
+      "url": "Your company website"
+    },
+    "description": "Based on the D3 Exoplanets example",
+    "template": "standard",
+    "container": "BorderSVGFlow",
+    "dataModel": "sap.viz.api.data.CrosstableDataset",
+    "title": {
+      "enabled": true,
+      "place": "top",
+      "text": "Chart Title",
+      "alignment": "center"
+    },
+    "legend": {
+      "enabled": false,
+      "place": "right",
+      "title": {
+        "text": "City/Year"
+      }
+    },
+    "plot": {
+      "id": "sap.viz.ext.exoplanets.PlotModule",
+      "name": "Exoplants Module",
+      "feeds": {
+        "dimensionSets": [
+          {
+            "name": "Name",
+            "min": "0",
+            "max": "2",
+            "minStackedDims": "0",
+            "maxStackedDims": "Infinity",
+            "aaIndex": 1,
+            "id": "sap.viz.ext.exoplanets.PlotModule.DS1",
+            "plotId": "sap.viz.ext.exoplanets.PlotModule",
+            "i": 1
+          }
+        ],
+        "measureSets": [
+          {
+            "name": "Radius",
+            "min": "0",
+            "max": "Infinity",
+            "mgIndex": 1,
+            "id": "sap.viz.ext.exoplanets.PlotModule.MS1",
+            "plotId": "sap.viz.ext.exoplanets.PlotModule",
+            "i": 1
+          },
+          {
+            "min": "0",
+            "max": "Infinity",
+            "name": "Distance",
+            "id": "sap.viz.ext.exoplanets.PlotModule.MS2",
+            "mgIndex": 2,
+            "type": "Measure",
+            "plotId": "sap.viz.ext.exoplanets.PlotModule",
+            "i": 2
+          }
+        ]
+      }
+    },
+    "data": {
+      "fileName": "exoplanets.csv",
+      "delimiter": ",",
+      "useFirstRowAsHeader": true,
+      "fields": [
+        "name",
+        "radius",
+        "distance"
+      ],
+      "types": [
+        "Dimension",
+        "Measure",
+        "Measure"
+      ]
+    },
+    "binding": {
+      "sap.viz.ext.exoplanets.PlotModule.MS2": [
+        "distance"
+      ],
+      "sap.viz.ext.exoplanets.PlotModule.MS1": [
+        "radius"
+      ],
+      "sap.viz.ext.exoplanets.PlotModule.DS1": [
+        "name"
+      ]
+    },
+    "requiresdkversion": "5.0.3"
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  }
+}

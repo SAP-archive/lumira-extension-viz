@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Exoplants Extension</title>
+        
+        <script type="text/javascript" src="https://webide-i819970trial.dispatcher.hanatrial.ondemand.com/plugins/pluginrepository/vizpacker/lib/require.js"></script>
+        <script type="text/javascript" src="https://webide-i819970trial.dispatcher.hanatrial.ondemand.com/plugins/pluginrepository/vizpacker/lib/d3.v2.js"></script>
+        <script type="text/javascript" src="https://webide-i819970trial.dispatcher.hanatrial.ondemand.com/plugins/pluginrepository/vizpacker/lib/jquery.js"></script>
+        <script type="text/javascript" src="https://webide-i819970trial.dispatcher.hanatrial.ondemand.com/plugins/pluginrepository/vizpacker/lib/sap.viz.js"></script>
+        <!-- DO NOT CHANGE THE ORDER OF THE ABOVE SCRIPTS, OR INSERT ANYTHING BETWEEN THEM -->
+        <script id="prepare" type="text/javascript">
+            // Create and initialize the extension in an requireJS manner
+            // Load the preview data
+            require(["previewData"], function(previewData) {
+                // Configure the baseUrl for requireJS to find the specific module or file
+                requirejs.config({
+                    baseUrl : "./bundles/sap/viz/ext/exoplanets"
+                });
+                require([ "exoplanets-bundle" ], function() {
+                    //chart option
+                    var chartPoperties = {
+                        title : {
+                            visible : true,
+                            text : "Chart Title",
+                            alignment : "center",
+                        },
+                        "Exoplants Module": {
+                            borderColor: "none"
+                        },
+                    };
+                    //dataset used by the chart
+                    var data = previewData.cross.data;
+                    var ds = new sap.viz.api.data.CrosstableDataset(); 
+                    ds.data(data);
+                    
+                    function onTplLoad() {
+                        //create chart after applying template
+                        try {
+                            var chart = sap.viz.api.core.createViz({
+                                type : "sap.viz.ext.exoplanets",
+                                data : ds,
+                                bindings : previewData.cross.bindings,
+                                container : $("#chart"),
+                                properties : chartPoperties,
+                            });
+                        } catch (err) {
+                            console.log(err);
+                            return;
+                        }
+                        //listen the barData event raised from the extension
+                        chart.on("barData", function(d) {
+                            alert("Data: " + d.join(" = "));
+                        });
+                        $(window).resize(function(){
+                            chart.size({
+                                width: $("#chart").width(),
+                                height: $("#chart").height()
+                            })
+                        });
+                    }
+                    function onTplFail() {}
+
+                    function onLocaleApplied() {
+                        // set template loadPath
+                        sap.viz.api.env.Resource.path("sap.viz.api.env.Template.loadPaths", ["./bundles/sap/viz/ext/exoplanets/sap_viz_ext_exoplanets-src/resources/templates"]);
+                        sap.viz.api.env.Template.set("standard", onTplLoad, onTplFail);
+                        $("footer").text(sap.viz.extapi.env.Language.getResourceString('IDS_VERSION_PUBLIC'));
+                    }
+                
+                    var lang, params; //paring language from param
+                    if (window.location && window.location.search) {
+                        params = window.location.search.match(/sap-ui-language=(\w*)/);
+                        lang = params && params[1] ? params[1] : lang;
+                    }
+                
+                    if (lang) {
+                        sap.viz.api.env.Resource.path("sap.viz.api.env.Language.loadPaths", ["./bundles/sap/viz/ext/exoplanets/sap_viz_ext_exoplanets-src/resources/languages"]);
+                        sap.viz.api.env.Language.set(lang, onLocaleApplied);
+                    } else {
+                        onLocaleApplied();
+                    }
+                });    
+            });
+        </script>
+    </head>
+    <body>
+        <div id="chart" style="position: absolute; left:0px; right: 0px; top:0px; bottom:0px; background-color: #ffffff"></div>
+        <footer style="position: absolute;right:10px;bottom:10px;font-size:12px;font-style:italic;text-align:right"></footer>
+    </body>
+</html>

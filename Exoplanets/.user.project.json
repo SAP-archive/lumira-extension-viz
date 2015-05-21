@@ -1,0 +1,16 @@
+{
+  "run": [
+    {
+      "filePath": "/Exoplants/preview.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 2233379,
+        "displayName": "New Web Application"
+      }
+    }
+  ]
+}
