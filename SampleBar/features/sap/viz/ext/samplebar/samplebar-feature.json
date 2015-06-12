@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.samplebar",
+	"name": "Sample Bar",
+	"description": "Hello World",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Your company",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "4.0.16"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.samplebar",
+		"version": "1.0.0"
+	}]
+}
