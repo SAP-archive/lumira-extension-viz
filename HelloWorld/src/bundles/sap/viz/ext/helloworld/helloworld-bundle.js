@@ -1,10 +1,10 @@
-define("helloworld-bundle", ["sap_viz_ext_helloworld-src/js/flow", "css!sap_viz_ext_helloworld-src/style/default.css"], function(flowDefinition,cssStyleDeclaration) {
-    var cssString="", rules, i;
+define("helloworld-bundle", ["sap_viz_ext_helloworld-src/js/flow", "css!sap_viz_ext_helloworld-src/style/default.css"], function(flowDefinition, cssStyleDeclaration) {
+    var cssString = "", rules, i;
     if (cssStyleDeclaration && cssStyleDeclaration.cssRules) {
-            rules = cssStyleDeclaration.cssRules;
-        for (i=0;i<rules.length;i++) {
-            cssString += rules.item(i).cssText;
-        }
+      rules = cssStyleDeclaration.cssRules;
+      for (i = 0; i < rules.length; i++) {
+        cssString += rules.item(i).cssText;
+      }
     }
     var vizExtImpl = {
         viz   : [flowDefinition],
@@ -14,7 +14,7 @@ define("helloworld-bundle", ["sap_viz_ext_helloworld-src/js/flow", "css!sap_viz_
     };
     var vizExtBundle = sap.bi.framework.declareBundle({
         "id" : "sap.viz.ext.helloworld",
-        "version" : "1.0.0.0",
+        "version" : "1.0.0",
         "components" : [{
             "id" : "sap.viz.ext.helloworld",
             "provide" : "sap.viz.impls",
@@ -24,6 +24,10 @@ define("helloworld-bundle", ["sap_viz_ext_helloworld-src/js/flow", "css!sap_viz_
                 "description" : "",
                 "icon" : {"path" : ""},
                 "category" : [],
+                "requires": [{
+                    "id": "sap.viz.common.core",
+                    "version": "5.7.3"
+                }],
                 "resources" : [{"key":"sap.viz.api.env.Template.loadPaths", "path":"./sap_viz_ext_helloworld-src/resources/templates"}]
             }
         }]
