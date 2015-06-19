@@ -2,7 +2,7 @@ define("sap_viz_ext_exoplanets-src/js/flow", [ "sap_viz_ext_exoplanets-src/js/mo
     var flowRegisterFunc = function(){
         var flow = sap.viz.extapi.Flow.createFlow({
             id : "sap.viz.ext.exoplanets",
-            name : "Exoplants",
+            name : "Exoplanets",
             dataModel : "sap.viz.api.data.CrosstableDataset",
             type : "BorderSVGFlow"
         });
@@ -21,7 +21,7 @@ define("sap_viz_ext_exoplanets-src/js/flow", [ "sap_viz_ext_exoplanets-src/js/mo
         
         var element  = sap.viz.extapi.Flow.createElement({
             id : "sap.viz.ext.exoplanets.PlotModule",
-            name : "Exoplants Module"
+            name : "Exoplanets Module"
         });
         element.implement("sap.viz.elements.common.BaseGraphic", moduleFunc);
 
