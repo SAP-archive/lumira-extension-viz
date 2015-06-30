@@ -1,0 +1,23 @@
+{
+    "metadataVersion": "1.0",
+    "id": "sap.viz.ext.footballheatmap",
+    "name": "Football Heatmap",
+    "description": "Football Heatmap",
+    "version": "1.0.0",
+    "vendor": {
+        "name": "sap",
+        "url": ""
+    },
+    "requires": [
+        {
+            "id": "sap.viz.common.core",
+            "version": "5.10.2"
+        }
+    ],
+    "bundles": [
+        {
+            "id": "sap.viz.ext.footballheatmap",
+            "version": "1.0.0.0"
+        }
+    ]
+}
