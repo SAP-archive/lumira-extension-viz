@@ -15,3 +15,9 @@ Resources
 -----------
 * Blog post - Football Heatmap visualization extension ([Coming soon]())
 * Blog post - How to Migrate Football Heatmap from Lumira VizPacker Utility to SAP Web IDE ([Coming soon]())
+
+
+Note
+-----------
+This extension is currently application for a football-related use case only. 
+Currently not reusable for other sports use cases.
