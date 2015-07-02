@@ -2,7 +2,9 @@ Football Heatmap - SAP Lumira visualization extension
 =================================================
 A custom heatmap chart extension for a football field.
 <br>
-Created by <strong>MUSTAFA AYDOGDU</strong>
+Created by - 
+<br>
+<strong>MUSTAFA AYDOGDU</strong>
 
 SAP Lumira files
 -----------
