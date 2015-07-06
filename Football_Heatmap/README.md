@@ -19,5 +19,5 @@ Resources
 
 Note
 -----------
-This extension is currently application for a football-related use case only. 
+This extension is currently applicable for a football-related use case only. 
 Currently not reusable for other sports use cases.
