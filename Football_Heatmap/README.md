@@ -13,8 +13,8 @@ SAP Lumira files
 
 Resources
 -----------
-* Blog post - Football Heatmap visualization extension ([Coming soon]())
-* Blog post - How to Migrate Football Heatmap from Lumira VizPacker Utility to SAP Web IDE ([Coming soon]())
+* Blog post - [Football Heatmap visualization extension] ()
+* Blog post -  [How to Migrate Football Heatmap from Lumira VizPacker Utility to SAP Web IDE](http://scn.sap.com/community/lumira/blog/2015/07/07/football-heatmap-viz-extension-the-migration-from-sap-lumira-sdk-to-sap-web-ide)
 
 
 Note
