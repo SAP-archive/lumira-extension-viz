@@ -4,7 +4,7 @@ A custom heatmap chart extension for a football field.
 <br>
 Created by - 
 <br>
-<strong>MUSTAFA AYDOGDU</strong>
+<strong>[MUSTAFA AYDOGDU](http://scn.sap.com/people/mustafa.aydogdu)</strong>
 
 SAP Lumira files
 -----------
