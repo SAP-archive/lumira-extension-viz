@@ -17,6 +17,8 @@ I built this within the Lumira folder structure: Inside the Lumira Desktop folde
     - comsapsvcseuropowermap
       - comsapsvcseuropowermap-src
         - js
+          - utils
+            - util.js
           - dataMapping.js
           - flow.js
           - module.js
