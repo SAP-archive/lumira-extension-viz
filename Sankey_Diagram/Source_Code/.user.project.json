@@ -1,0 +1,18 @@
+{
+  "run": [
+    {
+      "filePath": "/Google_Sankey/preview.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 4682896,
+        "displayName": "New Web Application 16"
+      }
+    }
+  ]
+}
