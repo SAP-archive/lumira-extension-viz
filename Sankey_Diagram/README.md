@@ -12,4 +12,4 @@ SAP Lumira visualization folders and files
 
 Resources
 -----------
-* Blog post - [TBA](http://scn.sap.com/community/lumira/)
+* Blog post - [Lumira Visualization Extension - Sankey Diagram](http://scn.sap.com/community/lumira/blog/2015/08/01/lumira-visualization-extension--sankey-diagram)
