@@ -41,6 +41,7 @@ List of current visualization extensions in the repo
 * Extended Bar Chart
 * Sample Bar Chart
 * Football Heatmap
+* Sankey Diagram (based on Google visualization API)
 
 Get it!
 -----------
