@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.powerflowmaps",
+	"name": "Power Flow Maps",
+	"description": "A visualization extension to map import-export flows between countries with GeoJSON/topoJSON in SAP Lumira",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Jay Thoden van Velzen",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.powerflowmaps",
+		"version": "1.0.0"
+	}]
+}
