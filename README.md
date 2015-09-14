@@ -34,11 +34,6 @@ List of current visualization extensions in the repo
 * Google Maps Heatmap
 * Mini Donut Chart
 * Mini Area Chart
-* Forecast Chart with Single Confidence Interval
-* Forecast Chart with 80% and 95% Confidence Intervals
-* Holt-Winters Exponential Smoothing Chart
-* Capacity Planning Chart
-* Extended Bar Chart
 * Sample Bar Chart
 * Football Heatmap
 * Sankey Diagram (based on Google visualization API)
