@@ -1,0 +1,9 @@
+Needle,needletype,startdepth,enddepth,Hg ng/g(dm)
+TS3 30m,A,0,5.5,45
+TS3 30m,B,5.5,5.9,150
+TS3 30m,C,5.9,8.3,180
+TS3 30m,D,8.3,10.5,25
+TS2-5,A,0,5.5,60
+TS2-5,B,5.5,5.9,130
+TS2-5,C,5.9,8.3,190
+TS2-5,D,8.3,10.5,40
