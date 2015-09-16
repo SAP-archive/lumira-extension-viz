@@ -1,5 +1,7 @@
 Extended Bar Chart or Variable-Width Bar Chart
 ==============================================
+By [Jay Thoden van Velzen](http://scn.sap.com/people/jay.thodenvanvelzen)
+------------------------------------------------------------------------
 Typically in a bar chart plotted along the X-axis, only the height of the bar/column has meaning. In this chart, not only the height, but also the width of the bar has meaning. In this chart, which was originally produced at the request of a watch maker, the full width of the bar expresses a range in depth, of a particular type, for which they have the same Hg ng/g(dm). (Unfortunately, I don't posess the domain knowledge to explain this further)
 
 This chart could easily be modified to accept other data analysis where variable width bars may be of use. In the JavaScript you'll see that contrary to normal, the data is very closely tied to the chart (and calls data columns by name). This actually makes some sense for charts that are this specialized.
