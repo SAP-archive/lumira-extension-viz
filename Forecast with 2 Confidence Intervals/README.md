@@ -1,5 +1,7 @@
 Forecast with 80% and 95% Confidence Intervals - Lumira extension
 =================================================================
+By [Jay Thoden van Velzen](http://scn.sap.com/people/jay.thodenvanvelzen)
+-------------------------------------------------------------------------
 This chart allows the visualization of actuals and forecast with 80 and 95% confidence intervals. Note that this chart 
 doesn't perform the forecast itself, but is a visualization extension that allows to show the results of such forecasting 
 with the appropriate confidence intervals. It is important to include confidence intervals in forecast to give a sense of 
