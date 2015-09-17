@@ -25,6 +25,7 @@ Check out our SAP Lumira Visualization Extension Library. This library contains 
 List of current visualization extensions in the repo
 
 * Bullet Chart
+* Capacity Planning Chart
 * Chord Diagram
 * Exoplanets
 * Extended Bar Chart
