@@ -30,7 +30,9 @@ List of current visualization extensions in the repo
 * Extended Bar Chart
 * Football Heatmap
 * Force Diagram
+* Forecast with 2 Confidence Intervals
 * Forecast with Single Confidence Interval
+* Gauges
 * Google Maps Heatmap
 * Hello World
 * Mini Charts
