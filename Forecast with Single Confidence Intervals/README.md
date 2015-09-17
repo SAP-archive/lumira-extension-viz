@@ -1,5 +1,7 @@
 Forecast with single Confidence Interval Band
 =============================================
+By [Jay Thoden van Velzen](http://scn.sap.com/people/jay.thodenvanvelzen)
+-------------------------------------------------------------------------
 
 This chart shows the visualization of actuals and forecast with a single confidence interval. Note that this chart doesn't
 perform the forecast itself, but a visualization extension that allows to show the results of such forecast with the appropriate
