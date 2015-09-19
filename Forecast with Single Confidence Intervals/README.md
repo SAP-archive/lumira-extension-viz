@@ -1,13 +1,11 @@
 Forecast with single Confidence Interval Band
 =============================================
 By [Jay Thoden van Velzen](http://scn.sap.com/people/jay.thodenvanvelzen)
--------------------------------------------------------------------------
 
 This chart shows the visualization of actuals and forecast with a single confidence interval. Note that this chart doesn't
 perform the forecast itself, but a visualization extension that allows to show the results of such forecast with the appropriate
 confidence interval. It is important to include a confidence interval with the forecast to give a sense of how reliable/accurate/precise the forecast really is. You do not want to have your end user misunderstand the forecast and make
-important decisions based on it, when the confidence interval could have shown there was a great deal of uncertainty involved 
-with the forecast.
+important decisions based on it, when the confidence interval could have shown there was a great deal of uncertainty involved with the forecast.
 
 Have a look at the included data file for the required format. This has a seasonal aspect to it, which is reflected as well in the forecast.
 
@@ -24,6 +22,20 @@ Versioning
 SAP Lumira development progresses quickly, and this extension was originally built in a previous version. The extension works just fine in SAP Lumira 1.21, but VizPacker can't read this original profile file anymore and returns undefined. 
 
 However, the .profile file for this has now been updated to correct this and should work just fine in newer VizPacker versions
+
+Data Binding
+-------------------------------------------
+<strong>Measures</strong>
+* Measure
+* PILower
+* PIUpper
+ 
+<strong>Dimensions</strong>
+* YearMonthString
+* Month
+* Type
+* Model
+* ForecastBy
 
 Resources
 ---------
