@@ -1,7 +1,7 @@
 Forecast with 80% and 95% Confidence Intervals - Lumira extension
 =================================================================
 By [Jay Thoden van Velzen](http://scn.sap.com/people/jay.thodenvanvelzen)
--------------------------------------------------------------------------
+
 This chart allows the visualization of actuals and forecast with 80 and 95% confidence intervals. Note that this chart 
 doesn't perform the forecast itself, but is a visualization extension that allows to show the results of such forecasting 
 with the appropriate confidence intervals. It is important to include confidence intervals in forecast to give a sense of 
@@ -30,6 +30,19 @@ Versioning
 SAP Lumira development progresses quickly, and this extension was originally built in a previous version. The extension works just fine in SAP Lumira 1.21, but VizPacker can't read this original profile file anymore and returns undefined. 
 
 However, I made the required updates, so that the .profile file included here should work just fine in the latest Lumira versions. 
+
+Data Binding
+-------------------------------------------
+<strong>Measures</strong>
+* Actuals
+* Forecast
+* Lo.80
+* Hi.80
+* Lo.95
+* Hi.95
+ 
+<strong>Dimensions</strong>
+* Year
 
 Resources
 ---------
