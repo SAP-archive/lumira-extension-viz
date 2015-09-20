@@ -10,6 +10,19 @@ Files
 * `population_pyramid.csv` - Sample dataset
 * `sap.viz.ext.populationpyramid.profile` - Load the extension back into SAP Lumira vizPacker
 
+Data Binding
+-------------------------------------------
+<strong>Measures (Y Axis)</strong>
+* Age
+* People 
+* Sex
+
+<strong>Dimensions (X Axis)</strong>
+* Year
+* Age 
+* People
+* Sex
+
 Resources
 -----------
 * Blog post - [SAP Lumira Chart Extensions Demonstrated at CodeJam Vancouver](http://scn.sap.com/community/lumira/blog/2014/06/28/cool-chart-extensions-demonstrated-at-lumira-codejam-vancouver)
