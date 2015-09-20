@@ -1,0 +1,23 @@
+{
+    "metadataVersion": "1.0",
+    "id": "sap.viz.ext.populationpyramid",
+    "name": "Population Pyramid Chart",
+    "description": "Population Pyramid Chart",
+    "version": "1.0.0.0",
+    "vendor": {
+        "name": "SAP",
+        "url": "www.sap.com"
+    },
+    "requires": [
+        {
+            "id": "sap.viz.common.core",
+            "version": "4.0.16"
+        }
+    ],
+    "bundles": [
+        {
+            "id": "sap.viz.ext.populationpyramid",
+            "version": "1.0.0.0"
+        }
+    ]
+}
