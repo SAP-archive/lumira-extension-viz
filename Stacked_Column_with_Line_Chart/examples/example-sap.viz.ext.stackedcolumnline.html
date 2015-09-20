@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Hello World Extension</title>
+        <!-- <<deps -->
+        <script type="text/javascript" src="../../../libs/require.js"></script>
+        <script type="text/javascript" src="../../../libs/d3.v2.js"></script>
+        <script type="text/javascript" src="../../../libs/jquery.js"></script>
+        
+        <script type="text/javascript" src="../../../libs/sap.viz.js"></script>
+
+        <!-- DO NOT CHANGE THE ORDER OF THE ABOVE SCRIPTS, OR INSERT ANYTHING BETWEEN THEM -->
+
+        <!-- deps>> -->
+        <script id="prepare" type="text/javascript">
+            // Create and initialize the extension in an requireJS manner
+             // Config the baseUrl for requireJS to find the specific module or file
+            requirejs.config({
+                 baseUrl : '../bundles/sap/viz/ext/stackedcolumnline'
+            });
+            require([ 'stackedcolumnline-bundle' ], function() {
+                //chart option
+                var chartPoperties = {
+                    
+                    title : {
+                        visible : true,
+                        text : "Chart Title",
+                        alignment : 'center',
+                    }, 
+                    'Stacked Column with Line Module': {
+                        borderColor: "none"
+                    },
+                    
+                };
+                //dataset used by the chart
+                /*<<data*/
+                var data =     {
+                        "analysisAxis": [{
+                            "index": 1,
+                            "data": [{
+                                "type": "Dimension",
+                                "name": "property",
+                                "values": ["foo", "bar", "baz"]
+                            }]
+                        }],
+                        "measureValuesGroup": [{
+                            "index": 1,
+                            "data": [{
+                                "type": "Measure",
+                                "name": "annual_emissions",
+                                "values": [
+                                    [9.48120598985868, 13.9329659660887, 14.8021361709446]
+                                ]
+                            }, {
+                                "type": "Measure",
+                                "name": "monthly_cost",
+                                "values": [
+                                    [23.4645618950913, 32.8744521510371, 30.8015383323353]
+                                ]
+                            }, {
+                                "type": "Measure",
+                                "name": "Gas",
+                                "values": [
+                                    [0, 1.06302263189102, 0]
+                                ]
+                            }, {
+                                "type": "Measure",
+                                "name": "Electrical",
+                                "values": [
+                                    [9.48120598985868, 12.8699433341977, 14.8021361709446]
+                                ]
+                            }]
+                        }, {
+                            "index": 2,
+                            "data": [{
+                                "type": "Measure",
+                                "name": "normalised_cost",
+                                "values": [
+                                    [3.32516229028219, 4.7563711817271, 5.19127050544977]
+                                ]
+                            }]
+                        }]
+                    };
+                var ds = new sap.viz.api.data.CrosstableDataset(); 
+                ds.data(data);
+                /*data>>*/
+                
+                function onTplLoad() {
+                    //create chart after applying template
+                    /*<<create*/
+                     try {
+                        var chart = sap.viz.api.core.createViz({
+                            type : 'sap.viz.ext.stackedcolumnline',
+                            data : ds,
+                            container : $("#chart"),
+                            properties : chartPoperties,
+                        });
+                    } catch (err) {
+                        console.log(err);
+                        return;
+                    }
+                    /*create>>*/
+                    //listen the barData event raised from the extension
+                    chart.on("barData", function(d) {
+                        alert("Data: " + d.join(" = "));
+                    });
+                    $(window).resize(function(){
+                        chart.size({
+                            width: $("#chart").width(),
+                            height: $("#chart").height()
+                        })
+                    });
+                };
+                function onTplFail() {
+                };
+                // set template loadPath
+                /*<<template*/
+                sap.viz.api.env.Resource.path("sap.viz.api.env.Template.loadPaths", ["../bundles/sap/viz/ext/stackedcolumnline/sap_viz_ext_stackedcolumnline-src/resources/templates"]);
+                sap.viz.api.env.Template.set("sample", onTplLoad, onTplFail);
+                    /*template>>*/
+            });
+        </script>
+    </head>
+    <body>
+        <!-- <<container -->
+        <div id="chart" style="position: absolute; left:0px; right: 0px; top:0px; bottom:0px; background-color: #ffffff"></div>
+        <!-- container>> -->
+    </body>
+</html>    
+    
