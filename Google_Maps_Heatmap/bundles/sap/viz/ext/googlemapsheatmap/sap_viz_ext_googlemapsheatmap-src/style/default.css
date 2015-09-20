@@ -1,0 +1,28 @@
+.v-m-plot rect.bar { stroke: black; stroke-width: 1px; stroke-opacity: 0.3 }
+
+html, body, #chart {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.stations, .stations svg {
+  position: absolute;
+}
+
+.stations svg {
+  width: 160px;
+  height: 160px;
+  padding-right: 100px;
+  font: 14px sans-serif;
+  fill: orange;
+  stroke: black;
+  stroke-width: 0.5px;
+}
+
+.stations circle {
+  fill: orange;
+  stroke: gray;
+  stroke-width: 2px;
+}
