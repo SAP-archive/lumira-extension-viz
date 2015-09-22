@@ -26,9 +26,9 @@ The main trick in the data file is that we have a large number of missing values
 
 Files
 ------
-* `sap.viz.ext.capacityplanning.zip` - Extension file
-* `capacity_planning.csv` - Sample dataset
 * `Capacity Planning.lums` - Sample Lumira file
+* `capacity_planning.csv` - Sample dataset
+* `sap.viz.ext.capacityplanning.zip` - Extension file
 
 Data Binding
 ------------
