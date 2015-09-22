@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.bulletchart",
+	"name": "Bullet Chart",
+	"description": " ",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Matt Lloyd",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.bulletchart",
+		"version": "1.0.1"
+	}]
+}

@@ -7,7 +7,7 @@ Based on the [Bullet Charts D3 example](http://bl.ocks.org/mbostock/4061961)
 
 Files
 -----------
-* `d3_gallery_modified` - modified version of the D3 code that makes it easier to bring into SAP Lumira vizPacker
+
 * `Bullet Chart.lums` - Sample Lumira file
 * `bullets.csv` - Sample dataset
 * `com.sap.sample.d3.bulletchart.profile` - SAP Lumira vizPacker version
