@@ -13,6 +13,7 @@ Files
 * `com.sap.sample.d3.bulletchart.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
 * `com.sap.sample.d3.bulletchart.profile` - Load the extension back into SAP Lumira vizPacker
 * `bullets.csv` - Sample dataset
+* `Bullet Chart.lums` - Sample Lumira file
 
 Data Binding
 -------------
