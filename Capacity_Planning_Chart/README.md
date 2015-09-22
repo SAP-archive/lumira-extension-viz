@@ -24,11 +24,28 @@ Data file
 ---------
 The main trick in the data file is that we have a large number of missing values (there is a clear cut-off at "present") and handle that appropriately. To test, use the .profile file in VizPacker to create the extension, and drop the bundle folder into $LUMIRA_HOME/Desktop/extensions/bundles. Open Lumira and upload the data file, then pick the extension. Drop Month into Dimensions/Data, all other data elements in Measures.
 
-Prior version/current version
------------------------------
-The extension was originally built in a prior version of VizPacker, but before publishing here, the code was updated and corrected in VizPacker/Lumira 1.21. For older extensions, the .profile file no longer works in newer versions. To update, I took the code from the render function from the -bundle file, and re-built the extension in VizPacker. The main thing to take care of is that you no longer need to flatten the data that is passed into VizPacker, and make sure your variables and properties are named right, still. By removing the now superfluous call to `_util.toFlattenTable(data)` and making sure variable names are correct, you should be able to recreate your extension.
+Files
+------
+* `sap.viz.ext.capacityplanning.zip` - Extension file
+* `capacity_planning.csv` - Sample dataset
+* `Capacity Planning.lums` - Sample Lumira file
 
-I included the original JavaScript -bundle.js file as well, as that makes for easier reading of the code online. However, to avoid having to make the adjustment yourself in VizPacker, I would recommend you use the .profile file and generate the extension for Lumira from there.
+Data Binding
+------------
+<strong>Measures</strong>
+* Backlog
+* Base Capacity (In House)
+* Completed Hours
+* Direct Labor Completed Hours
+* Full Absorption Line
+* Maximum Capacity (In House)
+* Maximum Capacity (incl. subcontracting)
+* Orders on Hand: Not Released
+* Orders on Hand: Released
+* Sales Forecast* 
+
+<strong>Dimensions</strong>
+* Month
 
 Resources
 ---------
