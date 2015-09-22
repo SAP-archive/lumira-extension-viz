@@ -2,12 +2,13 @@ Football Heatmap - SAP Lumira visualization extension
 =================================================
 A custom heatmap chart extension for a football field.
 <br>
-By [Mustafa Aydogdu](http://scn.sap.com/people/mustafa.aydogdu)
+* By [Mustafa Aydogdu](http://scn.sap.com/people/mustafa.aydogdu)
+* Migrated to Web IDE by [Annie (Suantak) Niangneihoi](http://scn.sap.com/people/suantak.niangneihoi)
 
 Files
 -----------
 * `sap.viz.ext.footballheatmap.zip` - SAP Lumira visualization extension, rebuilt in Web IDE
-* `Football Heatmap Demo.lums` - SAP Lumira .lums file
+* `Football Heatmap.lums` - SAP Lumira .lums file
 * `recordsView.csv` - Sample dataset
 
 Data Binding

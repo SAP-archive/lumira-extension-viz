@@ -1,4 +1,4 @@
-define("sap_viz_ext_footballheatmap-src/js/render", [], function() {
+define("sap_viz_ext_footballheatmap-src/js/render", ['heatmap2'], function() {
 	/*
 	 * This function is a drawing function; you should put all your drawing logic in it.
 	 * it's called in moduleFunc.prototype.render
@@ -19,12 +19,7 @@ define("sap_viz_ext_footballheatmap-src/js/render", [], function() {
 			dispatch = this.dispatch();
 		//Prepare canvas with width and height of container  
 
-		var vis = container.append('svg').attr('width', width).attr('height', height)
-			.append('g').attr('class', 'vis').attr('width', width).attr('height', height);
-
 		container.selectAll('svg').remove();
-		var dsets = data.meta.dimensions(),
-			msets = data.meta.measures();
 
 		var mset1 = data.meta.measures(0);
 		var dset1 = data.meta.dimensions(0),
@@ -57,6 +52,7 @@ define("sap_viz_ext_footballheatmap-src/js/render", [], function() {
 		var centerRadius = 9.15 * fieldHeight / 68;
 		var sideLengthOfPenaltyArc = 5.5 * fieldWidth / 105;
 
+		//!!!!!!!!!!!!If you know min and max point, please assign manually!!!!!!!!!!!!!!!1
 		var xMin = d3.min(data, function(d) {
 			return d[xDimension];
 		});
@@ -74,6 +70,7 @@ define("sap_viz_ext_footballheatmap-src/js/render", [], function() {
 		var maxValue = d3.max(data, function(d) {
 			return d[measureValue];
 		});
+
 		//Calculators for finding place of points on pitch
 		var y = d3.scale.linear()
 			.range([0, fieldHeight])
@@ -85,31 +82,35 @@ define("sap_viz_ext_footballheatmap-src/js/render", [], function() {
 
 		var heatData = [];
 
+		var datasetControl = 0; //to check if x and y has proper data.
+
 		data.forEach(function(d) {
 			var point = {
 				x: x(d[xDimension]),
 				y: y(d[yDimension]),
 				value: d[measureValue]
+
 			};
+			if (!isNaN(point.x) && !isNaN(point.y)) {
+				datasetControl = 1;
+			}
+
 			heatData.push(point);
 		});
 
-		require([
-          //'C:/LumiraFiles/heatmap2.js',
-        '../sap/bi/bundles/sap/viz/ext/footballheatmap/heatmap2.js',
-            ], function() {
-			// call google maps API after everything is loaded
+		if (datasetControl === 1) {
 			initializeHeatMap();
-		});
+		}
 
 		function initializeHeatMap() {
+
 			//Main div for including heatmap and football pitch
 			container.node().innerHTML = "";
 			var mainContainer = document.createElement('div');
 			mainContainer.style.width = canvasWidth + 'px';
 			mainContainer.style.height = fieldHeight + 'px';
 			//  mainContainer.style.left = leftMargin+'px';
-			mainContainer.className = 'divGreen';
+			mainContainer.className = 'sap_viz_ext_footballheatmap divGreen';
 			container.node().appendChild(mainContainer);
 
 			//Div for heatmap
@@ -117,7 +118,7 @@ define("sap_viz_ext_footballheatmap-src/js/render", [], function() {
 			heatmapContainer.style.width = fieldWidth + 'px';
 			heatmapContainer.style.height = fieldHeight + 'px';
 			//heatmapContainer.style.left = leftMargin+'px';
-			heatmapContainer.className = 'divCSS';
+			heatmapContainer.className = 'sap_viz_ext_footballheatmap divCSS';
 
 			//Div for drawing football pitch
 			var pitchContainer = document.createElement('div');
@@ -125,14 +126,14 @@ define("sap_viz_ext_footballheatmap-src/js/render", [], function() {
 			pitchContainer.style.height = fieldHeight + 'px';
 			pitchContainer.style.left = leftMargin + 'px';
 			pitchContainer.style.strokeWidth = fieldWidth / 150;
-			pitchContainer.className = 'divCSS';
+			pitchContainer.className = 'sap_viz_ext_footballheatmap divCSS';
 
 			var lineContainer = document.createElement('div');
 			lineContainer.style.width = fieldWidth + 'px';
 			lineContainer.style.height = fieldHeight + 'px';
 			lineContainer.style.left = leftMargin + 'px';
 			lineContainer.style.strokeWidth = fieldWidth / 150;
-			lineContainer.className = 'lines';
+			lineContainer.className = 'sap_viz_ext_footballheatmap lines';
 
 			//Div for drawing football pitch
 			var greenLayer = document.createElement('div');
@@ -140,7 +141,7 @@ define("sap_viz_ext_footballheatmap-src/js/render", [], function() {
 			greenLayer.style.height = fieldHeight + 'px';
 			greenLayer.style.left = leftMargin + 'px';
 			greenLayer.style.strokeWidth = fieldWidth / 150;
-			greenLayer.className = 'divCSS';
+			greenLayer.className = 'sap_viz_ext_footballheatmap divCSS';
 
 			mainContainer.appendChild(pitchContainer);
 			pitchContainer.appendChild(heatmapContainer);
@@ -245,11 +246,11 @@ define("sap_viz_ext_footballheatmap-src/js/render", [], function() {
 				.innerRadius(centerRadius)
 				.outerRadius(centerRadius)
 				.startAngle(arcAngle) //converting from degs to radians
-				.endAngle(Math.PI - arcAngle) //just radians
+				.endAngle(Math.PI - arcAngle); //just radians
 
 			svgContainerLines.append("path")
 				.attr("d", leftArc)
-				.attr("transform", "translate(" + (fieldWidth * 11 / 105 + 3) + "," + fieldHeight / 2 + ")")
+				.attr("transform", "translate(" + (fieldWidth * 11 / 105 + 3) + "," + fieldHeight / 2 + ")");
 
 			//Left dot
 			svgContainerLines.append("circle")
@@ -297,9 +298,8 @@ define("sap_viz_ext_footballheatmap-src/js/render", [], function() {
 				.attr("d", rightArc)
 				.attr("transform", "translate(" + Math.round(fieldWidth - 3 - fieldWidth * 11 / 105) + "," + fieldHeight / 2 + ")");
 
-			var centerRadius = 9.15 * fieldHeight / 68;
-			var sideLengthOfPenaltyArc = 5.5 * fieldWidth / 105;
-
+			centerRadius = 9.15 * fieldHeight / 68;
+			sideLengthOfPenaltyArc = 5.5 * fieldWidth / 105;
 		}
 
 	};
