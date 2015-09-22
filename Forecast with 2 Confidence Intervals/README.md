@@ -31,6 +31,12 @@ SAP Lumira development progresses quickly, and this extension was originally bui
 
 However, I made the required updates, so that the .profile file included here should work just fine in the latest Lumira versions. 
 
+Files
+-------
+* `Forecast2Confidence.lums` - SAP Lumira file
+* `datasets` - Folder with sample datasets for different countries
+* `sap.viz.ext.forecast2confidence.zip` - Extension file
+
 Data Binding
 -------------------------------------------
 <strong>Measures</strong>
