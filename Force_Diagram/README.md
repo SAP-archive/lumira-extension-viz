@@ -11,6 +11,14 @@ Files
 * `sap.viz.ext.force.profile` - Load the extension back into SAP Lumira vizPacker
 * `sap.viz.ext.force.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
 
+Data Binding
+---------------
+<strong>Measures (Force)</strong>
+* value
+
+<strong>Dimensions (Nodes)</strong>
+* source
+* target
 
 Resources
 -----------
