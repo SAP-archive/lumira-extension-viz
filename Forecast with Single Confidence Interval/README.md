@@ -23,6 +23,13 @@ SAP Lumira development progresses quickly, and this extension was originally bui
 
 However, the .profile file for this has now been updated to correct this and should work just fine in newer VizPacker versions
 
+Files
+---------
+
+* `Forecast Single Confidence.lums` - SAP Lumira file
+* `forecast_city.csv` - Sample dataset
+* `sap.viz.ext.forecastsingleconfidence.zip` - Extension file 
+
 Data Binding
 -------------------------------------------
 <strong>Measures</strong>
