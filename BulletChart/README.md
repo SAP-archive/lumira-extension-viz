@@ -1,9 +1,9 @@
 Bullet Chart - SAP Lumira visualization extension
 =================================================
-By [Matt Lloyd](http://scn.sap.com/people/matt.lloyd)<br>
-Migrated to Web IDE by [Raz Korn](http://scn.sap.com/people/raz.korn)
+* By [Matt Lloyd](http://scn.sap.com/people/matt.lloyd)<br>
+* Migrated to Web IDE by [Raz Korn](http://scn.sap.com/people/raz.korn)
 
-* Based on the [Bullet Charts D3 example](http://bl.ocks.org/mbostock/4061961)
+Based on the [Bullet Charts D3 example](http://bl.ocks.org/mbostock/4061961)
 
 Files
 -----------
