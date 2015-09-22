@@ -1,14 +1,28 @@
 Bullet Chart - SAP Lumira visualization extension
 =================================================
- * Based on the [Bullet Charts D3 example](http://bl.ocks.org/mbostock/4061961)
+By [Matt Lloyd](http://scn.sap.com/people/matt.lloyd)
+Migrated to Web IDE by [Raz Korn](http://scn.sap.com/people/raz.korn)
 
-SAP Lumira vizPacker files
+* Based on the [Bullet Charts D3 example](http://bl.ocks.org/mbostock/4061961)
+
+Files
 -----------
 * `d3_gallery_modified` - modified version of the D3 code that makes it easier to bring into SAP Lumira vizPacker
 * `lumiraBullet.zip` - Bullet chart source code for SAP Web IDE. Import it to SAP Web IDE.
 * `sap.viz.ext.bullet.zip` - Extension exported from SAP Web IDE. Load it to SAP Lumira.
 * `com.sap.sample.d3.bulletchart.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
 * `com.sap.sample.d3.bulletchart.profile` - Load the extension back into SAP Lumira vizPacker
+* `bullets.csv` - Sample dataset
+
+Data Binding
+-------------
+<strong>Measures</strong>
+* Actuals
+* Target
+* Ranges (Range 1, Range 2, Range 3)
+ 
+<strong>Dimensions</strong>
+* Title
 
 Resources
 -----------
