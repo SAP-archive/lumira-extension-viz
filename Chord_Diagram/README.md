@@ -7,10 +7,10 @@ Based on the [Chord Diagram D3 example by Mike Bostock](http://bl.ocks.org/mbost
 
 Files
 -----------
-* `sap.viz.ext.chordchart.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
-* `sap.viz.ext.chord.profile` - Load the extension back into SAP Lumira vizPacker
-* `hair.csv` - Sample dataset
 * `Chord Chart.lums` - Sample Lumira file
+* `hair.csv` - Sample dataset
+* `sap.viz.ext.chord.profile` - Load the extension back into SAP Lumira vizPacker
+* `sap.viz.ext.chordchart.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
 
 Data Binding
 -------------
