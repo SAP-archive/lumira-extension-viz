@@ -1,0 +1,21 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+/* For example, adding the extension id as prefix of CSS class name. */
+
+minidonutchart_body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+}
+
+
+
+minidonutchart_form {
+  position: absolute;
+
+}
+
+.minidonutchart_text{
+font-family : tahoma;
+font-size: 25px;
+font-weight: bold;
+}
