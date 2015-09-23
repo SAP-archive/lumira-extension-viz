@@ -12,6 +12,12 @@ Data File
 ---------
 A sample data file is supplied. This is the results of some analysis in R on tomatoes sold. First a seasonal adjustment was made, and then a Holt-Winters exponential smoothing was applied. The results were then exported as CSV. Of course, if you are using HANA, you could do this through direct R integration via SQLScript that embeds R script as well.
 
+Files
+------------
+* `Holt-Winters Exponential Smoothing.lums` - SAP Lumira file
+* `sap.viz.ext.holtwinters.zip` - Extension file
+* `toms_seas_adj_HW.csv` - Sample dataset
+
 Data Binding
 -------------------------------------------
 <strong>Measures</strong>
@@ -21,10 +27,6 @@ Data Binding
  
 <strong>Dimensions</strong>
 * Year-Week
-
-Attention: version impact for .profile file
--------------------------------------------
-SAP Lumira development progresses quickly, and this extension was originally built in a previous version. The extension works just fine in SAP Lumira 1.21, but VizPacker can't read this profile file anymore and returns undefined. However, you should just be able to copy the render function, upload the data file and name the canvas fields, and use the content of the .profile file to understand how the data should be included.
 
 Resources
 ---------
