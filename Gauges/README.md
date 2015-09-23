@@ -5,7 +5,7 @@ Gauges - SAP Lumira visualization extension
 Files
 -----------
 * `Gauge.lums` - SAP Lumira file
-* `gauge.csv` - Sample dataset* `ucs.viz.ext.gauge.zip` - SAP Lumira extension, packaged with SAP WebIDE
+* `gauge.csv` - Sample dataset
 * `ucs.viz.ext.gauge.zip` - SAP Lumira extension, packaged with SAP WebIDE
 
 Data Binding
