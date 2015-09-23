@@ -7,8 +7,9 @@ By [Mustafa Aydogdu](hscn.sap.com/people/mustafa.aydogdu)
 
 Files
 -----------
+* `Google Maps Heatmap.lums` - SAP Lumira file
+* `earthquakes.csv` - Sample dataset
 * `sap.viz.ext.googlemapsheatmap.zip` - SAP Lumira extension
-* `sample data set - earthquakes.csv` - Sample dataset
 * `sap.viz.ext.googlemapsheatmap.profile` - Load the extension back into SAP Lumira vizPacker. Async.js file must be located under "C:/LumiraFiles/" folder to run extension in vizPacker. Location of Async.js in render.js must be updated after packing extension.
 
 Data Binding
@@ -19,10 +20,10 @@ Data Binding
 <strong>Dimensions (Latitude and Longitude)</strong>
 * Latitude
 * Longitude
-* Country
-* Deaths
-* Injuries
-* Year
+* Country (optional)
+* Deaths (optional)
+* Injuries (optional)
+* Year (optional)
 
 Resources
 -----------
