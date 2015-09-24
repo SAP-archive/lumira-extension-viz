@@ -13,14 +13,11 @@ Files
 Data Binding
 -------------------------------------------
 <strong>Measures (Y Axis)</strong>
-* Age
 * People 
-* Sex
 
 <strong>Dimensions (X Axis)</strong>
 * Year
 * Age 
-* People
 * Sex
 
 Resources
