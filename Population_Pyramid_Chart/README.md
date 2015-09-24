@@ -6,8 +6,9 @@ By [Dong Pan](http://scn.sap.com/people/dong.pan)
 
 Files
 -----------
-* `sap.viz.ext.populationpyramid.zip` - SAP Lumira extension
+* `Population Pyramid.lums` - SAP Lumira document
 * `population_pyramid.csv` - Sample dataset
+* `sap.viz.ext.populationpyramid.zip` - SAP Lumira extension
 * `sap.viz.ext.populationpyramid.profile` - Load the extension back into SAP Lumira vizPacker
 
 Data Binding
