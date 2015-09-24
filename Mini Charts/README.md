@@ -5,6 +5,8 @@ Mini Donut Chart & Mini Area Chart - SAP Lumira visualization extension
  
 Files
 -----------
+* `Mini Charts Sample.lums` - Sample Lumira document
+
 <strong>Mini Area Chart folder</strong>
 *  `minichart data.csv` - Sample dataset for Mini Area Chart
 * `sap.viz.ext.miniareachart.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
@@ -14,8 +16,6 @@ Files
 *  `mini donut data.csv` - Sample dataset for Mini Donut Chart
 * `sap.viz.ext.minidonutchart.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
 * `sap.viz.ext.minidonut.profile` - Load the extension back into SAP Lumira vizPacker. This file is not maintained anymore.
-
-* `Mini Charts Sample.lums` - Sample Lumira document
 
 Data Binding
 -------------
