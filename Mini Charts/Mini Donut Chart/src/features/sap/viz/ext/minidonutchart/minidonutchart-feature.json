@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.minidonutchart",
+	"name": "Mini Donut Chart",
+	"description": "Mini Donut Chart by Mustafa Aydogdu",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Mustafa Aydogdu",
+		"url": "mustafa.aydogdu@yahoo.com"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.minidonutchart",
+		"version": "1.0.1"
+	}]
+}

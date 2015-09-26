@@ -1,0 +1,13 @@
+.sap_viz_ext_stackedline_X_axis path,
+.sap_viz_ext_stackedline_Y_axis path,
+.sap_viz_ext_stackedline_X_axis line
+{
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.sap_viz_ext_stackedline_Y_axis line {
+    fill: none;
+    stroke: #aaa;
+    shape-rendering: crispEdges;
+}

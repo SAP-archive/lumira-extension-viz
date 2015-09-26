@@ -1,6 +1,8 @@
 # Power Flow Maps
 ## Mapping import-export flows between countries with GeoJSON/topoJSON in Lumira
 
+By [Jay Thoden van Velzen](http://scn.sap.com/people/jay.thodenvanvelzen)
+
 *The code in this repository is provided as-is. This uses a require.js trick to pull in the external libraries that is no longer recommended. Development of extensions is moving from VizPacker to WebIDE with its own conventions. Note also that this pulls in d3_v3, which given your Lumira version (and VizPacker/WebIDE) may no longer be necessary. *
 
 The code and supporting files in this branch are further documented in this [SCN article](http://scn.sap.com/community/lumira/blog/2015/05/21/mapping-import-export-flows-between-countries-with-geojsontopojson-in-lumira), where you will find a walk-through of some tricky aspects of the code, as well as how  require.js was used to pull in external libraries like GeoJSON and topoJSON, as well as the map itself. It also pulls in D3_v3 since topojson requires it, and when this was first built Lumira still used d3_v2. Most likely, you can remove this library from the require config.
@@ -38,6 +40,20 @@ I built this within the Lumira folder structure: Inside the Lumira Desktop folde
   - features
     - comsapsvcseuropowermap
       - comsapsvcseuropowermap-feature.json
+
+## Files
+* `sap.viz.ext.powerflowmaps.zip` - SAP Lumira extension
+* `data.csv` - Sample dataset
+
+## Data Binding
+<strong>Measures Set</strong>
+* Power
+
+<strong>Dimension Set</strong>
+* market_area_from
+* market_area_to
+* from
+* to
 
 
 ## Resources

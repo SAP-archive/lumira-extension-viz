@@ -1,11 +1,24 @@
 Force Diagram - SAP Lumira visualization extension
 =================================================
- * Based on the [Force diagram D3 example in  Malcolm Maclean's book D3 Tips and Tricks (page 309)](https://leanpub.com/D3-Tips-and-Tricks)
+* By [Dong Pan](http://scn.sap.com/people/dong.pan)<br>
 
-SAP Lumira vizPacker files
+Based on the [Force diagram D3 example in  Malcolm Maclean's book D3 Tips and Tricks (page 309)](https://leanpub.com/D3-Tips-and-Tricks)
+
+Files
 -----------
-* `sap.viz.ext.force.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
+* `Force.lums` - SAP Lumira .lums file
+* `force.csv` - Sample dataset
 * `sap.viz.ext.force.profile` - Load the extension back into SAP Lumira vizPacker
+* `sap.viz.ext.force.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
+
+Data Binding
+---------------
+<strong>Measures (Force)</strong>
+* value
+
+<strong>Dimensions (Nodes)</strong>
+* source
+* target
 
 Resources
 -----------

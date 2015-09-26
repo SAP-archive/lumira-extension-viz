@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.forecastsingleconfidence",
+	"name": "ForecastSingleConfidence",
+	"description": "An analytical chart extension with a predictive flavor, visualizing forecast with a single confidence interval",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Jay Thoden van Velzen",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.forecastsingleconfidence",
+		"version": "1.0.0"
+	}]
+}

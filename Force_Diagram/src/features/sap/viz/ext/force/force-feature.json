@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.force",
+	"name": "Force-Directed Layout",
+	"description": "A D3-based force-directed layout",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Dong Pan",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.force",
+		"version": "1.0.1"
+	}]
+}

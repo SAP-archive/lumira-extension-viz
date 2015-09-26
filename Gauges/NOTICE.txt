@@ -1,0 +1,2 @@
+Lumira Visualization Extension - Gauge
+Copyright (c) 2015 Andrew Jabbitt. All rights reserved.

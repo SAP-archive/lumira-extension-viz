@@ -1,15 +1,10 @@
-var sampleTemplate = 
-{
-    "id": "standard",
-    "name": "Standard",
-    "properties": {
-        "sap.viz.ext.footballheatmap": {
-            "legend": {
-                "title": {
-                    "visible": true
-                }
-            }
-        }
-    }
+var sampleTemplate = {
+	"id": "standard",
+	"name": "Standard",
+	"properties": {
+		"sap.viz.ext.footballheatmap": {
+
+		}
+	}
 };
 sap.viz.extapi.env.Template.register(sampleTemplate);

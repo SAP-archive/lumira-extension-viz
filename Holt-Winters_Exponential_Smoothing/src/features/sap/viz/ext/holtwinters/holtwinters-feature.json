@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.holtwinters",
+	"name": "Holt-Winters Exponential",
+	"description": "A predictive analysis chart extension applying Holt-Winters Exponential Smoothing",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Jay Thoden van Velzen",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.holtwinters",
+		"version": "1.0.0"
+	}]
+}

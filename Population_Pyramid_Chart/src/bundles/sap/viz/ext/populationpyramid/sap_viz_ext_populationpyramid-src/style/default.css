@@ -1,0 +1,34 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+.sap_viz_ext_populationpyramid.y.axis path {
+    display: none;
+}
+.sap_viz_ext_populationpyramid.y.axis line {
+    stroke: #fff;
+    stroke-opacity: .2;
+    shape-rendering: crispEdges;
+}
+.sap_viz_ext_populationpyramid.y.axis .sap_viz_ext_populationpyramid.zero line {
+    stroke: #000;
+    stroke-opacity: 1;
+}
+.sap_viz_ext_populationpyramid.title {
+    font: 300 78px Helvetica Neue;
+    fill: #666;
+}
+.sap_viz_ext_populationpyramid.birthyear,
+.sap_viz_ext_populationpyramid.age {
+    text-anchor: middle;
+}
+.sap_viz_ext_populationpyramid.birthyear {
+    fill: #fff;
+}
+rect.sap_viz_ext_populationpyramid {
+    fill-opacity: .6;
+    fill: #e377c2;
+}
+rect.sap_viz_ext_populationpyramid:first-child {
+    fill: #1f77b4;
+}

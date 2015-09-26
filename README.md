@@ -24,24 +24,25 @@ Check out our SAP Lumira Visualization Extension Library. This library contains 
 
 List of current visualization extensions in the repo
 
-* Hello World
 * Bullet Chart
-* Exoplanets
-* Population Pyramid Chart
-* Chord Diagram
-* Force Diagram
-* Stacked Column with Line Chart
-* Google Maps Heatmap
-* Mini Donut Chart
-* Mini Area Chart
-* Forecast Chart with Single Confidence Interval
-* Forecast Chart with 80% and 95% Confidence Intervals
-* Holt-Winters Exponential Smoothing Chart
 * Capacity Planning Chart
+* Chord Diagram
+* Exoplanets
 * Extended Bar Chart
-* Sample Bar Chart
 * Football Heatmap
+* Force Diagram
+* Forecast with 2 Confidence Intervals
+* Forecast with Single Confidence Interval
+* Gauges
+* Google Maps Heatmap
+* Hello World
+* Holt-Winters Exponential Smoothing
+* Mini Charts
+* Population Pyramid Chart
+* Power Flow Maps
+* Sample Bar Chart
 * Sankey Diagram (based on Google visualization API)
+* Stacked Column with Line Chart
 
 Get it!
 -----------

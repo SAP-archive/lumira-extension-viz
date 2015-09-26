@@ -1,11 +1,26 @@
 Chord Diagram - SAP Lumira visualization extension
 =================================================
- * Based on the [Chord Diagram D3 example by Mike Bostock](http://bl.ocks.org/mbostock/4062006)
 
-SAP Lumira vizPacker files
+* By [Dong Pan](http://scn.sap.com/people/dong.pan)<br>
+
+Based on the [Chord Diagram D3 example by Mike Bostock](http://bl.ocks.org/mbostock/4062006)
+
+Files
 -----------
-* `sap.viz.ext.chord.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
+* `Chord Chart.lums` - Sample Lumira file
+* `hair.csv` - Sample dataset
 * `sap.viz.ext.chord.profile` - Load the extension back into SAP Lumira vizPacker
+* `sap.viz.ext.chordchart.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
+
+Data Binding
+-------------
+<strong>Measures</strong>
+* Count
+ 
+<strong>Dimensions(HairPair)</strong>
+* has
+* prefers
+
 
 Resources
 -----------

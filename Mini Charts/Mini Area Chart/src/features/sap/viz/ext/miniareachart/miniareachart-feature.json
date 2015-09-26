@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.miniareachart",
+	"name": "Mini Area Chart",
+	"description": "Mini Area Chart by Mustafa Aydogdu",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Mustafa Aydogdu",
+		"url": "mustafa.aydogdu@yahoo.com"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.miniareachart",
+		"version": "1.0.1"
+	}]
+}

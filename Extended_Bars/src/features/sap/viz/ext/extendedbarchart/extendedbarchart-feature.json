@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.extendedbarchart",
+	"name": "Extended Bar Chart",
+	"description": "A different type of bar chart where both the height and width of the bars are meaningful.",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Jay Thoden van Velzen",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.extendedbarchart",
+		"version": "1.0.0"
+	}]
+}

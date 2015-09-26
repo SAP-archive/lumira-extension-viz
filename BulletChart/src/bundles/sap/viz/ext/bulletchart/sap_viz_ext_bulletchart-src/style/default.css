@@ -1,0 +1,37 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+.sap_viz_ext_bulletchart.bullet {
+    font: 10px sans-serif;
+}
+.sap_viz_ext_bulletchart.bullet .sap_viz_ext_bulletchart.marker {
+    stroke: #000;
+    stroke-width: 2px;
+}
+.sap_viz_ext_bulletchart.bullet .sap_viz_ext_bulletchart.tick line {
+    stroke: #666;
+    stroke-width: .5px;
+}
+.sap_viz_ext_bulletchart.bullet .range.s0 {
+    fill: #eee;
+}
+.sap_viz_ext_bulletchart.bullet .range.s1 {
+    fill: #ddd;
+}
+.sap_viz_ext_bulletchart.bullet .range.s2 {
+    fill: #ccc;
+}
+.sap_viz_ext_bulletchart.bullet .measure.s0 {
+    fill: lightsteelblue;
+}
+.sap_viz_ext_bulletchart.bullet .measure.s1 {
+    fill: steelblue;
+}
+.sap_viz_ext_bulletchart.bullet .sap_viz_ext_bulletchart.title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.sap_viz_ext_bulletchart.bullet .sap_viz_ext_bulletchart.subtitle {
+    fill: #999;
+}

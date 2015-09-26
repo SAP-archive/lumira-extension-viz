@@ -191,7 +191,7 @@ define("sap_viz_ext_powerflowmaps-src/js/render", [], function() {
 					.data(countries.features)
 					.enter().append("path")
 					.attr("class", function(d) {
-						return "country " + d.id;
+						return "sap_viz_ext_powerflowmaps country " + d.id;
 					})
 					.attr("id", function(d) {
 						return d.id;
@@ -532,7 +532,7 @@ var updateMap = function(level) {
 		var divfactor = 12;
 
 		var real_arrow_back = vis.append("path")
-			.attr("class", "arrow")
+			.attr("class", "sap_viz_ext_powerflowmaps arrow")
 			.attr("d", draw_curve(from.x, from.y, to.x, to.y, (a_length / divfactor)))
 			.attr("stroke", "white")
 			.attr("stroke-width", powerscale(arrow_filtered[n].power) + 2)
@@ -541,7 +541,7 @@ var updateMap = function(level) {
 			.attr("fill", "none");
 
 		var real_arrow_front = vis.append("path")
-			.attr("class", "arrow")
+			.attr("class", "sap_viz_ext_powerflowmaps arrow")
 			.attr("d", draw_curve(from.x, from.y, to.x, to.y, (a_length / divfactor)))
 			.attr("stroke", function(d) {
 				if (arrow_filtered[n].from === filterval) {
@@ -569,7 +569,7 @@ var updateMap = function(level) {
 	var rows = arrow_filtered.length;
 	box_height = (rows * 12) + 40; // 15 rows, plus space for "exports" and "imports" labels
 	var info = vis.append("g")
-		.attr("class", "info")
+		.attr("class", "sap_viz_ext_powerflowmaps info")
 		.attr("transform", "translate(" + (legendX) + "," + (margin.top + 10) + ")");
 	info.append("rect")
 		.attr("class", "sap_viz_ext_powerflowmaps info_box")
