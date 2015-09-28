@@ -37,6 +37,7 @@ List of current visualization extensions in the repo
 * Google Maps Heatmap
 * Hello World
 * Holt-Winters Exponential Smoothing
+* Loss of Sales
 * Mini Charts
 * Population Pyramid Chart
 * Power Flow Maps
