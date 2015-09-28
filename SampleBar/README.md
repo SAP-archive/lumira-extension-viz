@@ -4,6 +4,7 @@ The Sample Bar extension can be used as is in SAP Lumira, or it can be customize
 
 Data Files
 -----------
+* `Sample Bar.lums` - Sample Lumira document
 * `sap.viz.ext.samplebar.zip` - SAP Lumira extension, packaged with SAP WebIDE
 * `data.csv` - Sample data file. When using the data file with the Sample Bar extension, set the following values:<br>
     •	Measure - Margin <br>
