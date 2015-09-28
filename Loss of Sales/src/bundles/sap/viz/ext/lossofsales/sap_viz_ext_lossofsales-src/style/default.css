@@ -1,0 +1,261 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+.sap_viz_ext_lossofsales_stockGraph line {
+	fill: none;
+	stroke: #999999;
+	width: 1px;
+}	
+.sap_viz_ext_lossofsales_selected{
+  color: rgb(255,71,71);
+}
+.sap_viz_ext_lossofsales_selected2{
+  color:#0EA9FF;
+}
+
+.sap_viz_ext_lossofsales_backgroundBars{
+    fill: #eeeeee;
+}
+
+.sap_viz_ext_lossofsales_currencySymbol{
+    text-anchor: middle;
+}
+
+.sap_viz_ext_lossofsales_salesGraph line {
+	fill: none;
+	stroke: #999999;
+	width: 1px;
+}	
+
+.sap_viz_ext_lossofsales_pane {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
+
+.sap_viz_ext_lossofsales_centerValue {
+    position: relative;
+    z-index:-1;
+	stroke: #ffffff;
+	font-family: Arial;
+	text-anchor: middle;
+	shape-rendering: crispEdges;
+}
+
+.sap_viz_ext_lossofsales_zeroSaleValue {
+	position: relative;
+	z-index:-1;
+	stroke: #D13D3D;
+	font-family: Arial;
+	font-size: 14px;
+	text-anchor: middle;
+}
+
+.sap_viz_ext_lossofsales_zeroStockValue {
+	position: relative;
+	z-index:-1;
+	stroke: #008AD6;
+	font-family: Arial;
+	font-size: 14px;
+	text-anchor: middle;
+}
+
+.sap_viz_ext_lossofsales_stockObjects {
+	position: absolute;
+	z-index:1;
+	fill: #008AD6;
+}
+.sap_viz_ext_lossofsales_salesObjects {
+	position: absolute;
+	z-index:1;
+	fill: #D13D3D; 
+	}
+.sap_viz_ext_lossofsales_tooltipLine{
+  stroke-dasharray: 5 5 5 5;
+  stroke-width: 1px;
+  stroke: #334450;
+}
+.sap_viz_ext_lossofsales_legends {
+	stroke: #666666;
+	font-family: Arial;
+	font-size: 14px;
+	text-anchor: middle;
+}
+.sap_viz_ext_lossofsales_centerLegend{
+	font-size: 14px;
+	font-family: Arial;
+	stroke: #666666;
+  text-anchor: middle;
+}
+.sap_viz_ext_lossofsales_xAxis{
+	font-size: 12px;
+	font-family: Arial;
+	stroke: #666666;
+}
+
+.sap_viz_ext_lossofsales_yAxis{
+	stroke: #666666;
+}
+
+.sap_viz_ext_lossofsales_dollar{
+	font-size: 36px;
+	font-family: InaiMathi;
+	stroke: #ff5151;
+}
+
+
+.sap_viz_ext_lossofsales_arrow-up {
+    width: 300px; 
+    height: 100px; 
+    border-top: 200px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid green;
+    display: inline-block;
+
+}
+.sap_viz_ext_lossofsales_bar_line {
+    fill: grey;
+    stroke: grey;
+    stroke-width:2px;
+    stroke-dasharray: 10,10,10,10;
+    shape-rendering: crispEdges;
+}
+.sap_viz_ext_lossofsales_axis path,
+.sap_viz_ext_lossofsales_axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+.sap_viz_ext_lossofsales_axis text {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+    
+        div.sap_viz_ext_lossofsales_chart{
+            font-family:sans-serif;
+            font-size:0.7em;
+        }
+        div.sap_viz_ext_lossofsales_bar {
+            background-color:DarkRed;
+            color:white;
+            height:3em;
+            line-height:3em;
+            padding-right:1em;
+            margin-bottom:2px;
+            text-align:right;
+            margin-left:22em;
+        }
+        div.sap_viz_ext_lossofsales_label {
+            height:3em;
+            line-height:3em;
+            padding-right:1em;
+            margin-bottom:2px;
+            float:left;
+            width:20em;
+            text-align:right;
+        }
+        body{
+            font-family: Arial;
+        }
+#sap_viz_ext_lossofsales_tooltip {
+  position: absolute;
+  width: 140px;
+  height: auto;
+  padding: 10px;
+  background-color: black;
+/*  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);*/
+  pointer-events: none;
+}
+.tmapEle{
+    fill:none;
+}
+#sap_viz_ext_lossofsales_tooltip.hidden {
+  display: none;
+}
+
+#sap_viz_ext_lossofsales_tooltip p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+.sap_viz_ext_lossofsales_tt-item {
+    width: 100%;
+    padding: 2px;
+}
+span.sap_viz_ext_lossofsales_tt-item-name {
+    margin-left: 5px;
+    font-size: 1em;
+}
+span.sap_viz_ext_lossofsales_tt-item-color {
+    margin-top: 3px;
+    border-radius: 10px;
+}
+span.sap_viz_ext_lossofsales_tt-item-price {
+    float: right;
+    margin-left: 10px;
+}
+.sap_viz_ext_lossofsales_tt-combo{
+  font-weight: bold;
+}
+.sap_viz_ext_lossofsales_tt-inner{
+background: #334450;
+height:auto;
+padding:10px;
+border-radius: 1px;
+width:auto;}
+
+#sap_viz_ext_lossofsales_triangle{
+display: block;
+position: absolute;
+}
+#sap_viz_ext_lossofsales_triangle.bottom{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 10px 9px 0px 9px;
+border-color: #334450 transparent transparent transparent;
+bottom: -10px;
+left: 45%;
+}
+#sap_viz_ext_lossofsales_triangle.left{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 9px 10px 9px 0;
+border-color: transparent #334450 transparent transparent;
+left: -9px;
+float: left;
+top:40%; 
+}
+#sap_viz_ext_lossofsales_triangle.top{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0px 9px 10px 9px;
+border-color: transparent transparent #334450 transparent;
+top: -10px;
+left: 45%;
+}
+#sap_viz_ext_lossofsales_triangle.right{
+width: 0;
+height: 0;  
+border-style: solid;  
+border-width: 9px 0 9px 10px;  
+border-color: transparent transparent transparent #334450;
+right: -9px;
+top: 40%;
+}
+#sap_viz_ext_lossofsales_t-tip{
+position:absolute;
+z-index:10;
+color: white;
+font-size: 12px;
+font-family: Arial;
+}
