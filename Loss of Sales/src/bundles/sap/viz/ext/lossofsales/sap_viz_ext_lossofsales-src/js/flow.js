@@ -16,7 +16,7 @@ define("sap_viz_ext_lossofsales-src/js/flow", ["sap_viz_ext_lossofsales-src/js/m
 		/*Feeds Definition*/
 		var ds1 = {
 			"id": "sap.viz.ext.lossofsales.PlotModule.DS1",
-			"name": "X Axis",
+			"name": "Product Name",
 			"type": "Dimension",
 			"min": 1, //minimum number of data container
 			"max": 2, //maximum number of data container

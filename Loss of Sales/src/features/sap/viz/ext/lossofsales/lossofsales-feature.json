@@ -5,8 +5,8 @@
 	"description": " ",
 	"version": "1.0.0",
 	"vendor": {
-		"name": "Your company",
-		"url": "Your company website"
+		"name": "Vidur Bhatnagar",
+		"url": ""
 	},
 	"requires": [{
 		"id": "sap.viz.common.core",

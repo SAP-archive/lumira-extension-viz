@@ -6,8 +6,7 @@ define("sap_viz_ext_lossofsales-src/js/module", ["sap_viz_ext_lossofsales-src/js
         // color palette used by chart
         _colorPalette : d3.scale.category20().range().concat(d3.scale.category20b().range()).concat(d3.scale.category20c().range()),
         //event dispatcher
-        _dispatch : d3.dispatch("initialized", "startToInit", 'barData', 'selectData'),
-        _count : 0
+        _dispatch : d3.dispatch("initialized", "startToInit", 'barData', 'selectData')
     };
 
     moduleFunc.dispatch = function(_){
@@ -33,7 +32,6 @@ define("sap_viz_ext_lossofsales-src/js/module", ["sap_viz_ext_lossofsales-src/js
             _properties = this._props,
             _dispatch = this._dispatch,
             _feeds = this._manifest.feeds;
-           // _count = this._count;
 
         _dispatch.startToInit();
         selection.each(function() {
@@ -42,13 +40,9 @@ define("sap_viz_ext_lossofsales-src/js/module", ["sap_viz_ext_lossofsales-src/js
                     alert(err);
                     return;
                 }
-            //    if(_count == 0){
-             //   	_count = _count + 1;
                 	render.call(that, pData, selection, _width, _height, _colorPalette, _properties, _dispatch);
-               // }
             });
         });
-        //this._count = _count;
         _dispatch.initialized({
             name : "initialized"
         });
