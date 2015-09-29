@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.lossincidentoptimization",
+	"name": "Loss Incident Optimization",
+	"description": " ",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Your company",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.lossincidentoptimization",
+		"version": "1.0.0"
+	}]
+}

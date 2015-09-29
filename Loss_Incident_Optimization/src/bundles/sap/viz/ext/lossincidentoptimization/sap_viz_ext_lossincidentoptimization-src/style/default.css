@@ -1,0 +1,194 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+rect.sap_viz_ext_lossincidentoptimization_bar { stroke: black; stroke-width: 1px; stroke-opacity: 0.3 }
+
+.sap_viz_ext_lossincidentoptimization_bar {
+  fill: #ff5151;
+}
+
+.sap_viz_ext_lossincidentoptimization_backgroundbar {
+  fill: #f7f7f7;
+}
+
+.sap_viz_ext_lossincidentoptimization_axis {
+  font: 10px;
+  font-family: arial;
+}
+
+.sap_viz_ext_lossincidentoptimization_axis path,
+.sap_viz_ext_lossincidentoptimization_axis line {
+  fill: none;
+  stroke: #999999;
+  shape-rendering: crispEdges;
+}
+
+.sap_viz_ext_lossincidentoptimization_x.sap_viz_ext_lossincidentoptimization_axis path {
+  display: none;
+}
+
+.sap_viz_ext_lossincidentoptimization_x.sap_viz_ext_lossincidentoptimization_axis text {
+    font-family: arial;
+    font-size: 12px;
+    stroke: #666666;
+}
+
+.sap_viz_ext_lossincidentoptimization_y.sap_viz_ext_lossincidentoptimization_axis text {
+    font-family: Arial;
+    font-size: 10px;
+    stroke: #009de0;
+}
+g.sap_viz_ext_lossincidentoptimization_slider {
+  border-color: blue;
+  border-width: 3px;
+}
+
+
+.sap_viz_ext_lossincidentoptimization_thumb{
+
+fill: #2394F5;
+}
+
+g.sap_viz_ext_lossincidentoptimization_ticktext text {
+  text-anchor: middle;
+  stroke: #bfbfbf;
+  font-family: Arial;
+}
+
+
+
+.sap_viz_ext_lossincidentoptimization_liobar {
+  fill: #009de0;
+}
+
+.sap_viz_ext_lossincidentoptimization_maxbar {
+  fill: brown;
+}
+
+.sap_viz_ext_lossincidentoptimization_liobar:hover {
+  fill: #006E9D;
+}
+
+
+.sap_viz_ext_lossincidentoptimization_liobackgroundbar {
+  fill: #f7f7f7;
+}
+
+
+.sap_viz_ext_lossincidentoptimization_xlio.sap_viz_ext_lossincidentoptimization_lioaxis,.sap_viz_ext_lossincidentoptimization_y2lio.sap_viz_ext_lossincidentoptimization_lioaxis path,
+.sap_viz_ext_lossincidentoptimization_xlio.sap_viz_ext_lossincidentoptimization_lioaxis line {
+  fill: none;
+  stroke: #999999;
+  shape-rendering: crispEdges;
+}
+.sap_viz_ext_lossincidentoptimization_xlio.sap_viz_ext_lossincidentoptimization_lioaxis path {
+  display: none;
+}
+
+.sap_viz_ext_lossincidentoptimization_xlio.sap_viz_ext_lossincidentoptimization_lioaxis text {
+    font-family: 'SourceSansPro';
+    font-size: 12px;
+    stroke: #666666;
+}
+
+.sap_viz_ext_lossincidentoptimization_ylio.sap_viz_ext_lossincidentoptimization_lioaxis text {
+    font-family: 'SourceSansPro';
+    font-size: 15px;
+    stroke: #009de0;
+}
+
+.sap_viz_ext_lossincidentoptimization_y2lio.sap_viz_ext_lossincidentoptimization_lioaxis text {
+    font-family: 'SourceSansPro';
+    font-size: 15px;
+    stroke: #f39200;
+}
+
+
+#sap_viz_ext_lossincidentoptimization_tooltip_lio {
+  position: absolute;
+  width: 140px;
+  height: auto;
+  padding: 10px;
+  background-color: black;
+/*  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);*/
+  pointer-events: none;
+}
+.sap_viz_ext_lossincidentoptimization_tmapEle_lio{
+    fill:none;
+}
+#sap_viz_ext_lossincidentoptimization_tooltip_lio.hidden {
+  display: none;
+}
+
+#sap_viz_ext_lossincidentoptimization_tooltip_lio p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+.sap_viz_ext_lossincidentoptimization_tt-item_lio {
+    width: 100%;
+    padding: 2px;
+
+}
+span.sap_viz_ext_lossincidentoptimization_tt-item-name_lio {
+    margin-left: 5px;
+    font-size: 13px;
+    color: #f39200;
+    
+}
+
+span.sap_viz_ext_lossincidentoptimization_tt-item-name-claim {
+    
+    font-size: 13px;
+    color: #181818;
+    font-weight: bold;
+}
+.sap_viz_ext_lossincidentoptimization_tt-combo_lio{
+  
+  font-size: 13px;
+    color: #009de0;
+}
+.sap_viz_ext_lossincidentoptimization_tt-inner_lio{
+background: #f6f6f6;
+height:auto;
+padding:10px;
+border-radius: 1px;
+opacity: 0.95;
+width:auto;}
+
+#sap_viz_ext_lossincidentoptimization_triangle{
+    display: block;
+    position: absolute;
+}
+#sap_viz_ext_lossincidentoptimization_triangle.left{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 9px 10px 9px 0;
+border-color: transparent #334450 transparent transparent;
+    left: -9px;
+    float: left;
+}
+#sap_viz_ext_lossincidentoptimization_triangle.right{
+    width: 0;
+      height: 0;  
+      border-style: solid;  
+      border-width: 9px 0 9px 10px;  
+      border-color: transparent transparent transparent #334450;
+    right: -9px;
+}
+#sap_viz_ext_lossincidentoptimization_t-tip_lio{
+position:absolute;
+z-index:10;
+position:absolute;
+color: white;
+font-size: 12px;
+font-family: helvetica;
+}
