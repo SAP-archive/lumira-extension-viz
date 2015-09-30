@@ -1,4 +1,4 @@
-Loss Incident Optmization - SAP Lumira visualization extension
+Loss Incident Optimization Chart - SAP Lumira visualization extension
 =================================================
 
 Files
@@ -11,14 +11,10 @@ Files
 Data Binding
 -------------
 <strong>Measures</strong>
-* Actual Stock
-* Forecasted Stock
-* Actual Sale
-* Forecasted Sale
+* Claim
 
 <strong>Dimensions</strong>
-* X Axis
+* Loss Event Start Date
+* Loss Event Start Time
 
-Resources
------------
-* Blog post - [How to add a D3 extension for SAP Lumira](http://http://scn.sap.com/community/lumira/blog/2015/03/19/sap-lumira-visualizations-loss-of-sales-charth)
+
