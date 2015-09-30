@@ -34,10 +34,12 @@ List of current visualization extensions in the repo
 * Forecast with 2 Confidence Intervals
 * Forecast with Single Confidence Interval
 * Gauges
+* Geo Maps Leaflet
 * Google Maps Heatmap
 * Hello World
 * Holt-Winters Exponential Smoothing
 * Loss of Sales
+* Loss Incident Optimization
 * Mini Charts
 * Population Pyramid Chart
 * Power Flow Maps
