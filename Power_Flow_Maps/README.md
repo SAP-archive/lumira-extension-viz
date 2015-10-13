@@ -43,7 +43,7 @@ I built this within the Lumira folder structure: Inside the Lumira Desktop folde
 
 ## Files
 * `sap.viz.ext.powerflowmaps.zip` - SAP Lumira extension
-* `data.csv` - Sample dataset
+* `powerflowmaps_data.csv` - Sample dataset
 
 ## Data Binding
 <strong>Measures Set</strong>
