@@ -8,7 +8,7 @@ By [Mustafa Aydogdu](hscn.sap.com/people/mustafa.aydogdu)
 Files
 -----------
 * `Google Maps Heatmap.lums` - SAP Lumira file
-* `earthquakes.csv` - Sample dataset
+* `googlemaps_heatmap_earthquakes.csv` - Sample dataset
 * `sap.viz.ext.googlemapsheatmap.zip` - SAP Lumira extension
 * `sap.viz.ext.googlemapsheatmap.profile` - Load the extension back into SAP Lumira vizPacker. Async.js file must be located under "C:/LumiraFiles/" folder to run extension in vizPacker. Location of Async.js in render.js must be updated after packing extension.
 
