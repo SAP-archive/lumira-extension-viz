@@ -8,7 +8,7 @@ A custom heatmap chart extension for a football field.
 Files
 -----------
 * `Football Heatmap.lums` - SAP Lumira .lums file
-* `recordsView.csv` - Sample dataset
+* `football_heatmap_recordsView.csv` - Sample dataset
 * `sap.viz.ext.footballheatmap.zip` - SAP Lumira visualization extension, rebuilt in Web IDE
 
 Data Binding
