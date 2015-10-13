@@ -6,7 +6,7 @@ Data Files
 -----------
 * `Sample Bar.lums` - Sample Lumira document
 * `sap.viz.ext.samplebar.zip` - SAP Lumira extension, packaged with SAP WebIDE
-* `data.csv` - Sample data file. When using the data file with the Sample Bar extension, set the following values:<br>
+* `samplebar_data.csv` - Sample data file. When using the data file with the Sample Bar extension, set the following values:<br>
     •	Measure - Margin <br>
     •	Dimension (Entity) - City <br>
     •	Dimension (Date) - Year
