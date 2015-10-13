@@ -7,7 +7,7 @@ A custom heatmap chart extension for a football field.
 Files
 -----------
 * `GeoMapsLeaflet.lums` - SAP Lumira .lums file
-* `iller.csv` - Sample dataset
+* `geomaps_leaflet.csv` - Sample dataset
 * `sap.viz.ext.geomapsleaflet.zip` - SAP Lumira visualization extension
 
 Data Binding
