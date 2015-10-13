@@ -9,7 +9,7 @@ Files
 -----------
 * `Stacked Column with Line Chart` - SAP Lumira document
 * `sap.viz.ext.stackedcolumnline.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
-* `data.csv` - Sample Dataset
+* `stackedcolumn_linechart_data.csv` - Sample Dataset
 * `sap.viz.ext.stackedcolumnline.profile` - Load the extension back into SAP Lumira vizPacker
 
 Data Binding
