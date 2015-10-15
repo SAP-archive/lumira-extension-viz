@@ -16,7 +16,7 @@ define("sap_viz_ext_chordchart-src/js/flow", ["sap_viz_ext_chordchart-src/js/mod
 		/*Feeds Definition*/
 		var ds1 = {
 			"id": "sap.viz.ext.chordchart.PlotModule.DS1",
-			"name": "HairPair",
+			"name": "Choice",
 			"type": "Dimension",
 			"min": 0, //minimum number of data container
 			"max": 2, //maximum number of data container

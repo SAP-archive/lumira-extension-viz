@@ -23,11 +23,15 @@ define("sap_viz_ext_chordchart-src/js/render", [], function() {
 			.append('g').attr('class', 'vis').attr('width', width).attr('height', height);
 
 		var meta = data.meta;
-		var ds = meta.dimensions('HairPair');
+		var ds = meta.dimensions('Choice');
 		var ms = meta.measures('Count');
-		var dim_HairColor = ds[0];
-		var dim_preferColor = ds[1];
+		var dim_current = ds[0];
+		var dim_preferred = ds[1];
 		var measure_count = ms[0];
+
+		data.forEach(function(d) {
+			d[measure_count] = +d[measure_count];
+		});
 
 		//Matrix size is always the square root of the number of rows for chord diagrams
 		var matrixSize = Math.sqrt(data.length);
@@ -43,8 +47,8 @@ define("sap_viz_ext_chordchart-src/js/render", [], function() {
 
 		var allNodes = new Array();
 		data.forEach(function(element) {
-			allNodes.push(element[dim_HairColor]);
-			allNodes.push(element[dim_preferColor]);
+			allNodes.push(element[dim_current]);
+			allNodes.push(element[dim_preferred]);
 		});
 		var uniqueNodes = new Array();
 		var item;
@@ -57,8 +61,8 @@ define("sap_viz_ext_chordchart-src/js/render", [], function() {
 		//console.log(JSON.stringify(uniqueNodes));
 		data.forEach(function(element) {
 			var i, j;
-			i = uniqueNodes.indexOf(element[dim_HairColor]);
-			j = uniqueNodes.indexOf(element[dim_preferColor]);
+			i = uniqueNodes.indexOf(element[dim_current]);
+			j = uniqueNodes.indexOf(element[dim_preferred]);
 			matrix[i][j] = element[measure_count];
 		});
 		console.log(JSON.stringify(matrix));
@@ -71,9 +75,9 @@ define("sap_viz_ext_chordchart-src/js/render", [], function() {
 		var innerRadius = Math.min(width, height) * .41,
 			outerRadius = innerRadius * 1.1;
 
-		var fill = d3.scale.ordinal()
-			.domain(d3.range(4))
-			.range(["#000000", "#FFDD89", "#957244", "#F26223"]);
+		var fill = d3.scale.category20();
+		// .domain(d3.range(4))
+		// .range(["#ED1B24", "#3A92C5", "#F1006C", "#FAE00E"]);
 
 		var vis_g = vis.append("g")
 			.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
@@ -137,7 +141,7 @@ define("sap_viz_ext_chordchart-src/js/render", [], function() {
 			return d3.range(0, d.value, 1000).map(function(v, i) {
 				return {
 					angle: v * k + d.startAngle,
-					label: i % 5 ? null : v / 1000 + "k"
+					label: i % 5 ? null : v / 1000
 				};
 			});
 		}
@@ -145,7 +149,7 @@ define("sap_viz_ext_chordchart-src/js/render", [], function() {
 		// Returns an event handler for fading a given chord group.
 		function fade(opacity) {
 			return function(g, i) {
-				vis_g.selectAll(".chord path")
+				vis_g.selectAll(".sap_viz_ext_chord.chord path")
 					.filter(function(d) {
 						return d.source.index != i && d.target.index != i;
 					})

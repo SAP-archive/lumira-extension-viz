@@ -8,7 +8,7 @@ Based on the [Chord Diagram D3 example by Mike Bostock](http://bl.ocks.org/mbost
 Files
 -----------
 * `Chord Chart.lums` - Sample Lumira file
-* `chord_diagram_data.csv` - Sample dataset
+* `chord_chart_data.csv` - Sample dataset
 * `sap.viz.ext.chord.profile` - Load the extension back into SAP Lumira vizPacker
 * `sap.viz.ext.chordchart.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
 
@@ -17,9 +17,9 @@ Data Binding
 <strong>Measures</strong>
 * Count
  
-<strong>Dimensions(HairPair)</strong>
-* has
-* prefers
+<strong>Dimensions(Choice)</strong>
+* Current 
+* Preferred
 
 
 Resources

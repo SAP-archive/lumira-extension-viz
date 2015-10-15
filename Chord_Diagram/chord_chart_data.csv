@@ -1,0 +1,50 @@
+Current,Preferred,Count (K)
+Verizom,Verizom,2868
+AP&P,Verizom,2060
+D-Mobile ,Verizom,16145
+Sfrint,Verizom,1013
+UX Cellular,Verizom,8916
+C Sbire,Verizom,10048
+nTelox,Verizom,8010
+Verizom,AP&P,6907
+AP&P,AP&P,5871
+D-Mobile ,AP&P,1951
+Sfrint,AP&P,8045
+UX Cellular,AP&P,940
+C Sbire,AP&P,11975
+nTelox,AP&P,6171
+Verizom,D-Mobile ,8090
+AP&P,D-Mobile ,990
+D-Mobile ,D-Mobile ,2868
+Sfrint,D-Mobile ,2060
+UX Cellular,D-Mobile ,16145
+C Sbire,D-Mobile ,1013
+nTelox,D-Mobile ,8916
+Verizom,Sfrint,10048
+AP&P,Sfrint,8010
+D-Mobile ,Sfrint,6907
+Sfrint,Sfrint,5871
+UX Cellular,Sfrint,1951
+C Sbire,Sfrint,8045
+nTelox,Sfrint,940
+Verizom,UX Cellular,11975
+AP&P,UX Cellular,6171
+D-Mobile ,UX Cellular,8090
+Sfrint,UX Cellular,990
+UX Cellular,UX Cellular,2868
+C Sbire,UX Cellular,2060
+nTelox,UX Cellular,16145
+Verizom,C Sbire,1013
+AP&P,C Sbire,8916
+D-Mobile ,C Sbire,10048
+Sfrint,C Sbire,8010
+UX Cellular,C Sbire,6907
+C Sbire,C Sbire,5871
+nTelox,C Sbire,1951
+Verizom,nTelox,8045
+AP&P,nTelox,940
+D-Mobile ,nTelox,11975
+Sfrint,nTelox,6171
+UX Cellular,nTelox,8090
+C Sbire,nTelox,990
+nTelox,nTelox,5694
