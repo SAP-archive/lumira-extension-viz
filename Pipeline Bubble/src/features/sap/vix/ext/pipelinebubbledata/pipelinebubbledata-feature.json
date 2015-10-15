@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.vix.ext.pipelinebubbledata",
+	"name": "PipelineBubble_Data",
+	"description": " ",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "SAP",
+		"url": "www.sap.com"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.vix.ext.pipelinebubbledata",
+		"version": "1.0.1"
+	}]
+}

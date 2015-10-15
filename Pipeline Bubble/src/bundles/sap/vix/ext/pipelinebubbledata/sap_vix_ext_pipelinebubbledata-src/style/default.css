@@ -1,0 +1,54 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+/* For example, adding the extension id as prefix of CSS class name. */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+.extPipebubBar {
+    opacity: 1;
+}
+.extPipebubBar:hover {
+    fill: #003459;
+    opacity: .9;
+}
+.extPipebubBar_subStage text{
+	font-size:1em;
+}
+.extPipebubBar_stage text{
+	font-size:1.2em;
+	font-weight: bold;
+}
+.extPipebubBar_stage text:hover, .extPipebubBar_subStage text:hover{
+	font-size:1.4em;
+}
+.extPipebubAxis {
+    font: 10px sans-serif;
+}
+.extPipebubX.extPipebubAxis path {
+    display: none;
+}
+g.extPipebubX text{
+    visibility : hidden;
+}
+path, line {
+    fill: none;
+    stroke: #50514f;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+text{
+    font-family: 'Lato', sans-serif;
+}
+
+table{
+    border-collapse:collapse;
+}
+g.extPipebubD3tip{
+    opacity : 0;
+}
+g.extPipebubD3tip rect.label {
+    fill: #444;
+    stroke-width = 1;
+    stroke = #aaa;
+}
+g.extPipebubD3tip g.label_detail text{
+    fill: #fff;
+    font-size: 1.1em;
+}
