@@ -5,6 +5,8 @@ Chord Diagram - SAP Lumira visualization extension
 
 Based on the [Chord Diagram D3 example by Mike Bostock](http://bl.ocks.org/mbostock/4062006)
 
+![Chord Chart](https://github.com/SAP/lumira-extension-viz/blob/master/Chord_Chart/ChordChart.PNG)
+
 Files
 -----------
 * `Chord Chart.lums` - Sample Lumira file
