@@ -4,6 +4,8 @@ Force Diagram - SAP Lumira visualization extension
 
 Based on the [Force diagram D3 example in  Malcolm Maclean's book D3 Tips and Tricks (page 309)](https://leanpub.com/D3-Tips-and-Tricks)
 
+![Force Diagram](https://github.com/SAP/lumira-extension-viz/blob/master/Force_Diagram/ForceDiagram.PNG)
+
 Files
 -----------
 * `Force.lums` - SAP Lumira .lums file
