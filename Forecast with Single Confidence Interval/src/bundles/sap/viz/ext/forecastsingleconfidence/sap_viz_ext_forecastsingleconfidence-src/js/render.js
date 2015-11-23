@@ -89,7 +89,7 @@ define("sap_viz_ext_forecastsingleconfidence-src/js/render", [], function() {
 
 		vis.append("g")
 			.append("path")
-			.attr("class", "sap_viz_ext_forecastsingleconfidence actuals")
+			.attr("class", "sap_viz_ext_forecastsingleconfidence_actuals")
 			.attr("d", dpath);
 
 		//end actuals
@@ -120,7 +120,7 @@ define("sap_viz_ext_forecastsingleconfidence-src/js/render", [], function() {
 
 		vis.append("g")
 			.append("path")
-			.attr("class", "sap_viz_ext_forecastsingleconfidence conf")
+			.attr("class", "sap_viz_ext_forecastsingleconfidence_conf")
 			.attr("d", dpath);
 
 		//end conf  
@@ -143,22 +143,22 @@ define("sap_viz_ext_forecastsingleconfidence-src/js/render", [], function() {
 		//console.log(dpath); 
 		vis.append("g")
 			.append("path")
-			.attr("class", "sap_viz_ext_forecastsingleconfidence forecast")
+			.attr("class", "sap_viz_ext_forecastsingleconfidence_forecast")
 			.attr("d", dpath);
 		//end forecast
 
 		//draw x axis
-		vis.append("g").attr("class", "sap_viz_ext_forecastsingleconfidence x axis").attr("transform", "translate(0," + plotHeight + ")").call(xAxis)
+		vis.append("g").attr("class", "sap_viz_ext_forecastsingleconfidence_x_axis").attr("transform", "translate(0," + plotHeight + ")").call(xAxis)
 			.selectAll("text")
 			.style("text-anchor", "end")
 			.attr("dx", "-.8em")
 			.attr("dy", ".15em")
 			.attr("transform", function(d) {
-				return "rotate(-55)"
+				return "rotate(-55)";
 			});
 
 		//draw y axis
-		vis.append("g").attr("class", "sap_viz_ext_forecastsingleconfidence y axis").call(yAxis);
+		vis.append("g").attr("class", "sap_viz_ext_forecastsingleconfidence_y_axis").call(yAxis);
 
 		//title: combination of dimension[1] and dimension[3] (once we have a value)
 
@@ -171,7 +171,7 @@ define("sap_viz_ext_forecastsingleconfidence-src/js/render", [], function() {
 			}
 		}
 
-		vis.append("g").attr("class", "sap_viz_ext_forecastsingleconfidence mytitle").append("text")
+		vis.append("g").attr("class", "sap_viz_ext_forecastsingleconfidence_mytitle").append("text")
 			.attr("transform", "translate(" + plotWidth / 2 + ", 0)").text(ttitle + " - " + model).style("text-anchor", "middle");
 
 		//set style of axis and its ticks and text
