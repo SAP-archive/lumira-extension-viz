@@ -28,7 +28,7 @@ The main trick in the data file is that we have a large number of missing values
 
 Files
 ------
-* `Capacity Planning.lums` - Sample Lumira file
+* `Capacity Planning Chart.lums` - Sample Lumira file
 * `capacity_planning.csv` - Sample dataset
 * `sap.viz.ext.capacityplanning.zip` - Extension file
 
