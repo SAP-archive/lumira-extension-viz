@@ -4,6 +4,8 @@ A custom heatmap chart extension for a football field.
 <br>
 * By [Mustafa Aydogdu](http://scn.sap.com/people/mustafa.aydogdu)
 
+![Geo Maps Leaflet](https://github.com/SAP/lumira-extension-viz/blob/master/Geomaps_Leaflet/GeoMapsLeaflet.PNG)
+
 Files
 -----------
 * `GeoMapsLeaflet.lums` - SAP Lumira .lums file
