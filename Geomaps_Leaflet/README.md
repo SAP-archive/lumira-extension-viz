@@ -1,7 +1,7 @@
 Geo Maps Leaflet - SAP Lumira visualization extension
 =================================================
-<br>
-* By [Mustafa Aydogdu](http://scn.sap.com/people/mustafa.aydogdu)
+
+By [Mustafa Aydogdu](http://scn.sap.com/people/mustafa.aydogdu)
 
 ![Geo Maps Leaflet](https://github.com/SAP/lumira-extension-viz/blob/master/Geomaps_Leaflet/GeoMapsLeaflet.PNG)
 
