@@ -2,17 +2,17 @@
 
 /* For example, adding the extension id as prefix of CSS class name. */
 
-.sap_viz_ext_footballheatmap.v-m-plot rect.bar {
+.sap_viz_ext_footballheatmap_v-m-plot rect.bar {
     stroke: black;
     stroke-width: 1px;
     stroke-opacity: 0.3
 }
-.sap_viz_ext_footballheatmap.divCSS {
+.sap_viz_ext_footballheatmap_divCSS {
     position: absolute;
     stroke: white;
     fill: none;
 }
-.sap_viz_ext_footballheatmap.lines {
+.sap_viz_ext_footballheatmap_lines {
     position: absolute;
     stroke: white;
     fill: none;

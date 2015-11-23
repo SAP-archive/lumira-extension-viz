@@ -110,7 +110,7 @@ define("sap_viz_ext_footballheatmap-src/js/render", ['heatmap2'], function() {
 			mainContainer.style.width = canvasWidth + 'px';
 			mainContainer.style.height = fieldHeight + 'px';
 			//  mainContainer.style.left = leftMargin+'px';
-			mainContainer.className = 'sap_viz_ext_footballheatmap divGreen';
+			mainContainer.className = 'sap_viz_ext_footballheatmap_divGreen';
 			container.node().appendChild(mainContainer);
 
 			//Div for heatmap
@@ -118,7 +118,7 @@ define("sap_viz_ext_footballheatmap-src/js/render", ['heatmap2'], function() {
 			heatmapContainer.style.width = fieldWidth + 'px';
 			heatmapContainer.style.height = fieldHeight + 'px';
 			//heatmapContainer.style.left = leftMargin+'px';
-			heatmapContainer.className = 'sap_viz_ext_footballheatmap divCSS';
+			heatmapContainer.className = 'sap_viz_ext_footballheatmap_divCSS';
 
 			//Div for drawing football pitch
 			var pitchContainer = document.createElement('div');
@@ -126,14 +126,14 @@ define("sap_viz_ext_footballheatmap-src/js/render", ['heatmap2'], function() {
 			pitchContainer.style.height = fieldHeight + 'px';
 			pitchContainer.style.left = leftMargin + 'px';
 			pitchContainer.style.strokeWidth = fieldWidth / 150;
-			pitchContainer.className = 'sap_viz_ext_footballheatmap divCSS';
+			pitchContainer.className = 'sap_viz_ext_footballheatmap_divCSS';
 
 			var lineContainer = document.createElement('div');
 			lineContainer.style.width = fieldWidth + 'px';
 			lineContainer.style.height = fieldHeight + 'px';
 			lineContainer.style.left = leftMargin + 'px';
 			lineContainer.style.strokeWidth = fieldWidth / 150;
-			lineContainer.className = 'sap_viz_ext_footballheatmap lines';
+			lineContainer.className = 'sap_viz_ext_footballheatmap_lines';
 
 			//Div for drawing football pitch
 			var greenLayer = document.createElement('div');
@@ -141,7 +141,7 @@ define("sap_viz_ext_footballheatmap-src/js/render", ['heatmap2'], function() {
 			greenLayer.style.height = fieldHeight + 'px';
 			greenLayer.style.left = leftMargin + 'px';
 			greenLayer.style.strokeWidth = fieldWidth / 150;
-			greenLayer.className = 'sap_viz_ext_footballheatmap divCSS';
+			greenLayer.className = 'sap_viz_ext_footballheatmap_divCSS';
 
 			mainContainer.appendChild(pitchContainer);
 			pitchContainer.appendChild(heatmapContainer);
