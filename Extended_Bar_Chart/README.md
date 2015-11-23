@@ -1,7 +1,7 @@
 Extended Bar Chart or Variable-Width Bar Chart
 ==============================================
 
-By [Jay Thoden van Velzen](http://scn.sap.com/people/jay.thodenvanvelzen)
+By [Jay Thoden van Velzen](https://github.com/SAP/lumira-extension-viz/blob/master/Extended_Bar_Chart/ExtendedBarChart.PNG)
 
 ![Extended Bar Chart]()
 
