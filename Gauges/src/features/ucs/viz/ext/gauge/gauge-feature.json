@@ -3,17 +3,17 @@
 	"id": "ucs.viz.ext.gauge",
 	"name": "Gauge",
 	"description": "An open-source Gauge Extension for Lumira",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"vendor": {
-		"name": "A Jabbitt - UCS Solutions",
-		"url": "www.ucs-solutions.co.za"
+		"name": "Andrew Jabbitt - UCS Solutions",
+		"url": "Your company website"
 	},
 	"requires": [{
 		"id": "sap.viz.common.core",
-		"version": "5.7.3"
+		"version": "5.6.0"
 	}],
 	"bundles": [{
 		"id": "ucs.viz.ext.gauge",
-		"version": "1.0.0"
+		"version": "1.0.1"
 	}]
 }

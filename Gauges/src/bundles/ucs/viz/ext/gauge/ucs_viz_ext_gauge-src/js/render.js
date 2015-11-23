@@ -1,5 +1,15 @@
 define("ucs_viz_ext_gauge-src/js/render", [], function() {
-
+	/*
+	 * This function is a drawing function; you should put all your drawing logic in it.
+	 * it's called in moduleFunc.prototype.render
+	 * @param {Object} data - proceessed dataset, check dataMapping.js
+	 * @param {Object} container - the target d3.selection element of plot area
+	 * @example
+	 *   container size:     this.width() or this.height()
+	 *   chart properties:   this.properties()
+	 *   dimensions info:    data.meta.dimensions()
+	 *   measures info:      data.meta.measures()
+	 */
 	var render = function(data, container) {
 		var width = this.width(),
 			height = this.height();
@@ -67,7 +77,7 @@ define("ucs_viz_ext_gauge-src/js/render", [], function() {
 				//this.body = d3.select("#" + this.placeholderName)
 				this.body = d3.select(this.placeholderName)
 					.append("svg:svg")
-					.attr("class", "gauge")
+					.attr("class", "ucs_viz_ext_gauge_gauge")
 					.attr("width", (this.config.size) + (150 * instance))
 					.attr("height", this.config.size);
 
@@ -155,7 +165,7 @@ define("ucs_viz_ext_gauge-src/js/render", [], function() {
 					}
 				}
 
-				var pointerContainer = this.body.append("svg:g").attr("class", "pointerContainer");
+				var pointerContainer = this.body.append("svg:g").attr("class", "ucs_viz_ext_gauge_pointerContainer");
 
 				var midValue = (this.config.min + this.config.max) / 2;
 
@@ -243,7 +253,7 @@ define("ucs_viz_ext_gauge-src/js/render", [], function() {
 			};
 
 			this.redraw = function(value, transitionDuration) {
-				var pointerContainer = this.body.select(".pointerContainer");
+				var pointerContainer = this.body.select(".ucs_viz_ext_gauge_pointerContainer");
 
 				pointerContainer.selectAll("text").text(Math.round(value));
 
@@ -308,14 +318,16 @@ define("ucs_viz_ext_gauge-src/js/render", [], function() {
 				to: config.min + range * 0.8
 			}];
 			if (lih === 0) {
-			config.redZones = [{
-				from: config.min + range * 0.8,
-				to: config.max
-			}];}
-			else {config.greenZones = [{
-				from: config.min + range * 0.8,
-				to: config.max
-			}];}
+				config.redZones = [{
+					from: config.min + range * 0.8,
+					to: config.max
+				}];
+			} else {
+				config.greenZones = [{
+					from: config.min + range * 0.8,
+					to: config.max
+				}];
+			}
 
 			gauges[name] = new Gauge(".vis", config);
 			gauges[name].render();
