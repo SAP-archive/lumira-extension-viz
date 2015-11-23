@@ -1,9 +1,9 @@
 Extended Bar Chart or Variable-Width Bar Chart
 ==============================================
 
-By [Jay Thoden van Velzen](https://github.com/SAP/lumira-extension-viz/blob/master/Extended_Bar_Chart/ExtendedBarChart.PNG)
+By [Jay Thoden van Velzen](http://scn.sap.com/people/jay.thodenvanvelzen)
 
-![Extended Bar Chart]()
+![Extended Bar Chart](https://github.com/SAP/lumira-extension-viz/blob/master/Extended_Bar_Chart/ExtendedBarChart.PNG)
 
 Typically in a bar chart plotted along the X-axis, only the height of the bar/column has meaning. In this chart, not only the height, but also the width of the bar has meaning. In this chart, which was originally produced at the request of a watch maker, the full width of the bar expresses a range in depth, of a particular type, for which they have the same Hg ng/g(dm). (Unfortunately, I don't posess the domain knowledge to explain this further)
 
