@@ -32,6 +32,8 @@ define("sap_viz_ext_chordchart-src/js/render", [], function() {
 		data.forEach(function(d) {
 			d[measure_count] = +d[measure_count];
 		});
+		
+		console.log(data);
 
 		//Matrix size is always the square root of the number of rows for chord diagrams
 		var matrixSize = Math.sqrt(data.length);
@@ -65,7 +67,7 @@ define("sap_viz_ext_chordchart-src/js/render", [], function() {
 			j = uniqueNodes.indexOf(element[dim_preferred]);
 			matrix[i][j] = element[measure_count];
 		});
-		console.log(JSON.stringify(matrix));
+		// console.log(JSON.stringify(matrix));
 
 		var chord = d3.layout.chord()
 			.padding(.05)
@@ -125,7 +127,7 @@ define("sap_viz_ext_chordchart-src/js/render", [], function() {
 			});
 
 		vis_g.append("g")
-			.attr("class", "sap_viz_ext_chord chord")
+			.attr("class", "sap_viz_ext_chord_chord")
 			.selectAll("path")
 			.data(chord.chords)
 			.enter().append("path")
@@ -149,7 +151,7 @@ define("sap_viz_ext_chordchart-src/js/render", [], function() {
 		// Returns an event handler for fading a given chord group.
 		function fade(opacity) {
 			return function(g, i) {
-				vis_g.selectAll(".sap_viz_ext_chord.chord path")
+				vis_g.selectAll(".sap_viz_ext_chord_chord path")
 					.filter(function(d) {
 						return d.source.index != i && d.target.index != i;
 					})

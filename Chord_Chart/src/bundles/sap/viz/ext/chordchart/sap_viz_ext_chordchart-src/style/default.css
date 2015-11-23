@@ -2,7 +2,7 @@
 
 /* For example, adding the extension id as prefix of CSS class name. */
 
-.sap_viz_ext_chord.chord path {
+.sap_viz_ext_chord_chord path {
     fill-opacity: .67;
     stroke: #000;
     stroke-width: .2px;
