@@ -8,7 +8,7 @@ Based on the [Force diagram D3 example in  Malcolm Maclean's book D3 Tips and Tr
 
 Files
 -----------
-* `Force.lums` - SAP Lumira .lums file
+* `ForceDiagram.lums` - SAP Lumira .lums file
 * `force.csv` - Sample dataset
 * `sap.viz.ext.force.profile` - Load the extension back into SAP Lumira vizPacker
 * `sap.viz.ext.force.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
