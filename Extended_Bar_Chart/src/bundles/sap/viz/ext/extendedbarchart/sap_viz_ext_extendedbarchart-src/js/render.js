@@ -109,12 +109,12 @@ define("sap_viz_ext_extendedbarchart-src/js/render", [], function() {
 
 		//Axes
 		vis.append("g")
-			.attr("class", "sap_viz_ext_extendedbarchart x axis")
+			.attr("class", "sap_viz_ext_extendedbarchart_x_axis")
 			.attr("transform", "translate(0," + plotHeight + ")")
 			.call(xAxis);
 
 		vis.append("g")
-			.attr("class", "sap_viz_ext_extendedbarchart y axis")
+			.attr("class", "sap_viz_ext_extendedbarchart_y_axis")
 			.call(yAxis);
 
 		vis.append("text")
