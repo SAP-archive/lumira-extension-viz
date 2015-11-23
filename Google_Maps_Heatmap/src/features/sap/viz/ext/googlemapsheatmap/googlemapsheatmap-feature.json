@@ -1,23 +1,19 @@
 {
-    "metadataVersion": "1.0",
-    "id": "sap.viz.ext.googlemapsheatmap",
-    "name": "Google Maps",
-    "description": "Google Maps",
-    "version": "1.0.0",
-    "vendor": {
-        "name": "Mustafa Aydogdu",
-        "url": "mustafa.aydogdu@yahoo.com"
-    },
-    "requires": [
-        {
-            "id": "sap.viz.common.core",
-            "version": "5.10.2"
-        }
-    ],
-    "bundles": [
-        {
-            "id": "sap.viz.ext.googlemapsheatmap",
-            "version": "1.0.0.0"
-        }
-    ]
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.googlemapsheatmap",
+	"name": "Google Maps Heatmap",
+	"description": "A geographical heatmap based on Google Maps",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Mustafa Aydogdu",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.6.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.googlemapsheatmap",
+		"version": "1.0.1"
+	}]
 }
