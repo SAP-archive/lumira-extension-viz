@@ -5,6 +5,8 @@ By [Mustafa Aydogdu](hscn.sap.com/people/mustafa.aydogdu)
  * Based on the [Google Maps JavaScript API v3](https://developers.google.com/maps/documentation/javascript/tutorial)
  * [Async.js] (https://github.com/millermedeiros/requirejs-plugins/tree/master/src) plugin for RequireJS is used in order to load Google Maps JS API
 
+![Google Maps Heatmap](https://github.com/SAP/lumira-extension-viz/blob/master/Google_Maps_Heatmap/GoogleMapsHeatmap.PNG)
+
 Files
 -----------
 * `Google Maps Heatmap.lums` - SAP Lumira file
