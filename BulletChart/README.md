@@ -5,6 +5,8 @@ Bullet Chart - SAP Lumira visualization extension
 
 Based on the [Bullet Charts D3 example](http://bl.ocks.org/mbostock/4061961)
 
+![Bullet Chart](http://scn.sap.com/servlet/JiveServlet/downloadImage/102-68082-7-803570/257-156/BulletChart.PNG)
+
 Files
 -----------
 

@@ -2,7 +2,7 @@
 	"metadataVersion": "1.0",
 	"id": "sap.viz.ext.bulletchart",
 	"name": "Bullet Chart",
-	"description": " ",
+	"description": "A bullet chart based on D3",
 	"version": "1.0.1",
 	"vendor": {
 		"name": "Matt Lloyd",
@@ -10,7 +10,7 @@
 	},
 	"requires": [{
 		"id": "sap.viz.common.core",
-		"version": "5.7.3"
+		"version": "5.6.0"
 	}],
 	"bundles": [{
 		"id": "sap.viz.ext.bulletchart",

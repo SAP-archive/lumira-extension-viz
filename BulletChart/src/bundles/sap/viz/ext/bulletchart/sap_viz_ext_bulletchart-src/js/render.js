@@ -1,15 +1,5 @@
 define("sap_viz_ext_bulletchart-src/js/render", [], function() {
-	/*
-	 * This function is a drawing function; you should put all your drawing logic in it.
-	 * it's called in moduleFunc.prototype.render
-	 * @param {Object} data - proceessed dataset, check dataMapping.js
-	 * @param {Object} container - the target d3.selection element of plot area
-	 * @example
-	 *   container size:     this.width() or this.height()
-	 *   chart properties:   this.properties()
-	 *   dimensions info:    data.meta.dimensions()
-	 *   measures info:      data.meta.measures()
-	 */
+
 	var render = function(data, container) {
 		var width = this.width(),
 			height = this.height(),
@@ -170,7 +160,7 @@ define("sap_viz_ext_bulletchart-src/js/render", [], function() {
 						.data(markerz);
 
 					marker.enter().append("line")
-						.attr("class", "sap_viz_ext_bulletchart marker")
+						.attr("class", "sap_viz_ext_bulletchart_marker")
 						.attr("x1", x0)
 						.attr("x2", x0)
 						.attr("y1", height / 6)
@@ -198,7 +188,7 @@ define("sap_viz_ext_bulletchart-src/js/render", [], function() {
 
 					// Initialize the ticks with the old scale, x0.
 					var tickEnter = tick.enter().append("g")
-						.attr("class", "sap_viz_ext_bulletchart tick")
+						.attr("class", "sap_viz_ext_bulletchart_tick")
 						.attr("transform", bulletTranslate(x0))
 						.style("opacity", 1e-6);
 
@@ -357,7 +347,7 @@ define("sap_viz_ext_bulletchart-src/js/render", [], function() {
 			.data(data)
 			// MDL: end
 			.enter().append("svg")
-			.attr("class", "sap_viz_ext_bulletchart bullet")
+			.attr("class", "sap_viz_ext_bulletchart_bullet")
 			.attr("width", width + margin.left + margin.right)
 			.attr("height", height + margin.top + margin.bottom)
 			// MDL: Y position
@@ -374,7 +364,7 @@ define("sap_viz_ext_bulletchart-src/js/render", [], function() {
 			.attr("transform", "translate(-6," + height / 2 + ")");
 
 		title.append("text")
-			.attr("class", "sap_viz_ext_bulletchart title")
+			.attr("class", "sap_viz_ext_bulletchart_title")
 		// MDL: title is the first item in titles	  
 		.text(function(d) {
 			return (dset1 && dset1.length > 0 ? d[dim_title] : "");
@@ -382,7 +372,7 @@ define("sap_viz_ext_bulletchart-src/js/render", [], function() {
 		// MDL: end
 
 		title.append("text")
-			.attr("class", "sap_viz_ext_bulletchart subtitle")
+			.attr("class", "sap_viz_ext_bulletchart_subtitle")
 			.attr("dy", "1em")
 		// MDL: title is the second item in titles	  
 		.text(function(d) {
