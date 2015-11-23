@@ -42,7 +42,7 @@ define("sap_viz_ext_forecast2confidence-src/js/render", [], function() {
 			top: 20,
 			right: 20,
 			bottom: 60,
-			left: 40
+			left: 50
 		};
 		var plotWidth = width - margin.left - margin.right,
 			plotHeight = height - margin.top - margin.bottom;
@@ -92,7 +92,7 @@ define("sap_viz_ext_forecast2confidence-src/js/render", [], function() {
 
 		vis.append("g")
 			.append("path")
-			.attr("class", "sap_viz_ext_forecast2confidence actuals")
+			.attr("class", "sap_viz_ext_forecast2confidence_actuals")
 			.attr("d", dpath);
 
 		//end actuals
@@ -124,7 +124,7 @@ define("sap_viz_ext_forecast2confidence-src/js/render", [], function() {
 		//console.log(dpath);
 		vis.append("g")
 			.append("path")
-			.attr("class", "sap_viz_ext_forecast2confidence conf95p")
+			.attr("class", "sap_viz_ext_forecast2confidence_conf95p")
 			.attr("d", dpath);
 
 		//end conf95p 
@@ -155,7 +155,7 @@ define("sap_viz_ext_forecast2confidence-src/js/render", [], function() {
 		//console.log(dpath);
 		vis.append("g")
 			.append("path")
-			.attr("class", "sap_viz_ext_forecast2confidence conf80p")
+			.attr("class", "sap_viz_ext_forecast2confidence_conf80p")
 			.attr("d", dpath);
 
 		//end conf80p 
@@ -178,15 +178,15 @@ define("sap_viz_ext_forecast2confidence-src/js/render", [], function() {
 		//console.log(dpath); 
 		vis.append("g")
 			.append("path")
-			.attr("class", "sap_viz_ext_forecast2confidence forecast")
+			.attr("class", "sap_viz_ext_forecast2confidence_forecast")
 			.attr("d", dpath);
 		//end forecast
 
 		//draw x axis
-		vis.append("g").attr("class", "sap_viz_ext_forecast2confidence x axis").attr("transform", "translate(0," + plotHeight + ")").call(xAxis);
+		vis.append("g").attr("class", "sap_viz_ext_forecast2confidence_x_axis").attr("transform", "translate(0," + plotHeight + ")").call(xAxis);
 
 		//draw y axis
-		vis.append("g").attr("class", "sap_viz_ext_forecast2confidence y axis").call(yAxis);
+		vis.append("g").attr("class", "sap_viz_ext_forecast2confidence_y_axis").call(yAxis);
 
 	};
 

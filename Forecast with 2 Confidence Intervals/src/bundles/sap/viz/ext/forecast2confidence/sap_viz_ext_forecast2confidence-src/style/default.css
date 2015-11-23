@@ -2,46 +2,50 @@
 
 /* For example, adding the extension id as prefix of CSS class name. */
 
-.sap_viz_ext_forecast2confidence.v-m-plot rect.bar {
+.sap_viz_ext_forecast2confidence_v-m-plot rect.bar {
     stroke: black;
     stroke-width: 1px;
     stroke-opacity: 0.3
 }
-.sap_viz_ext_forecast2confidence.axis path,
-.sap_viz_ext_forecast2confidence.axis line {
+.sap_viz_ext_forecast2confidence_x_axis path,
+.sap_viz_ext_forecast2confidence_y_axis path,
+.sap_viz_ext_forecast2confidence_x_axis line,
+.sap_viz_ext_forecast2confidence_y_axis line {
     fill: none;
     stroke: #000;
     shape-rendering: crispEdges;
 }
 
-.sap_viz_ext_forecast2confidence.axis text {
+.sap_viz_ext_forecast2confidence_x_axis text,
+.sap_viz_ext_forecast2confidence_y_axis text{
     font-size: 12px;
 }
 
-.sap_viz_ext_forecast2confidence.axis > text {
+.sap_viz_ext_forecast2confidence_x_axis > text,
+.sap_viz_ext_forecast2confidence_y_axis > text{
     font-size: 16px;
     font-weight: bold;
 }
 
-.sap_viz_ext_forecast2confidence.actuals {
+.sap_viz_ext_forecast2confidence_actuals {
     fill: none;
     stroke: #4040A0;
     stroke-width: 2;
 }
 
-.sap_viz_ext_forecast2confidence.forecast {
+.sap_viz_ext_forecast2confidence_forecast {
     fill: none;
     stroke: #0000FF;
     stroke-width: 2;
 }
 
-.sap_viz_ext_forecast2confidence.conf80p {
+.sap_viz_ext_forecast2confidence_conf80p {
     fill: #A0A0A0;
     stroke: #A0A0A0;
     stroke-width: 0;
 }
 
-.sap_viz_ext_forecast2confidence.conf95p {
+.sap_viz_ext_forecast2confidence_conf95p {
     fill: #C0C0C0;
     stroke: #C0C0C0;
     stroke-width: 0;

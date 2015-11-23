@@ -2,7 +2,7 @@
 	"metadataVersion": "1.0",
 	"id": "sap.viz.ext.forecast2confidence",
 	"name": "Forecast 2Confidence Intervals",
-	"description": "An analytical chart extension with a predictive flavor, visualizing forecast with 80% and 90% confidence intervals",
+	"description": "An analytical chart extension with a predictive flavor, visualizing forecast with 80% and 95% confidence intervals",
 	"version": "1.0.0",
 	"vendor": {
 		"name": "Jay Thoden van Velzen",

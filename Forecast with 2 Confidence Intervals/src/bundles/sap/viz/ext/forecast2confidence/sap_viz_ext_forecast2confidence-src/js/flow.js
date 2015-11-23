@@ -16,7 +16,7 @@ define("sap_viz_ext_forecast2confidence-src/js/flow", ["sap_viz_ext_forecast2con
 		/*Feeds Definition*/
 		var ds1 = {
 			"id": "sap.viz.ext.forecast2confidence.PlotModule.DS1",
-			"name": "Dimensions",
+			"name": "Year",
 			"type": "Dimension",
 			"min": 0, //minimum number of data container
 			"max": 2, //maximum number of data container
