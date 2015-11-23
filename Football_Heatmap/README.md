@@ -5,6 +5,8 @@ A custom heatmap chart extension for a football field.
 * By [Mustafa Aydogdu](http://scn.sap.com/people/mustafa.aydogdu)
 * Migrated to Web IDE by [Annie (Suantak) Niangneihoi](http://scn.sap.com/people/suantak.niangneihoi)
 
+![Football Heatmap](https://github.com/SAP/lumira-extension-viz/blob/master/Football_Heatmap/FootballHeatmap.PNG)
+
 Files
 -----------
 * `Football Heatmap.lums` - SAP Lumira .lums file
