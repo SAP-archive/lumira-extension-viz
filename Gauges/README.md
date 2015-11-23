@@ -2,6 +2,8 @@ Gauges - SAP Lumira visualization extension
 =================================================
  * By [Andrew Jabbitt](http://scn.sap.com/people/andrew.jabbitt01)
 
+![Gauge](https://github.com/SAP/lumira-extension-viz/blob/master/Gauges/Gauge.PNG)
+
 Files
 -----------
 * `Gauge.lums` - SAP Lumira file
