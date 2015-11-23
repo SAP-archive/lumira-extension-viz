@@ -103,7 +103,7 @@ define("sap_viz_ext_force-src/js/render", [], function() {
 			.data(force.links())
 			.enter().append("svg:path")
 			.attr("class", function(d) {
-				return "link " + d.type + " sap_viz_ext_force";
+				return "link " + d.type + " sap_viz_ext_force_path";
 			})
 			.attr("marker-end", "url(#end)");
 
@@ -111,7 +111,7 @@ define("sap_viz_ext_force-src/js/render", [], function() {
 		var node = vis.selectAll(".node")
 			.data(force.nodes())
 			.enter().append("g")
-			.attr("class", "sap_viz_ext_force node")
+			.attr("class", "sap_viz_ext_force_node")
 			.on("click", click)
 			.on("dblclick", dblclick)
 			.call(force.drag);
@@ -119,7 +119,7 @@ define("sap_viz_ext_force-src/js/render", [], function() {
 		// add the nodes
 		node.append("circle")
 			.attr("r", 5)
-			.attr("class", "sap_viz_ext_force")
+			.attr("class", "sap_viz_ext_force_circle")
 			.style("fill", function(d) {
 				return color(d.name);
 			});
@@ -128,7 +128,7 @@ define("sap_viz_ext_force-src/js/render", [], function() {
 		node.append("text")
 			.attr("x", 12)
 			.attr("dy", ".35em")
-			.attr("class", "sap_viz_ext_force")
+			.attr("class", "sap_viz_ext_force_text")
 			.text(function(d) {
 				return d.name;
 			});

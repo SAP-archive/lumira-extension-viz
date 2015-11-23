@@ -2,29 +2,29 @@
 
 /* For example, adding the extension id as prefix of CSS class name. */
 
-path.link.sap_viz_ext_force {
+.link.sap_viz_ext_force_path {
     fill: none;
     stroke: #666;
     stroke-width: 1.5px;
 }
-path.link.twofive.sap_viz_ext_force {
+.link.twofive.sap_viz_ext_force_path {
     opacity: 0.25;
 }
-path.link.fivezero.sap_viz_ext_force {
+.link.fivezero.sap_viz_ext_force_path {
     opacity: 0.50;
 }
-path.link.sevenfive.sap_viz_ext_force {
+.link.sevenfive.sap_viz_ext_force_path {
     opacity: 0.75;
 }
-path.link.onezerozero.sap_viz_ext_force {
+.link.onezerozero.sap_viz_ext_force_path {
     opacity: 1.0;
 }
-circle.sap_viz_ext_force {
+.sap_viz_ext_force_circle {
     fill: #ccc;
     stroke: #fff;
     stroke-width: 1.5px;
 }
-text.sap_viz_ext_force {
+.sap_viz_ext_force_text {
     fill: #000;
     font: 10px sans-serif;
     pointer-events: none;
