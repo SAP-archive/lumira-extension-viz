@@ -28,18 +28,18 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 		dataset = data.map(function(d) {
 			//console.log(d);
 
-			month = dateparse(d.Month);
-			full_abs_line = +d["Full Absorption Line"];
-			base_cap = +d["Base Capacity (In House)"];
-			max_cap_ih = +d["Maximum Capacity (In House)"];
-			max_cap_sub = +d["Maximum Capacity (incl. subcontracting)"];
-			comp_hours = +d["Completed Hours"];
-			sub_prev_month = (d["Subcontracting previous month"] ? +d["Subcontracting previous month"] : -1);
-			lab_prev_month = (d["Direct Labor Completed Hours"] ? +d["Direct Labor Completed Hours"] : -1);
-			orders_not_rel = (d["Orders on Hand: Not Released"] ? +d["Orders on Hand: Not Released"] : -1);
-			orders_rel = (d["Orders on Hand: Released"] ? +d["Orders on Hand: Released"] : -1);
-			backlog = (d["Backlog"] ? +d["Backlog"] : -1);
-			backlog_prev = (d["Backlog previous year"] ? +d["Backlog previous year"] : -1);
+		var	month = dateparse(d.Month),
+			full_abs_line = +d["Full Absorption Line"],
+			base_cap = +d["Base Capacity (In House)"],
+			max_cap_ih = +d["Maximum Capacity (In House)"],
+			max_cap_sub = +d["Maximum Capacity (incl. subcontracting)"],
+			comp_hours = +d["Completed Hours"],
+			sub_prev_month = (d["Subcontracting previous month"] ? +d["Subcontracting previous month"] : -1),
+			lab_prev_month = (d["Direct Labor Completed Hours"] ? +d["Direct Labor Completed Hours"] : -1),
+			orders_not_rel = (d["Orders on Hand: Not Released"] ? +d["Orders on Hand: Not Released"] : -1),
+			orders_rel = (d["Orders on Hand: Released"] ? +d["Orders on Hand: Released"] : -1),
+			backlog = (d["Backlog"] ? +d["Backlog"] : -1),
+			backlog_prev = (d["Backlog previous year"] ? +d["Backlog previous year"] : -1),
 			forecast = (d["Sales forecast"] ? +d["Sales forecast"] : -1);
 
 			return {
@@ -62,9 +62,9 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 
 		var margin = {
 				top: 20,
-				right: 180,
+				right: 220,
 				bottom: 20,
-				left: 20
+				left: 40
 			},
 			plotWidth = width - margin.left - margin.right,
 			plotHeight = height - margin.top - margin.bottom;
@@ -96,7 +96,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 		var xAxis = d3.svg.axis()
 			.orient("bottom")
 			.scale(x)
-			.tickFormat(d3.time.format("%b %Y"));;
+			.tickFormat(d3.time.format("%b %Y"));
 
 		var y1Axis = d3.svg.axis()
 			.scale(y1)
@@ -150,21 +150,21 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 		//paint areas
 		vis.append("path")
 			.datum(dataset)
-			.attr("class", "sap_viz_ext_capacityplanning area")
+			.attr("class", "sap_viz_ext_capacityplanning_area")
 			.attr("d", max_cap)
 			.style("stroke", "#404040")
 			.style("fill", "#D0D0D0");
 
 		vis.append("path")
 			.datum(dataset)
-			.attr("class", "sap_viz_ext_capacityplanning area")
+			.attr("class", "sap_viz_ext_capacityplanning_area")
 			.attr("d", norm_cap)
 			.style("stroke", "#404040")
 			.style("fill", "#B0B0B0");
 
 		vis.append("path")
 			.datum(dataset)
-			.attr("class", "sap_viz_ext_capacityplanning area")
+			.attr("class", "sap_viz_ext_capacityplanning_area")
 			.attr("d", min_cap)
 			.style("stroke", "#404040")
 			.style("fill", "#808080");
@@ -210,7 +210,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 		var pastbars = vis.selectAll(".pastbars")
 			.data(past)
 			.enter().append("g")
-			.attr("class", "sap_viz_ext_capacityplanning pastbars")
+			.attr("class", "sap_viz_ext_capacityplanning_pastbars")
 			.attr("transform", function(d) {
 				return "translate(" + x(d.month) + ",0)";
 			});
@@ -253,7 +253,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 		var futurebars = vis.selectAll(".futurebars")
 			.data(future)
 			.enter().append("g")
-			.attr("class", "sap_viz_ext_capacityplanning futurebars")
+			.attr("class", "sap_viz_ext_capacityplanning_futurebars")
 			.attr("transform", function(d) {
 				return "translate(" + x(d.month) + ",0)";
 			});
@@ -293,7 +293,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 
 		//lines
 		vis.append("path")
-			.attr("class", "sap_viz_ext_capacityplanning line")
+			.attr("class", "sap_viz_ext_capacityplanning_line")
 			.style("stroke", "#000000")
 			.style("stroke-dasharray", ("5,5"))
 			.style("stroke-width", "2")
@@ -317,7 +317,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 
 		vis.append("g")
 			.append("path")
-			.attr("class", "sap_viz_ext_capacityplanning backlog")
+			.attr("class", "sap_viz_ext_capacityplanning_backlog")
 			.style("stroke", "#000000")
 		//.style("stroke-dasharray", ("5,5"))
 		.style("stroke-width", "2")
@@ -341,7 +341,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 
 		vis.append("g")
 			.append("path")
-			.attr("class", "sap_viz_ext_capacityplanning backlog")
+			.attr("class", "sap_viz_ext_capacityplanning_backlog")
 			.style("stroke", "#000000")
 			.style("stroke-dasharray", ("3,3"))
 			.style("stroke-width", "2")
@@ -350,16 +350,16 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 
 		//paint the axes
 		vis.append("g")
-			.attr("class", "sap_viz_ext_capacityplanning x axis")
+			.attr("class", "sap_viz_ext_capacityplanning_x_axis")
 			.attr("transform", "translate(0, " + plotHeight + ")")
 			.call(xAxis);
 
 		vis.append("g")
-			.attr("class", "sap_viz_ext_capacityplanning y axis")
+			.attr("class", "sap_viz_ext_capacityplanning_y_axis")
 			.call(y1Axis);
 
 		vis.append("g")
-			.attr("class", "sap_viz_ext_capacityplanning y axis")
+			.attr("class", "sap_viz_ext_capacityplanning_y_axis")
 			.attr("transform", "translate(" + plotWidth + ", 0)")
 			.call(y2Axis)
 			.append("text")
@@ -370,7 +370,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 
 		//Legend - hardcoded: too complex to drive programmatically
 		var legend_g = vis.append("g")
-			.attr("class", "sap_viz_ext_capacityplanning legend")
+			.attr("class", "sap_viz_ext_capacityplanning_legend")
 			.attr("transform", "translate(" + (plotWidth + 40) + ", 10)");
 
 		legend_g.append("rect")
@@ -381,7 +381,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.style("stroke", "#404040")
 			.style("stroke-width", "1");
 		legend_g.append("text")
-			.attr("class", "sap_viz_ext_capacityplanning legend")
+			.attr("class", "sap_viz_ext_capacityplanning_legend")
 			.attr("x", "20")
 			.attr("y", "0")
 			.attr("dy", ".75em")
@@ -396,7 +396,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.style("stroke", "#404040")
 			.style("stroke-width", "1");
 		legend_g.append("text")
-			.attr("class", "sap_viz_ext_capacityplanning legend")
+			.attr("class", "sap_viz_ext_capacityplanning_legend")
 			.attr("x", 20)
 			.attr("y", 15)
 			.attr("dy", ".75em")
@@ -411,7 +411,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.style("stroke", "#404040")
 			.style("stroke-width", "1");
 		legend_g.append("text")
-			.attr("class", "sap_viz_ext_capacityplanning legend")
+			.attr("class", "sap_viz_ext_capacityplanning_legend")
 			.attr("x", 20)
 			.attr("y", 30)
 			.attr("dy", ".75em")
@@ -426,7 +426,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.style("stroke", "#404040")
 			.style("stroke-width", "1");
 		legend_g.append("text")
-			.attr("class", "sap_viz_ext_capacityplanning legend")
+			.attr("class", "sap_viz_ext_capacityplanning_legend")
 			.attr("x", 20)
 			.attr("y", 45)
 			.attr("dy", ".75em")
@@ -441,7 +441,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.style("stroke", "#404040")
 			.style("stroke-width", "1");
 		legend_g.append("text")
-			.attr("class", "sap_viz_ext_capacityplanning legend")
+			.attr("class", "sap_viz_ext_capacityplanning_legend")
 			.attr("x", 20)
 			.attr("y", 60)
 			.attr("dy", ".75em")
@@ -456,7 +456,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.style("stroke", "#404040")
 			.style("stroke-width", "1");
 		legend_g.append("text")
-			.attr("class", "sap_viz_ext_capacityplanning legend")
+			.attr("class", "sap_viz_ext_capacityplanning_legend")
 			.attr("x", 20)
 			.attr("y", 80)
 			.attr("dy", ".75em")
@@ -471,7 +471,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.style("stroke", "#404040")
 			.style("stroke-width", "1");
 		legend_g.append("text")
-			.attr("class", "sap_viz_ext_capacityplanning legend")
+			.attr("class", "sap_viz_ext_capacityplanning_legend")
 			.attr("x", 20)
 			.attr("y", 95)
 			.attr("dy", ".75em")
@@ -486,7 +486,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.style("stroke", "#404040")
 			.style("stroke-width", "1");
 		legend_g.append("text")
-			.attr("class", "sap_viz_ext_capacityplanning legend")
+			.attr("class", "sap_viz_ext_capacityplanning_legend")
 			.attr("x", 20)
 			.attr("y", 110)
 			.attr("dy", ".75em")
@@ -503,7 +503,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.interpolate("linear");
 
 		legend_g.append("path")
-			.attr("class", "sap_viz_ext_capacityplanning line")
+			.attr("class", "sap_viz_ext_capacityplanning_line")
 			.style("stroke", "#000000")
 			.style("stroke-dasharray", ("5,5"))
 			.style("stroke-width", "2")
@@ -515,7 +515,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 				"y": 135
 			}]));
 		legend_g.append("text")
-			.attr("class", "sap_viz_ext_capacityplanning legend")
+			.attr("class", "sap_viz_ext_capacityplanning_legend")
 			.attr("x", 20)
 			.attr("y", 130)
 			.attr("dy", ".75em")
@@ -532,7 +532,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.interpolate("linear");
 
 		legend_g.append("path")
-			.attr("class", "sap_viz_ext_capacityplanning line")
+			.attr("class", "sap_viz_ext_capacityplanning_line")
 			.style("stroke", "#000000")
 		//.style("stroke-dasharray", ("5,5"))
 		.style("stroke-width", "2")
@@ -544,7 +544,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 				"y": 150
 			}]));
 		legend_g.append("text")
-			.attr("class", "sap_viz_ext_capacityplanning legend")
+			.attr("class", "sap_viz_ext_capacityplanning_legend")
 			.attr("x", 20)
 			.attr("y", 145)
 			.attr("dy", ".75em")
@@ -561,7 +561,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.interpolate("linear");
 
 		legend_g.append("path")
-			.attr("class", "sap_viz_ext_capacityplanning line")
+			.attr("class", "sap_viz_ext_capacityplanning_line")
 			.style("stroke", "#000000")
 			.style("stroke-dasharray", ("3,3"))
 			.style("stroke-width", "2")
@@ -573,7 +573,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 				"y": 165
 			}]));
 		legend_g.append("text")
-			.attr("class", "sap_viz_ext_capacityplanning legend")
+			.attr("class", "sap_viz_ext_capacityplanning_legend")
 			.attr("x", 20)
 			.attr("y", 160)
 			.attr("dy", ".75em")

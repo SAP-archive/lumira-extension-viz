@@ -2,6 +2,8 @@ Capacity Planning Chart
 =======================
 By [Jay Thoden val Velzen](http://scn.sap.com/people/jay.thodenvanvelzen)
 
+![Capacity Planning Chart](https://github.com/SAP/lumira-extension-viz/tree/master/Capacity_Planning_Chart/CapacityPlanningChart.PNG)
+
 In this chart, we show a total of 12 data elements (all measures) mapped against a Date range (the X-axis) of months. This was a chart type that came to us from a customer who asked "can you do this?". And yes, we can...
 
 The chart is used for capacity planning. There are 3 main sections within the chart:

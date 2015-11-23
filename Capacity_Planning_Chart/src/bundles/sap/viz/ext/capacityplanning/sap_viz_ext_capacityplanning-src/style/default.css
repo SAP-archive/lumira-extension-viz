@@ -2,26 +2,30 @@
 
 /* For example, adding the extension id as prefix of CSS class name. */
 
-.sap_viz_ext_capacityplanning.axis path, 
-.sap_viz_ext_capacityplanning.axis line {
+.sap_viz_ext_capacityplanning_x_axis path, 
+.sap_viz_ext_capacityplanning_y_axis path,
+.sap_viz_ext_capacityplanning_x_axis line,
+.sap_viz_ext_capacityplanning_y_axis line {
     fill: none;
     stroke: #000;
     shape-rendering: crispEdges;
 }
 
-.sap_viz_ext_capacityplanning.axis text {
+.sap_viz_ext_capacityplanning_x_axis text,
+.sap_viz_ext_capacityplanning_y_axis text{
     font-size: 12px;
 }
 
-.sap_viz_ext_capacityplanning.axis > text {
+.sap_viz_ext_capacityplanning_x_axis > text,
+.sap_viz_ext_capacityplanning_y_axis > text{
     font-size: 16px;
     font-weight: bold;
 }
 
-.sap_viz_ext_capacityplanning.legend {
+.sap_viz_ext_capacityplanning_legend {
     font-size: 10px;
 }
 
-sap_viz_ext_capacityplanning rect {
+.sap_viz_ext_capacityplanning_rect {
     shape-rendering: crispEdges;
 }
