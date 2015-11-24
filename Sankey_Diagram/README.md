@@ -6,13 +6,21 @@ By [Dong Pan](http://scn.sap.com/people/dong.pan)
 
  ![Sankey Diagram](https://github.com/SAP/lumira-extension-viz/blob/master/Sankey_Diagram/SankeyDiagram.PNG)
 
-SAP Lumira visualization folders and files
+Files
 -----------
-* `Packaged_Extension/pan.viz.ext.sankey.zip` - SAP Lumira visualization extension, packaged by SAP Web IDE
-* `Source_Code/` - Content/source code of the visualization extension project
-* `Project_Export/Google_Sankey.zip` - Export of the visualization project
-* `Sample_Data/energy_flow.csv` - sample data used in building the visualization extension
-* `Sample_Data/BC_FinancialFlow.xlsx` - additional sample data
+* `sap.viz.ext.sankey.zip` - SAP Lumira visualization extension, packaged by SAP Web IDE
+* `Sample datasets/sankey_energy_flow.csv` - sample data used in building the visualization extension
+* `Sample datasets/BC_FinancialFlow.xlsx` - additional sample data
+* `Sankey Diagram.lums` - SAP Lumira document
+
+Data Binding
+-------------------------------------------
+<strong>Measures (Value)</strong>
+* Value 
+
+<strong>Dimensions (Nodes)</strong>
+* Source
+* Target
 
 Resources
 -----------
