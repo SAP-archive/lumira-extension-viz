@@ -10,20 +10,18 @@ By [Dong Pan](http://scn.sap.com/people/dong.pan)
 Files
 -----------
 * `Stacked Column with Line Chart` - SAP Lumira document
-* `sap.viz.ext.stackedcolumnline.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
+* `sap.viz.ext.stackedcolumnlinechart.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
 * `stackedcolumn_linechart_data.csv` - Sample Dataset
 * `sap.viz.ext.stackedcolumnline.profile` - Load the extension back into SAP Lumira vizPacker
 
 Data Binding
 -------------------------------------------
 <strong>Measures</strong>
-* Y Axis: Electrical, annual_emissions, normalised_cost, Gas
-* Y Axis 2: Electrical, annual_emissions, normalised_cost, Gas 
+* Y Axis: Electrical, Gas, monthly_cost, normalised_cost, 
+* Y Axis 2: annual_emissions 
 
 <strong>Dimensions (X Axis)</strong>
 * Property
-* Other dimensions can be added
-
 
 Resources
 -----------
