@@ -5,6 +5,8 @@ By [Dong Pan](http://scn.sap.com/people/dong.pan)
  * Based on the [Stacked Column with Line chart D3 example by Bruce Durling](http://bl.ocks.org/otfrom/4754261)
  * Part of the visual effect based on Craig Buckler's article [How to Calculate Lighter or Darker Hex Colors in JavaScript]( http://www.sitepoint.com/javascript-generate-lighter-darker-color/)
 
+ ![Stacked Column with Line Chart](https://github.com/SAP/lumira-extension-viz/blob/master/Stacked_Column_with_Line_Chart/StackedColumnLineChart.PNG)
+
 Files
 -----------
 * `Stacked Column with Line Chart` - SAP Lumira document
