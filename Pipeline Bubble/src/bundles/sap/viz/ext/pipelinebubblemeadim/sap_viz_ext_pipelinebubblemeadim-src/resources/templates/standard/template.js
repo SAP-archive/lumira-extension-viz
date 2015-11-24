@@ -2,7 +2,7 @@ var sampleTemplate = {
 	"id": "standard",
 	"name": "Standard",
 	"properties": {
-		"sap.vix.ext.pipelinebubbledata": {
+		"sap.viz.ext.pipelinebubblemeadim": {
 
 		}
 	}

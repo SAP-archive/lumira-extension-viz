@@ -1,5 +1,5 @@
-define("sap_vix_ext_pipelinebubbledata-src/js/module", ["sap_vix_ext_pipelinebubbledata-src/js/render",
-	"sap_vix_ext_pipelinebubbledata-src/js/dataMapping"
+define("sap_viz_ext_pipelinebubblemeadim-src/js/module", ["sap_viz_ext_pipelinebubblemeadim-src/js/render",
+	"sap_viz_ext_pipelinebubblemeadim-src/js/dataMapping"
 ], function(render, processData) {
 	// Extension module implementation
 	var moduleFunc = {
@@ -11,7 +11,7 @@ define("sap_vix_ext_pipelinebubbledata-src/js/module", ["sap_vix_ext_pipelinebub
 				dispatch = this.dispatch(),
 				feeds = this.feeds(),
 				data = this.data();
-				
+
 			dispatch.startToInit();
 			selection.each(function() {
 				processData(data, feeds, function(err, pData) {

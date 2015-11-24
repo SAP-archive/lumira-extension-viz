@@ -1,21 +1,21 @@
-define("sap_vix_ext_pipelinebubbledata-src/js/flow", ["sap_vix_ext_pipelinebubbledata-src/js/module"], function(moduleFunc) {
+define("sap_viz_ext_pipelinebubblemeadim-src/js/flow", ["sap_viz_ext_pipelinebubblemeadim-src/js/module"], function(moduleFunc) {
 	var flowRegisterFunc = function() {
 		var flow = sap.viz.extapi.Flow.createFlow({
-			id: "sap.vix.ext.pipelinebubbledata",
-			name: "PipelineBubble_Data",
+			id: "sap.viz.ext.pipelinebubblemeadim",
+			name: "PipelineBubble_MeaDim",
 			dataModel: "sap.viz.api.data.CrosstableDataset",
 			type: "BorderSVGFlow"
 		});
 
 		var element = sap.viz.extapi.Flow.createElement({
-			id: "sap.vix.ext.pipelinebubbledata.PlotModule",
-			name: "PipelineBubble_Data Module"
+			id: "sap.viz.ext.pipelinebubblemeadim.PlotModule",
+			name: "PipelineBubble_MeaDim Module"
 		});
 		element.implement("sap.viz.elements.common.BaseGraphic", moduleFunc);
 
 		/*Feeds Definition*/
 		var ds1 = {
-			"id": "sap.vix.ext.pipelinebubbledata.PlotModule.DS1",
+			"id": "sap.viz.ext.pipelinebubblemeadim.PlotModule.DS1",
 			"name": "Stage, Bubble Color & Tooltip",
 			"type": "Dimension",
 			"min": 0, //minimum number of data container
@@ -25,21 +25,21 @@ define("sap_vix_ext_pipelinebubbledata-src/js/flow", ["sap_vix_ext_pipelinebubbl
 		element.addFeed(ds1);
 
 		var ms1 = {
-			"id": "sap.vix.ext.pipelinebubbledata.PlotModule.MS1",
+			"id": "sap.viz.ext.pipelinebubblemeadim.PlotModule.MS1",
 			"name": "Bubble Height",
 			"type": "Measure",
 			"min": 0, //minimum number of measures
-			"max":  2, //maximum number of measures
+			"max": Infinity, //maximum number of measures
 			"mgIndex": 1
 		};
 		element.addFeed(ms1);
-		
+
 		var ms2 = {
-			"id": "sap.vix.ext.pipelinebubbledata.PlotModule.MS2",
+			"id": "sap.viz.ext.pipelinebubblemeadim.PlotModule.MS2",
 			"name": "Bubble Size",
 			"type": "Measure",
 			"min": 0, //minimum number of measures
-			"max":  2, //maximum number of measures
+			"max": Infinity, //maximum number of measures
 			"mgIndex": 2
 		};
 		element.addFeed(ms2);
@@ -57,7 +57,7 @@ define("sap_vix_ext_pipelinebubbledata-src/js/flow", ["sap_vix_ext_pipelinebubbl
 		});
 		sap.viz.extapi.Flow.registerFlow(flow);
 	};
-	flowRegisterFunc.id = "sap.vix.ext.pipelinebubbledata";
+	flowRegisterFunc.id = "sap.viz.ext.pipelinebubblemeadim";
 	return {
 		id: flowRegisterFunc.id,
 		init: flowRegisterFunc

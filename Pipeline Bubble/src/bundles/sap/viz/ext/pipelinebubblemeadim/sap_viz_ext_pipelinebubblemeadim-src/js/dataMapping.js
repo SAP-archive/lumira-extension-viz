@@ -1,4 +1,4 @@
-define("sap_vix_ext_pipelinebubbledata-src/js/dataMapping", ["sap_vix_ext_pipelinebubbledata-src/js/utils/util"], function(util) {
+define("sap_viz_ext_pipelinebubblemeadim-src/js/dataMapping", ["sap_viz_ext_pipelinebubblemeadim-src/js/utils/util"], function(util) {
 	var processData = function(data, feeds, done) {
 		// Build name index so that dimension/measure sets can be accessed by name
 		util.buildNameIdx(feeds);

@@ -1,5 +1,5 @@
-define("sap_vix_ext_pipelinebubbledata-src/js/render", [], function() {
-	/*
+define("sap_viz_ext_pipelinebubblemeadim-src/js/render", [], function() {
+/*
 	 * This function is a drawing function; you should put all your drawing logic in it.
 	 * it's called in moduleFunc.prototype.render
 	 * @param {Object} data - proceessed dataset, check dataMapping.js

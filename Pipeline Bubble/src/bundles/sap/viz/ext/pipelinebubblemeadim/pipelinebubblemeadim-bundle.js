@@ -1,5 +1,5 @@
-define("pipelinebubbledata-bundle", ["sap_vix_ext_pipelinebubbledata-src/js/flow",
-	"css!sap_vix_ext_pipelinebubbledata-src/style/default.css"
+define("pipelinebubblemeadim-bundle", ["sap_viz_ext_pipelinebubblemeadim-src/js/flow",
+	"css!sap_viz_ext_pipelinebubblemeadim-src/style/default.css"
 ], function(flowDefinition, cssStyleDeclaration) {
 	var cssString = "",
 		rules, i;
@@ -16,14 +16,14 @@ define("pipelinebubbledata-bundle", ["sap_vix_ext_pipelinebubbledata-src/js/flow
 		cssString: cssString
 	};
 	var vizExtBundle = sap.bi.framework.declareBundle({
-		"id": "sap.vix.ext.pipelinebubbledata",
-		"version": "1.0.1",
+		"id": "sap.viz.ext.pipelinebubblemeadim",
+		"version": "1.0.4",
 		"components": [{
-			"id": "sap.vix.ext.pipelinebubbledata",
+			"id": "sap.viz.ext.pipelinebubblemeadim",
 			"provide": "sap.viz.impls",
 			"instance": vizExtImpl,
 			"customProperties": {
-				"name": "PipelineBubble_Data",
+				"name": "PipelineBubble_MeaDim",
 				"description": "",
 				"icon": {
 					"path": ""
@@ -31,11 +31,11 @@ define("pipelinebubbledata-bundle", ["sap_vix_ext_pipelinebubbledata-src/js/flow
 				"category": [],
 				"requires": [{
 					"id": "sap.viz.common.core",
-					"version": "5.7.3"
+					"version": "5.14.0"
 				}],
 				"resources": [{
 					"key": "sap.viz.api.env.Template.loadPaths",
-					"path": "./sap_vix_ext_pipelinebubbledata-src/resources/templates"
+					"path": "./sap_viz_ext_pipelinebubblemeadim-src/resources/templates"
 				}]
 			}
 		}]

@@ -1,5 +1,5 @@
 /*eslint no-shadow:0 no-loop-func:0*/
-define("sap_vix_ext_pipelinebubbledata-src/js/utils/util", [], function() {
+define("sap_viz_ext_pipelinebubblemeadim-src/js/utils/util", [], function() {
 	/*
 	 * In most cases, you don't need to modify the following code.
 	 */

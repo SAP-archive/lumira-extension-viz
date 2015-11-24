@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.pipelinebubblemeadim",
+	"name": "PipelineBubble_MeaDim",
+	"description": " ",
+	"version": "1.0.4",
+	"vendor": {
+		"name": "Xin Wen",
+		"url": "www.sap.com"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.14.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.pipelinebubblemeadim",
+		"version": "1.0.4"
+	}]
+}
