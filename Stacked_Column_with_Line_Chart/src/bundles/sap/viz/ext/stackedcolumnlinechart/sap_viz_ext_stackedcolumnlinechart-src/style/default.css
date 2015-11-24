@@ -1,0 +1,16 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+.sap_viz_ext_stackedcolumnlinechart_X_axis path,
+.sap_viz_ext_stackedcolumnlinechart_Y_axis path,
+.sap_viz_ext_stackedcolumnlinechart_X_axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.sap_viz_ext_stackedcolumnlinechart_Y_axis line {
+    fill: none;
+    stroke: #aaa;
+    shape-rendering: crispEdges;
+}

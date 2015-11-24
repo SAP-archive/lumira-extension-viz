@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.stackedcolumnlinechart",
+	"name": "Stacked Column with Line Chart",
+	"description": "A stacked column chart combined with a line chart",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Dong Pan",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.6.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.stackedcolumnlinechart",
+		"version": "1.0.1"
+	}]
+}
