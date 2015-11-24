@@ -16,7 +16,7 @@ define("sap_viz_ext_holtwinters-src/js/flow", ["sap_viz_ext_holtwinters-src/js/m
 		/*Feeds Definition*/
 		var ds1 = {
 			"id": "sap.viz.ext.holtwinters.PlotModule.DS1",
-			"name": "Dimensions",
+			"name": "Year-Week",
 			"type": "Dimension",
 			"min": 0, //minimum number of data container
 			"max": 2, //maximum number of data container

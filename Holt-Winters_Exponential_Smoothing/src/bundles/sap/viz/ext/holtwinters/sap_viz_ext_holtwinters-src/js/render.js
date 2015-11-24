@@ -41,10 +41,10 @@ define("sap_viz_ext_holtwinters-src/js/render", [], function() {
 		}
 
 		var margin = {
-				top: 20,
+				top: 40,
 				right: 20,
-				bottom: 60,
-				left: 50
+				bottom: 20,
+				left: 40
 			},
 			plotWidth = width - margin.left - margin.right,
 			plotHeight = height - margin.top - margin.bottom;
@@ -66,7 +66,7 @@ define("sap_viz_ext_holtwinters-src/js/render", [], function() {
 
 		//draw x axis
 		vis.append("g")
-			.attr("class", "x axis")
+			.attr("class", "sap_viz_ext_holtwinters_x_axis")
 			.attr("transform", "translate(0," + plotHeight + ")")
 			.call(xAxis)
 			.append("text")
@@ -77,7 +77,7 @@ define("sap_viz_ext_holtwinters-src/js/render", [], function() {
 
 		//draw y axis
 		vis.append("g")
-			.attr("class", "y axis")
+			.attr("class", "sap_viz_ext_holtwinters_y_axis")
 			.call(yAxis)
 			.append("text")
 			.attr("transform", "rotate(-90)")
@@ -121,7 +121,7 @@ define("sap_viz_ext_holtwinters-src/js/render", [], function() {
 
 		canvas.append("g")
 			.append("path")
-			.attr("class", "actuals")
+			.attr("class", "sap_viz_ext_holtwinters_actuals")
 			.attr("d", dapath);
 
 		//end actuals
@@ -145,7 +145,7 @@ define("sap_viz_ext_holtwinters-src/js/render", [], function() {
 
 		canvas.append("g")
 			.append("path")
-			.attr("class", "fitted")
+			.attr("class", "sap_viz_ext_holtwinters_fitted")
 			.attr("d", dpath);
 
 		//end fitted

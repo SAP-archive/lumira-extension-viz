@@ -2,41 +2,34 @@
 
 /* For example, adding the extension id as prefix of CSS class name. */
 
-.v-m-plot rect.bar {
+.sap_viz_ext_holtwinters_v-m-plot rect.bar {
     stroke: black;
     stroke-width: 1px;
     stroke-opacity: 0.3
 }
-.axis path,
-.axis line {
+.sap_viz_ext_holtwinters_x_axis path,
+.sap_viz_ext_holtwinters_x_axis line,
+.sap_viz_ext_holtwinters_y_axis path,
+.sap_viz_ext_holtwinters_y_axis line{
     fill: none;
     stroke: #000;
     shape-rendering: crispEdges;
 }
-.axis text {
+.sap_viz_ext_holtwinters_x_axis text,
+.sap_viz_ext_holtwinters_y_axis text{
     font-size: 12px;
 }
-.axis > text {
+.sap_viz_ext_holtwinters_x_axis > text,
+.sap_viz_ext_holtwinters_y_axis > text{
     font-size: 12px;
     font-weight: bold;
 }
 
-.yaxis path,
-.yaxis line {
-    fill: none;
-    stroke: #000;
-    shape-rendering: crispEdges;
-}
-
-.yaxis text {
-    font-size: 2px;
-}
-
-.actuals {
+.sap_viz_ext_holtwinters_actuals {
     stroke: #0000FF;
     fill: none;
 }
-.fitted {
+.sap_viz_ext_holtwinters_fitted {
     stroke: #FF0000;
     stroke-width: 1.5;
     fill: none;
