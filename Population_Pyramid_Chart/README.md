@@ -4,7 +4,7 @@ By [Dong Pan](http://scn.sap.com/people/dong.pan)
 
  * Based on the [Population Pyramid Chart D3 example by Mike Bostock](http://bl.ocks.org/mbostock/4062085)
 
-![Population Pyramid](https://github.com/SAP/lumira-extension-viz/blob/master/Population_Pyramid_Chart/PopulationPyramid.PNG)
+![Population Pyramid](https://github.com/SAP/lumira-extension-viz/blob/master/Population_Pyramid_Chart/PopulationPyramid.gif)
 
 Files
 -----------
