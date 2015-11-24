@@ -1,6 +1,8 @@
 Loss Incident Optimization Chart - SAP Lumira visualization extension
 =================================================
 
+![Loss Incident Optimization](https://github.com/SAP/lumira-extension-viz/blob/master/Loss_Incident_Optimization/LossIncidentOptimization.PNG)
+
 Files
 -----------
 * `Loss Incident Optimization.lums` - SAP Lumira document
