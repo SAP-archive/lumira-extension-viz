@@ -2,12 +2,13 @@ Pipeline Bubble - SAP Lumira visualization extension
 =================================================
 * By [Xin Wen](http://scn.sap.com/people/wendy.xin.wen)<br>
 
+![Pipeline Bubble Chart](https://github.com/SAP/lumira-extension-viz/blob/master/Pipeline%20Bubble/PipelineBubble.PNG)
 
 Files
 -----------
-* `PipelineBubble.lums` - SAP Lumira .lums file
+* `Pipeline Bubble Chart.lums` - SAP Lumira .lums file
 * `PipelineBubble_testdata.csv` - Sample dataset
-* `sap.vix.ext.pipelinebubbledata.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
+* `sap.viz.ext.pipelinebubbledata.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
 
 Data Binding
 ---------------
@@ -20,7 +21,7 @@ Data Binding
 <strong>Stage, Bubble Color & Tooltip</strong>
 * Stage
 * Category
-* Proejct Name / Project Classification
+* Project Name / Project Classification
 
 Resources
 -----------
