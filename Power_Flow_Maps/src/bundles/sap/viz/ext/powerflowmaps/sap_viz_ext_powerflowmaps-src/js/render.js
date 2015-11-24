@@ -88,7 +88,9 @@ define("sap_viz_ext_powerflowmaps-src/js/render", [], function() {
 
 		//Require JS block
 		try {
-
+//				alert(require.toUrl("topojson.v1.min"));
+//			    var res =   /
+//				alert(res);
 			require.config({
 				'paths': {
 
