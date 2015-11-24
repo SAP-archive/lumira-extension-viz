@@ -2,33 +2,33 @@
 
 /* For example, adding the extension id as prefix of CSS class name. */
 
-.sap_viz_ext_populationpyramid.y.axis path {
+.sap_viz_ext_populationpyramid_y_axis path {
     display: none;
 }
-.sap_viz_ext_populationpyramid.y.axis line {
+.sap_viz_ext_populationpyramid_y_axis line {
     stroke: #fff;
     stroke-opacity: .2;
     shape-rendering: crispEdges;
 }
-.sap_viz_ext_populationpyramid.y.axis .sap_viz_ext_populationpyramid.zero line {
+.sap_viz_ext_populationpyramid_y_axis .sap_viz_ext_populationpyramid_zero line {
     stroke: #000;
     stroke-opacity: 1;
 }
-.sap_viz_ext_populationpyramid.title {
+.sap_viz_ext_populationpyramid_title {
     font: 300 78px Helvetica Neue;
     fill: #666;
 }
-.sap_viz_ext_populationpyramid.birthyear,
-.sap_viz_ext_populationpyramid.age {
+.sap_viz_ext_populationpyramid_birthyear,
+.sap_viz_ext_populationpyramid_age {
     text-anchor: middle;
 }
-.sap_viz_ext_populationpyramid.birthyear {
+.sap_viz_ext_populationpyramid_birthyear {
     fill: #fff;
 }
-rect.sap_viz_ext_populationpyramid {
+.sap_viz_ext_populationpyramid_rect {
     fill-opacity: .6;
     fill: #e377c2;
 }
-rect.sap_viz_ext_populationpyramid:first-child {
+.sap_viz_ext_populationpyramid_rect:first-child {
     fill: #1f77b4;
 }

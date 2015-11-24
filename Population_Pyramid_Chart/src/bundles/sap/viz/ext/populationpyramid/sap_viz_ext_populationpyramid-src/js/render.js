@@ -33,7 +33,7 @@ define("sap_viz_ext_populationpyramid-src/js/render", [], function() {
 		var dims = meta.dimensions('X Axis');
 		var Y_measure = meta.measures('Y Axis')[0];
 
-		barWidth = Math.floor(width / 19) - 1;
+		var barWidth = Math.floor(width / 19) - 1;
 
 		var x = d3.scale.linear()
 			.range([barWidth / 2, width - barWidth / 2]);
@@ -56,11 +56,11 @@ define("sap_viz_ext_populationpyramid-src/js/render", [], function() {
 
 		// A sliding container to hold the bars by birthyear.
 		var birthyears = svg.append("g")
-			.attr("class", "birthyears");
+			.attr("class", "sap_viz_ext_populationpyramid_birthyears");
 
 		// A label for the current year.
 		var title = svg.append("text")
-			.attr("class", "sap_viz_ext_populationpyramid title")
+			.attr("class", "sap_viz_ext_populationpyramid_title")
 			.attr("dy", ".71em")
 			.text(2000);
 
@@ -106,20 +106,20 @@ define("sap_viz_ext_populationpyramid-src/js/render", [], function() {
 
 		// Add an axis to show the population values.
 		svg.append("g")
-			.attr("class", "sap_viz_ext_populationpyramid y axis")
+			.attr("class", "sap_viz_ext_populationpyramid_y_axis")
 			.attr("transform", "translate(" + width + ",0)")
 			.call(yAxis)
 			.selectAll("g")
 			.filter(function(value) {
 				return !value;
 			})
-			.classed("sap_viz_ext_populationpyramid zero", true);
+			.classed("sap_viz_ext_populationpyramid_zero", true);
 
 		// Add labeled rects for each birthyear (so that no enter or exit is required).
 		var birthyear = birthyears.selectAll(".birthyear")
 			.data(d3.range(year0 - age1, year1 + 1, 5))
 			.enter().append("g")
-			.attr("class", "sap_viz_ext_populationpyramid birthyear")
+			.attr("class", "sap_viz_ext_populationpyramid_birthyear")
 			.attr("transform", function(birthyear) {
 				return "translate(" + x(birthyear) + ",0)";
 			});
@@ -129,7 +129,7 @@ define("sap_viz_ext_populationpyramid-src/js/render", [], function() {
 				return data[year][birthyear] || [0, 0];
 			})
 			.enter().append("rect")
-			.attr("class", "sap_viz_ext_populationpyramid")
+			.attr("class", "sap_viz_ext_populationpyramid_rect")
 			.attr("x", -barWidth / 2)
 			.attr("width", barWidth)
 			.attr("y", y)
@@ -145,10 +145,10 @@ define("sap_viz_ext_populationpyramid-src/js/render", [], function() {
 			});
 
 		// Add labels to show age (separate; not animated).
-		svg.selectAll(".sap_viz_ext_populationpyramid.age")
+		svg.selectAll(".sap_viz_ext_populationpyramid_age")
 			.data(d3.range(0, age1 + 1, 5))
 			.enter().append("text")
-			.attr("class", "sap_viz_ext_populationpyramid age")
+			.attr("class", "sap_viz_ext_populationpyramid_age")
 			.attr("x", function(age) {
 				return x(year - age);
 			})
