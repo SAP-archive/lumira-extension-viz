@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.sankey",
+	"name": "Sankey Diagram",
+	"description": "A Sankey diagram to visualize energy consumption flow",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Dong Pan",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.6.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.sankey",
+		"version": "1.0.1"
+	}]
+}
