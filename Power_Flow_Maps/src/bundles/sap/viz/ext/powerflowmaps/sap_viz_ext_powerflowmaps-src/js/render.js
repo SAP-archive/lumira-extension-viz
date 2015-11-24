@@ -41,7 +41,7 @@ define("sap_viz_ext_powerflowmaps-src/js/render", [], function() {
 		};
 		plotWidth = width - margin.left - margin.right;
 		plotHeight = height - margin.top - margin.bottom;
-		
+
 		//transform plot area
 		vis.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 		var defs = vis.append("defs");
@@ -88,14 +88,16 @@ define("sap_viz_ext_powerflowmaps-src/js/render", [], function() {
 
 		//Require JS block
 		try {
-//				alert(require.toUrl("topojson.v1.min"));
-//			    var res =   /
-//				alert(res);
+			//				alert(require.toUrl("topojson.v1.min"));
+			//			    var res =   /
+			//				alert(res);
 			require.config({
 				'paths': {
 
 					'topojson': '../sap/bi/bundles/sap/viz/ext/powerflowmaps/topojson.v1.min',
 					'eur': '../sap/bi/bundles/sap/viz/ext/powerflowmaps/mideurope.json'
+					// 'topojson': 'topojson.v1.min',
+					// 'eur': 'mideurope.json'
 				},
 				shim: {
 
@@ -189,11 +191,11 @@ define("sap_viz_ext_powerflowmaps-src/js/render", [], function() {
 				//countries for the data set. If so, fill with #888, otherwise #ccc. 
 				//Also using this pass to create a list of relevant country codes for our dataset.
 				//This means that for other components we can just filter the data before drawing.
-				vis.selectAll(".country")
+				vis.selectAll(".sap_viz_ext_powerflowmaps_country")
 					.data(countries.features)
 					.enter().append("path")
 					.attr("class", function(d) {
-						return "sap_viz_ext_powerflowmaps country " + d.id;
+						return "sap_viz_ext_powerflowmaps_country " + d.id;
 					})
 					.attr("id", function(d) {
 						return d.id;
@@ -231,7 +233,7 @@ define("sap_viz_ext_powerflowmaps-src/js/render", [], function() {
 						return a !== b;
 					}))
 					.attr("d", path)
-					.attr("class", "sap_viz_ext_powerflowmaps country-boundary");
+					.attr("class", "sap_viz_ext_powerflowmaps_country-boundary");
 
 				//create a subset of all the countries to just those that are relevant for further drawing
 				var selected_countries = topojson.feature(eur, eur.objects.countries).features.filter(function(d) {
@@ -243,11 +245,11 @@ define("sap_viz_ext_powerflowmaps-src/js/render", [], function() {
 				Since we're making this pass anyway, also use this pass to store relevant
 				country centroids and boundaries for each country code
 				*/
-				vis.selectAll(".sap_viz_ext_powerflowmaps country-label")
+				vis.selectAll(".sap_viz_ext_powerflowmaps_country-label")
 					.data(selected_countries)
 					.enter().append("text")
 					.attr("class", function(d) {
-						return "sap_viz_ext_powerflowmaps country-label " + d.id;
+						return "sap_viz_ext_powerflowmaps_country-label " + d.id;
 					})
 					.attr("id", function(d) {
 						return "label_" + d.id;
@@ -486,7 +488,7 @@ var updateMap = function(level) {
 		//svg.select("#label_" + power_countries[n]).style("fill", "#444");
 	}
 	//clear all arrows currently displayed
-	vis.selectAll(".arrow").remove();
+	vis.selectAll(".sap_viz_ext_powerflowmaps_arrow").remove();
 
 	//filter only to the selected country
 	var filterval = level;
@@ -534,7 +536,7 @@ var updateMap = function(level) {
 		var divfactor = 12;
 
 		var real_arrow_back = vis.append("path")
-			.attr("class", "sap_viz_ext_powerflowmaps arrow")
+			.attr("class", "sap_viz_ext_powerflowmaps_arrow")
 			.attr("d", draw_curve(from.x, from.y, to.x, to.y, (a_length / divfactor)))
 			.attr("stroke", "white")
 			.attr("stroke-width", powerscale(arrow_filtered[n].power) + 2)
@@ -543,7 +545,7 @@ var updateMap = function(level) {
 			.attr("fill", "none");
 
 		var real_arrow_front = vis.append("path")
-			.attr("class", "sap_viz_ext_powerflowmaps arrow")
+			.attr("class", "sap_viz_ext_powerflowmaps_arrow")
 			.attr("d", draw_curve(from.x, from.y, to.x, to.y, (a_length / divfactor)))
 			.attr("stroke", function(d) {
 				if (arrow_filtered[n].from === filterval) {
@@ -566,15 +568,15 @@ var updateMap = function(level) {
 	}
 
 	//info box - first remove any that already exists
-	vis.selectAll(".info").remove();
+	vis.selectAll(".sap_viz_ext_powerflowmaps_info").remove();
 
 	var rows = arrow_filtered.length;
 	box_height = (rows * 12) + 40; // 15 rows, plus space for "exports" and "imports" labels
 	var info = vis.append("g")
-		.attr("class", "sap_viz_ext_powerflowmaps info")
+		.attr("class", "sap_viz_ext_powerflowmaps_info")
 		.attr("transform", "translate(" + (legendX) + "," + (margin.top + 10) + ")");
 	info.append("rect")
-		.attr("class", "sap_viz_ext_powerflowmaps info_box")
+		.attr("class", "sap_viz_ext_powerflowmaps_info_box")
 		.attr("rx", 8)
 		.attr("ry", 8)
 		.attr("width", 100)
@@ -584,7 +586,7 @@ var updateMap = function(level) {
 	info.append("text")
 		.attr("x", 6)
 		.attr("y", 12)
-		.attr("class", "sap_viz_ext_powerflowmaps info_label")
+		.attr("class", "sap_viz_ext_powerflowmaps_info_label")
 		.attr("fill", "white")
 		.text("Exports");
 
@@ -607,14 +609,14 @@ var updateMap = function(level) {
 		info.append("text")
 			.attr("x", 12)
 			.attr("y", (12 + 14) + (n * 12))
-			.attr("class", "sap_viz_ext_powerflowmaps info_text")
+			.attr("class", "sap_viz_ext_powerflowmaps_info_text")
 			.attr("fill", "gold")
 			.text(exports[n].to);
 
 		info.append("text")
 			.attr("x", 60)
 			.attr("y", (12 + 14) + (n * 12))
-			.attr("class", "sap_viz_ext_powerflowmaps info_text")
+			.attr("class", "sap_viz_ext_powerflowmaps_info_text")
 			.attr("fill", "gold")
 			.text(formatShort(exports[n].power));
 	}
@@ -623,7 +625,7 @@ var updateMap = function(level) {
 	info.append("text")
 		.attr("x", 6)
 		.attr("y", new_y)
-		.attr("class", "sap_viz_ext_powerflowmaps info_label")
+		.attr("class", "sap_viz_ext_powerflowmaps_info_label")
 		.attr("fill", "white")
 		.text("Imports");
 
@@ -631,14 +633,14 @@ var updateMap = function(level) {
 		info.append("text")
 			.attr("x", 12)
 			.attr("y", (new_y + 14) + (n * 12))
-			.attr("class", "sap_viz_ext_powerflowmaps info_text")
+			.attr("class", "sap_viz_ext_powerflowmaps_info_text")
 			.attr("fill", "orange")
 			.text(imports[n].from);
 
 		info.append("text")
 			.attr("x", 60)
 			.attr("y", (new_y + 14) + (n * 12))
-			.attr("class", "sap_viz_ext_powerflowmaps info_text")
+			.attr("class", "sap_viz_ext_powerflowmaps_info_text")
 			.attr("fill", "orange")
 			.text(formatShort(imports[n].power));
 	}

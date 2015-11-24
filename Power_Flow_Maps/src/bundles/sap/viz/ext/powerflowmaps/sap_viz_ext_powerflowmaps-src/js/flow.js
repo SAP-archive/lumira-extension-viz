@@ -16,7 +16,7 @@ define("sap_viz_ext_powerflowmaps-src/js/flow", ["sap_viz_ext_powerflowmaps-src/
 		/*Feeds Definition*/
 		var ds1 = {
 			"id": "sap.viz.ext.powerflowmaps.PlotModule.DS1",
-			"name": "Dimension Set",
+			"name": "Dimensions",
 			"type": "Dimension",
 			"min": 0, //minimum number of data container
 			"max": 2, //maximum number of data container
@@ -26,7 +26,7 @@ define("sap_viz_ext_powerflowmaps-src/js/flow", ["sap_viz_ext_powerflowmaps-src/
 
 		var ms1 = {
 			"id": "sap.viz.ext.powerflowmaps.PlotModule.MS1",
-			"name": "Measure Set",
+			"name": "Power",
 			"type": "Measure",
 			"min": 0, //minimum number of measures
 			"max": Infinity, //maximum number of measures
