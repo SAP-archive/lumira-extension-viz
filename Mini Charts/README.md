@@ -3,9 +3,12 @@ Mini Donut Chart & Mini Area Chart - SAP Lumira visualization extension
 * By [Mustafa Aydogdu](http://scn.sap.com/people/mustafa.aydogdu)
 * Based on the [D3.js library](http://d3js.org/)
  
+![Mini Area Chart](https://github.com/SAP/lumira-extension-viz/blob/master/Mini%20Charts/Mini%20Area%20Chart/MiniAreaChart.PNG)
+![Mini Donut Chart](https://github.com/SAP/lumira-extension-viz/blob/master/Mini%20Charts/Mini%20Donut%20Chart/MiniDonutChart.PNG)
+
 Files
 -----------
-* `Mini Charts Sample.lums` - Sample Lumira document
+* `Mini Charts.lums` - Sample Lumira document
 
 <strong>Mini Area Chart folder</strong>
 *  `minichart data.csv` - Sample dataset for Mini Area Chart
