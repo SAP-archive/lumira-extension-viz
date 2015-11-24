@@ -1,6 +1,10 @@
 Sankey Diagram - SAP Lumira visualization extension
 =================================================
+By [Dong Pan](http://scn.sap.com/people/dong.pan)
+
  * Based on [Google Visualization API](https://developers.google.com/chart/interactive/docs/gallery/sankey)
+
+ ![Sankey Diagram](https://github.com/SAP/lumira-extension-viz/blob/master/Sankey_Diagram/SankeyDiagram.PNG)
 
 SAP Lumira visualization folders and files
 -----------
