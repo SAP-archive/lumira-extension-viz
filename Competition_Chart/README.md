@@ -13,18 +13,12 @@ Files
 Data Binding
 ---------------
 <strong>MEASURES</strong><br>
-<strong>Value</strong>
-* Value<br>
+* Value (Value)
+* Benefit (Benefit)
+* Bubble size(MyValue)
 
-<strong>Benefit</strong>
-* Benefit<br>
-
-<strong>Bubble size</strong>
-* MyValue<br>
-
-<strong>DIMENSIONS</strong>
-<strong>Name</strong>
-* Name
+<strong>DIMENSIONS</strong><br>
+* Name (Name)
 
 Resources
 -----------
