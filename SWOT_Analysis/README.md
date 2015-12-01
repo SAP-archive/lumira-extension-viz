@@ -16,11 +16,8 @@ Data Binding
 * Environment
 
 <strong>Dimensions</strong>
-<strong>Category&Environment</strong>
-* Category
-
-<strong>Description</strong>
-* Description
+* Category&Environment (Category)
+* Description (Description)
 
 Resources
 -----------
