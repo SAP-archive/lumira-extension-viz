@@ -14,13 +14,13 @@ Data Binding
 ---------------
 <strong>MEASURES</strong><br>
 <strong>Value</strong>
-* Value
+* Value<br>
 
 <strong>Benefit</strong>
-* Benefit
+* Benefit<br>
 
 <strong>Bubble size</strong>
-* MyValue
+* MyValue<br>
 
 <strong>DIMENSIONS</strong>
 <strong>Name</strong>
