@@ -1,6 +1,6 @@
 Tubble Chart
 =================================================
-By [Annie Suantak Niangneihoi](https://scn.sap.com/people/mustafa.aydogdu)<br>
+By [Mustafa Aydogdu](https://scn.sap.com/people/mustafa.aydogdu)<br>
 
 ![Tubble Chart](https://github.com/SAP/lumira-extension-viz/blob/master/Tubble_Chart/tubble.gif)
 
