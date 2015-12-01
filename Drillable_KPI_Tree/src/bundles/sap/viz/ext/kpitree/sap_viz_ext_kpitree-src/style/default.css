@@ -1,0 +1,50 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+.sap_viz_ext_kpitree.node {
+    cursor: pointer;
+}
+.sap_viz_ext_kpitree.node circle {} .sap_viz_ext_kpitree.node text {} .sap_viz_ext_kpitree.node text.label {
+    font: 10px sans-serif;
+    fill: #fff;
+    stroke: none;
+}
+.sap_viz_ext_kpitree.node text.info {
+    stroke: #none;
+    font-size: 12px;
+    font-weight: bold;
+    shape-rendering: auto;
+}
+.sap_viz_ext_kpitree.node text.revenue {
+    fill: #080808;
+    font-size: 10px;
+    //font-weight: bold;  
+    shape-rendering: auto;
+}
+.sap_viz_ext_kpitree.node text.cost {
+    fill: red;
+    font-size: 10px;
+    //font-weight: bold;  
+    shape-rendering: auto;
+}
+.sap_viz_ext_kpitree.node text.reason {
+    fill: #080808;
+    font-size: 10px;
+    font-weight: bold;
+    shape-rendering: auto;
+}
+.sap_viz_ext_kpitree.node rect.rinfo {
+    fill: #F0F0FF;
+}
+.sap_viz_ext_kpitree.link {
+    fill: none;
+    stroke: #C0C0E0;
+    stroke-width: 2px;
+}
+.sap_viz_ext_kpitree.axis path,
+.sap_viz_ext_kpitree.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}

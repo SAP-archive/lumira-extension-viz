@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.kpitree",
+	"name": "Drillable KPI Tree",
+	"description": " ",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Jay Thoden van Velzen",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.kpitree",
+		"version": "1.0.0"
+	}]
+}
