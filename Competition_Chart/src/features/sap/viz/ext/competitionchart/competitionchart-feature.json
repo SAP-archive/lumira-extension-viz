@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.competitionchart",
+	"name": "Competition Chart",
+	"description": " ",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Florian Stumpe",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.competitionchart",
+		"version": "1.0.0"
+	}]
+}

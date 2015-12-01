@@ -1,0 +1,21 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+.sap_viz_ext_competitionchart_axis path,
+.sap_viz_ext_competitionchart_axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.sap_viz_ext_competitionchart_dot {
+  stroke: #000;
+}
+
+.sap_viz_ext_competitionchart_label-line{
+	  stroke: red;
+	  fill: none;
+	  stroke-dasharray: 5,5; 
+	  stroke-width: 1; 
+}
