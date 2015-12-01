@@ -2,7 +2,7 @@ SWOT Analysis
 =================================================
 By [Xin Wen](http://scn.sap.com/people/wendy.xin.wen)<br>
 
-![SWOT Analysis](https://github.com/SAP/lumira-extension-viz/blob/master/SWOT_Analysis/SWOT.jpg)
+![SWOT Analysis](https://github.com/SAP/lumira-extension-viz/blob/master/SWOT_Analysis/SWOT.PNG)
 
 Files
 -----------
