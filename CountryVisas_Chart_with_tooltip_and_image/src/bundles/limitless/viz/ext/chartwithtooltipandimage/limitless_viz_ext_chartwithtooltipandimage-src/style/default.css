@@ -1,0 +1,44 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+.limitless_viz_ext_chartwithtooltipandimage_x_axis path,
+.limitless_viz_ext_chartwithtooltipandimage_x_axis line,
+.limitless_viz_ext_chartwithtooltipandimage_y_axis path,
+.limitless_viz_ext_chartwithtooltipandimage_y_axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.limitless_viz_ext_chartwithtooltipandimage_x_axis path,
+.limitless_viz_ext_chartwithtooltipandimage_y_axis path{
+    display: block;
+}
+.limitless_viz_ext_chartwithtooltipandimage_d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+/* Creates a small triangle extender for the tooltip */
+
+.limitless_viz_ext_chartwithtooltipandimage_d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+/* Style northward tooltips differently */
+
+.limitless_viz_ext_chartwithtooltipandimage_d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}

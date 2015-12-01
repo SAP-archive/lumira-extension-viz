@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "limitless.viz.ext.chartwithtooltipandimage",
+	"name": "Chart with Tooltip and Image",
+	"description": "A chart extension with tooltip and images of country flags to visualize visa count",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Team Limitless",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "limitless.viz.ext.chartwithtooltipandimage",
+		"version": "1.0.0"
+	}]
+}

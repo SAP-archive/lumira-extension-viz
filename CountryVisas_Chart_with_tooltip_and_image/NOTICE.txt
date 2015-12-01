@@ -1,0 +1,2 @@
+Lumira Visualization Extension - IoT Data Integrator and Visualization
+Copyright (c) 2015 Uma Devi Jonnalagadda, Karthik Rayala. All rights reserved.
