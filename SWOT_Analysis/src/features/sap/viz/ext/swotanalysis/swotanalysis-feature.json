@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.swotanalysis",
+	"name": "SWOTAnalysis",
+	"description": " ",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "SAP",
+		"url": "www.sap.com"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.swotanalysis",
+		"version": "1.0.1"
+	}]
+}
