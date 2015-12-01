@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.extendedbubblematrix",
+	"name": "Extended Bubble Matrix",
+	"description": "A management methodology chart to visualize data points in negative and positive chart areas.",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Annie Suantak Niangneihoi",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.6.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.extendedbubblematrix",
+		"version": "1.0.0"
+	}]
+}
