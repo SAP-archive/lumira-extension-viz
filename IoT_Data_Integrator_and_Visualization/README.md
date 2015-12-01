@@ -3,7 +3,7 @@ IoT Data Integrator and Visualization
 By <strong>Team Siesta</strong>
 From the [SAP Lumira BizViz Hackathon - September 2015](http://scn.sap.com/community/lumira/blog/2015/09/22/the-lumira-bizviz-hackathon-54-hours-9-breakouts-92-red-bulls--and-lots-of-fun)
 
-![IoT Data Integrator and Visualization](https://github.com/SAP/lumira-extension-viz/blob/master/Drillable_KPI_Tree/siesta.gif)
+![IoT Data Integrator and Visualization](https://github.com/SAP/lumira-extension-viz/blob/master/IoT_Data_Integrator_and_Visualization/siesta.gif)
 
 Files
 ------------
