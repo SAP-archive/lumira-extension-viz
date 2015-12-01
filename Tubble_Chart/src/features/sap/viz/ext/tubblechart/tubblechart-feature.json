@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.tubblechart",
+	"name": "Tubble Chart",
+	"description": " ",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Mustafa Aydogdu",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.tubblechart",
+		"version": "1.0.0"
+	}]
+}
