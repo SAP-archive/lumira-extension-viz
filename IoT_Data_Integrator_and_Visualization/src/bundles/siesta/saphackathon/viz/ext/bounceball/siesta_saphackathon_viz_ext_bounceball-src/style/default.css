@@ -1,0 +1,12 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+g.x_axis_ext_bounceball path.domain, 
+g.y_axis_ext_bounceball path.domain,
+.x_axis_ext_bounceball g.tick line,
+.y_axis_ext_bounceball g.tick line{
+    fill: none;
+    stroke: #50514f;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
