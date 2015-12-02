@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "com.viz.ext.businessbubbles",
+	"name": "Business Bubbles",
+	"description": "Line graph with bubble extension created by Fabian Berns, Alex Hauck, Jan Kirchhoff, Glendan Lawler, Stefan Selent.",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Business Bubbles Team",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "com.viz.ext.businessbubbles",
+		"version": "1.0.0"
+	}]
+}

@@ -1,0 +1,19 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+body { font: 12px Arial;}
+
+.com_viz_ext_businessbubbles_line { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.com_viz_ext_businessbubbles_X_Axis path,
+.com_viz_ext_businessbubbles_Y_Axis path
+{
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
