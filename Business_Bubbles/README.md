@@ -7,9 +7,9 @@ From the [SAP Lumira BizViz Hackathon - September 2015](http://scn.sap.com/commu
 
 Files
 ------------
-* `Drillable KPI Tree.lums` - SAP Lumira file
-* `sap.viz.ext.kpitree.zip` - Extension file
-* `kpi_tree.csv` - Sample dataset
+* `Business Bubbles.lums` - SAP Lumira file
+* `com.viz.ext.businessbubbles.zip` - Extension file
+* `Business_bubbles_data.csv` - Sample dataset
 
 Data Binding
 -------------------------------------------
