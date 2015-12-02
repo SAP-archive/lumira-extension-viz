@@ -1,2 +1,2 @@
-Lumira Visualization Extension - IoT Data Integrator and Visualization
+Lumira Visualization Extension - Country Visas (Chart with Tooltip and Image)
 Copyright (c) 2015 Uma Devi Jonnalagadda, Karthik Rayala. All rights reserved.
