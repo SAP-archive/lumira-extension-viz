@@ -1,0 +1,23 @@
+{
+    "metadataVersion" : "1.0",
+    "id" : "vdn.viz.ext.3dworld",
+    "name" : "3D World",
+    "description" : "3D World",
+    "version" : "1.0.0",
+    "vendor" : {
+        "name" : "Vincent Dechandon",
+        "url"  : "https://github.com/idawave/Lumira.viz-ext.3DWorld"
+    },
+    "requires" : [
+        {
+            "id" : "sap.viz.common.core",
+            "version" : "4.0.20"
+        }
+    ],
+    "bundles" : [
+        {
+            "id" : "vdn.viz.ext.3dworld",
+            "version" : "1.0.0"
+        }
+    ]
+}

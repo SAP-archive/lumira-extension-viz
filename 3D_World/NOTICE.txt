@@ -1,0 +1,2 @@
+Lumira Visualization Extension - 3D World
+Copyright (c) 2015 Vincent Dechandon. All rights reserved.
