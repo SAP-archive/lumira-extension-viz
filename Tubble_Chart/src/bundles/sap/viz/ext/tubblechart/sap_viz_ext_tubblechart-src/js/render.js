@@ -90,12 +90,12 @@ define("sap_viz_ext_tubblechart-src/js/render", [], function() {
 		var yAxis = d3.svg.axis().scale(yScale).orient("left");
 
 		svg.append("g")
-			.attr("class", "sap_viz_ext_tubblechart axis")
+			.attr("class", "sap_viz_ext_tubblechart_axis")
 			.attr("transform", "translate(" + 0 + ", " + (height - margin.top) + ")")
 			.call(xAxis);
 
 		svg.append("g")
-			.attr("class", "sap_viz_ext_tubblechart axis")
+			.attr("class", "sap_viz_ext_tubblechart_axis")
 			.attr("transform", "translate(" + margin.left + "," + -margin.bottom + " )")
 			.call(yAxis);
 
@@ -125,7 +125,7 @@ define("sap_viz_ext_tubblechart-src/js/render", [], function() {
 				.attr("y1", paddingY + yScale(item))
 				.attr("x2", width - rMax)
 				.attr("y2", paddingY + yScale(item))
-				.attr("class", "sap_viz_ext_tubblechart v-line");
+				.attr("class", "sap_viz_ext_tubblechart_v-line");
 		}
 
 		//Create tooltip for mouse over action
@@ -137,7 +137,7 @@ define("sap_viz_ext_tubblechart-src/js/render", [], function() {
 				.attr("y", y)
 				.attr("dy", ".35em")
 				.style("text-anchor", "middle")
-				.attr("class", "sap_viz_ext_tubblechart text");
+				.attr("class", "sap_viz_ext_tubblechart_text");
 		}
 
 		function hideTooltip() {
@@ -149,7 +149,7 @@ define("sap_viz_ext_tubblechart-src/js/render", [], function() {
 			.data(data)
 			.enter()
 			.append("circle")
-			.attr("class", "sap_viz_ext_tubblechart circle")
+			.attr("class", "sap_viz_ext_tubblechart_circle")
 			.attr("cy", function(d) {
 				return paddingY + yScale(d[dimension2]);
 			})

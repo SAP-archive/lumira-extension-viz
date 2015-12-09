@@ -2,35 +2,30 @@
 
 /* For example, adding the extension id as prefix of CSS class name. */
 
-.sap_viz_ext_tubblechart.v-m-plot rect.bar {
+.sap_viz_ext_tubblechart_v-m-plot rect.bar {
     stroke: black;
     stroke-width: 1px;
     stroke-opacity: 0.3
 }
-.sap_viz_ext_tubblechart.v-m-plot rect.bar {
-    stroke: black;
-    stroke-width: 1px;
-    stroke-opacity: 0.3
-}
-.sap_viz_ext_tubblechart.axis path,
-.sap_viz_ext_tubblechart.axis line {
+.sap_viz_ext_tubblechart_axis path,
+.sap_viz_ext_tubblechart_axis line {
     fill: none;
     stroke: #afafaf;
     shape-rendering: crispEdges;
 }
-.sap_viz_ext_tubblechart.axis text {
+.sap_viz_ext_tubblechart_axis text {
     font-family: sans-serif;
     font-size: 11px;
 }
-.sap_viz_ext_tubblechart.circle {
+.sap_viz_ext_tubblechart_circle {
     fill: #222;
 }
-.sap_viz_ext_tubblechart.v-line {
+.sap_viz_ext_tubblechart_v-line {
     fill: none;
     stroke: #eee;
     shape-rendering: crispEdges;
 }
-.sap_viz_ext_tubblechart.text {
+.sap_viz_ext_tubblechart_text {
     font-family: tahoma;
     font-size: 25px;
     font-weight: bold;
