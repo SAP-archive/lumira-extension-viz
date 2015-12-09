@@ -3,7 +3,11 @@ var sampleTemplate = {
 	"name": "Standard",
 	"properties": {
 		"sap.viz.ext.competitionchart": {
-
+			"legend": {
+				"title": {
+					"visible": true
+				}
+			}
 		}
 	}
 };

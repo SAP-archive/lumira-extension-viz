@@ -6,7 +6,7 @@ define("sap_viz_ext_competitionchart-src/js/flow", ["sap_viz_ext_competitionchar
 			dataModel: "sap.viz.api.data.CrosstableDataset",
 			type: "BorderSVGFlow"
 		});
-		
+
 		var legendElement = sap.viz.extapi.Flow.createElement({
 			id: "sap.viz.chart.elements.ColorLegend",
 			name: "Legend",
@@ -57,7 +57,7 @@ define("sap_viz_ext_competitionchart-src/js/flow", ["sap_viz_ext_competitionchar
 
 		var ms3 = {
 			"id": "sap.viz.ext.competitionchart.PlotModule.MS3",
-			"name": "Bubble size",
+			"name": "Bubble Size",
 			"type": "Measure",
 			"min": 0, //minimum number of measures
 			"max": Infinity, //maximum number of measures
@@ -70,41 +70,6 @@ define("sap_viz_ext_competitionchart-src/js/flow", ["sap_viz_ext_competitionchar
 			type: "StringArray",
 			supportedValues: "",
 			defaultValue: d3.scale.category20().range().concat(d3.scale.category20b().range()).concat(d3.scale.category20c().range())
-		});
-		
-		 element.addProperty({
-			name: "gridline",
-			type: "Object",
-			supportedValues: {
-				visible: {
-					name: "visible",
-					type: "Boolean",
-					supportedValues: [true, false]
-				}
-			}
-		});
-		element.addProperty({
-			name: "animation",
-			type: "Object",
-			supportedValues: {
-				dataLoading: {
-					name: "dataLoading",
-					type: "Boolean",
-					supportedValues: [true, false]
-				}
-			}
-		});
-		
-		element.addProperty({
-			name: "color",
-			type: "Object",
-			supportedValues: {
-				dataLoading: {
-					name: "dataLoading",
-					type: "Boolean",
-					supportedValues: [true, false]
-				}
-			}
 		});
 
 		flow.addElement({

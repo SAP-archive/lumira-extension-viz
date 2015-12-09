@@ -1,7 +1,5 @@
-define("competitionchart-bundle", ["sap_viz_ext_competitionchart-src/js/flow", "sap_viz_ext_competitionchart-src/js/propertyeditor/spec",
-	"css!sap_viz_ext_competitionchart-src/style/default.css"], function(flowDefinition, propertyEditorSpec, cssStyleDeclaration) {
-// define("competitionchart-bundle", ["sap_viz_ext_competitionchart-src/js/flow", "css!sap_viz_ext_competitionchart-src/style/default.css"],
-// 	function(flowDefinition, cssStyleDeclaration) {
+define("competitionchart-bundle", ["sap_viz_ext_competitionchart-src/js/flow", "css!sap_viz_ext_competitionchart-src/style/default.css"],
+	function(flowDefinition, cssStyleDeclaration) {
 		var cssString = "",
 			rules, i;
 		if (cssStyleDeclaration && cssStyleDeclaration.cssRules) {
@@ -18,7 +16,7 @@ define("competitionchart-bundle", ["sap_viz_ext_competitionchart-src/js/flow", "
 		};
 		var vizExtBundle = sap.bi.framework.declareBundle({
 			"id": "sap.viz.ext.competitionchart",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"components": [{
 				"id": "sap.viz.ext.competitionchart",
 				"provide": "sap.viz.impls",
@@ -32,19 +30,15 @@ define("competitionchart-bundle", ["sap_viz_ext_competitionchart-src/js/flow", "
 					"category": [],
 					"requires": [{
 						"id": "sap.viz.common.core",
-						"version": "5.7.3"
+						"version": "5.14.0"
 					}],
 					"resources": [{
 						"key": "sap.viz.api.env.Template.loadPaths",
 						"path": "./sap_viz_ext_competitionchart-src/resources/templates"
-					},{
-						"key": "sap.viz.controls.openpe.Language.loadPaths",
-						"path": "./sap_viz_ext_competitionchart-src/resources/languages/propertyeditor"
 					}]
 				}
 			}]
 		});
-		vizExtBundle.components = vizExtBundle.components.concat(propertyEditorSpec.components);
 		// sap.bi.framework.getService is defined in BundleLoader, which is
 		// always available at this timeframe
 		// in standalone mode sap.viz.js will force load and active the

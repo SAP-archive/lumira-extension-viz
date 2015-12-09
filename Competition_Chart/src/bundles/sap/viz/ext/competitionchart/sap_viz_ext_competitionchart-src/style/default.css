@@ -4,18 +4,16 @@
 
 .sap_viz_ext_competitionchart_axis path,
 .sap_viz_ext_competitionchart_axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
 }
-
 .sap_viz_ext_competitionchart_dot {
-  stroke: #000;
+    stroke: #000;
 }
-
-.sap_viz_ext_competitionchart_label-line{
-	  stroke: red;
-	  fill: none;
-	  stroke-dasharray: 5,5; 
-	  stroke-width: 1; 
+.sap_viz_ext_competitionchart_label-line {
+    stroke: red;
+    fill: none;
+    stroke-dasharray: 5, 5;
+    stroke-width: 1;
 }
