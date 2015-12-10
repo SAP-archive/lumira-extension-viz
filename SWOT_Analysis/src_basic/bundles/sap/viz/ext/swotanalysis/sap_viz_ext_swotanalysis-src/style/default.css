@@ -1,0 +1,154 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */、、
+div.v-m-plot div.sap_viz_ext_swotanalysis_basic_maintitle p.rotateLeft{
+	/* Rotate div */
+	transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg); /* IE 9 */
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+}
+div.sap_viz_ext_swotanalysis_basic{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    height:100%;
+}
+.sap_viz_ext_swotanalysis_basic p{
+	font-size: 1.2em;
+	font-family: Arial,sans-serif;
+}
+/*	Internal & External label	*/
+.sap_viz_ext_swotanalysis_basic_maintitle .envirSec{
+	position: absolute;
+	left:88%;
+    width: 12%;
+    top: 100px;
+    text-align: center;
+	background-image:url('Arrow_nostroke.svg');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	height:18%;
+	display:table;
+	font-weight: bold;
+}
+.sap_viz_ext_swotanalysis_basic_maintitle .envirSec .arrowText{
+	font-family:Verdana,Sans-serif;
+	font-weight: bold;
+	font-size:1.4em;
+	display:table-cell; 
+	text-align: left;
+	vertical-align:middle;
+	color:#fff;
+	padding-left: 5px;
+}
+
+/*	Description Section	*/
+.sap_viz_ext_swotanalysis_basic .contentSection{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;  /* Firefox */ 
+	-webkit-box-sizing:border-box; /* Safari */
+	text-align: center;
+	width:44%;
+	height: 50%;
+	font-size: 1.4em;
+	color: #003459;
+	border-color: #ccc;
+	border-style:solid;
+	border-width:medium;
+	position:relative;
+}
+
+.sap_viz_ext_swotanalysis_basic .blueTitle{
+	font-family:Verdana,Sans-serif;
+	text-align: left;
+	padding-left: 1em;
+	font-size: 2em;
+	color: #222;
+	/*background: #007ea7;*/
+	padding: 10px 0 10px 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.sap_viz_ext_swotanalysis_basic ul.description li{
+	color: #222;
+	font-size: 1.2em;
+	font-family: Arial,sans-serif;
+	text-align: left;
+	padding: 0.4em 1em 0.4em 0.2em;
+}
+
+.sap_viz_ext_swotanalysis_basic .capital_letR{
+	font-family: "Times New Roman",Georgia,Serif;
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+.sap_viz_ext_swotanalysis_basic .capitalLet{
+	width:30%;
+	height:20%;
+	margin-top:10px;
+	font-size:5em;
+	color:#222;
+	font-weight:bold;
+	font-family: Arial,sans-serif;
+	/*border-color: #003459;*/
+	/*border-style:solid;*/
+	/*border-width:medium;*/
+}
+.sap_viz_ext_swotanalysis_basic .float_right{
+	float:right;
+}
+
+
+/* Set different style for narrow screen */
+@media screen and (max-width:599px) {
+ .sap_viz_ext_swotanalysis_basic .contentSection{
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;  /* Firefox */ 
+		-webkit-box-sizing:border-box; /* Safari */
+		text-align: center;
+		width:86%;
+		height: 25%;
+		font-size: 1em;
+		color: #003459;
+		border-color: #fff;
+		border-style:solid;
+		border-width:medium;
+		position:relative;
+	}
+	
+	.sap_viz_ext_swotanalysis_basic .capitalLet{
+		font-family: "Times New Roman",Georgia,Serif;
+		width:20%;
+		height:20%;
+		margin-top:10px;
+		font-size:5em;
+		color:#222;
+		font-weight:bold;
+		font-family: Arial,sans-serif;
+	}
+	
+	/*	Internal & External label	*/
+	.sap_viz_ext_swotanalysis_basic_maintitle .envirSec{
+		position: absolute;
+		left:86%;
+	    width: 14%;
+	    top: 100px;
+	    text-align: center;
+		background-image:url('Bookmark_gray_nostroke.svg');
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+		height:20%;
+		display:table;
+	}
+	.sap_viz_ext_swotanalysis_basic_maintitle .envirSec .arrowText{
+		color:#222;
+		font-family:Verdana,Sans-serif;
+		font-size:1em;
+		display:table-cell; 
+		vertical-align:middle;
+	}
+}

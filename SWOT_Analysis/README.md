@@ -4,16 +4,20 @@ By [Xin Wen](http://scn.sap.com/people/wendy.xin.wen)<br>
 [Xin Wen's portfolio](http://www.wenwebdz.com)<br>
 
 ![SWOT Analysis](https://github.com/SAP/lumira-extension-viz/blob/master/SWOT_Analysis/SWOT.PNG)
+- Basic version
+
+![SWOT Analysis custom property](https://github.com/SAP/lumira-extension-viz/blob/master/SWOT_Analysis/SWOT_1.29CustomProperty.png)
 ![SWOT Analysis custom property](https://github.com/SAP/lumira-extension-viz/blob/master/SWOT_Analysis/SWOT_1.29CustomProperty2.jpg)
+- Custom Property version for Lumira 1.29
 
 Files
 -----------
 * `SWOT.lums` - SAP Lumira .lums file
 * `SWOT Analysis sample data.xlsx` - Sample dataset
-* `sap.viz.ext.swotanalysis_nocolor.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
+* `sap.viz.ext.swotanalysis_basic.zip` - SAP Lumira extension, exported from SAP Lumira vizPacker
 * `sap.viz.ext.swotanalysis_customprop.zip` - SAP Lumira extension with custom property, exported from SAP Lumira vizPacker
 
-Data Binding 1 - sap.viz.ext.swotanalysis_nocolor.zip
+Data Binding 1 - sap.viz.ext.swotanalysis_basic.zip
 ---------------
 <strong>Measures (Sequence)</strong>
 * Sequence
