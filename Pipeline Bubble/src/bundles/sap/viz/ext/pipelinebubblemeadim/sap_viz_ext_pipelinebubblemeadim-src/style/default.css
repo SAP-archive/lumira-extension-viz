@@ -27,7 +27,7 @@
 .pipetable g.extPipebubX text{
     visibility : hidden;
 }
-.pipetable path, line {
+.pipetable path, .pipetable line {
     fill: none;
     stroke: #50514f;
     stroke-width: 1px;
