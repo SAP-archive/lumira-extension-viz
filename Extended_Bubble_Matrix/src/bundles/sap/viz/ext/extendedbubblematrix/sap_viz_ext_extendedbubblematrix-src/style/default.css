@@ -12,31 +12,31 @@
     font-family: Sans-Serif;
     opacity: 1;
 }
-.sap_viz_ext_extendedbubblematrix_verticalgrid .sap_viz_ext_extendedbubblematrix_vtick {
-    stroke: #fff;
-    opacity: 0.1;
-    stroke-dasharray: 10, 10;
-}
-.sap_viz_ext_extendedbubblematrix_verticalgrid path {
-    stroke-width: 0;
-}
+/*.sap_viz_ext_extendedbubblematrix_vtick line{*/
+/*    stroke: #fff;*/
+/*    opacity: 0.1;*/
+/*    stroke-dasharray: 10, 10;*/
+/*}*/
+/*.sap_viz_ext_extendedbubblematrix_verticalgrid path {*/
+/*    stroke-width: 0;*/
+/*}*/
 
-.sap_viz_ext_extendedbubblematrix_horizontalgrid .sap_viz_ext_extendedbubblematrix_htick {
-    stroke: #fff;
-    opacity: 0.1;
-    stroke-dasharray: 10, 10;
-}
-.sap_viz_ext_extendedbubblematrix_horizontalgrid path {
-    stroke-width: 0;
-}
-.sap_viz_ext_extendedbubblematrix_blackgrid .sap_viz_ext_extendedbubblematrix_btick {
-    stroke: #000;
-    opacity: 1;
-    stroke-dasharray: 10, 10;
-}
-.sap_viz_ext_extendedbubblematrix_blackgrid path {
-    stroke: none;
-}
+/*.sap_viz_ext_extendedbubblematrix_horizontalgrid .sap_viz_ext_extendedbubblematrix_htick {*/
+/*    stroke: #fff;*/
+/*    opacity: 0.1;*/
+/*    stroke-dasharray: 10, 10;*/
+/*}*/
+/*.sap_viz_ext_extendedbubblematrix_horizontalgrid path {*/
+/*    stroke-width: 0;*/
+/*}*/
+/*.sap_viz_ext_extendedbubblematrix_blackgrid .sap_viz_ext_extendedbubblematrix_btick {*/
+/*    stroke: #000;*/
+/*    opacity: 1;*/
+/*    stroke-dasharray: 10, 10;*/
+/*}*/
+/*.sap_viz_ext_extendedbubblematrix_blackgrid path {*/
+/*    stroke: none;*/
+/*}*/
 .sap_viz_ext_extendedbubblematrix_bubble {
     stroke: #fff;
     stroke-width: 3.5px;

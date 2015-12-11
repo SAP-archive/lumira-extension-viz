@@ -142,7 +142,11 @@ define("sap_viz_ext_extendedbubblematrix-src/js/render", [], function() {
 				.tickSize(-height, 10, 0)
 				.tickFormat("")
 			);
-		verticalGrid.selectAll(".tick").attr("class", "sap_viz_ext_extendedbubblematrix_vtick");
+		verticalGrid.selectAll("line")
+			.attr("class", "sap_viz_ext_extendedbubblematrix_vtick")
+			.attr("stroke", "#fff")
+			.attr("opacity", "1")
+			.attr("stroke-dasharray", "10, 10");
 
 		//horizontal white grids
 		function horizontalGridLines() {
@@ -157,7 +161,10 @@ define("sap_viz_ext_extendedbubblematrix-src/js/render", [], function() {
 				.tickSize(-width, 0, 0)
 				.tickFormat("")
 			);
-		horizontalGrid.selectAll(".tick").attr("class", "sap_viz_ext_extendedbubblematrix_htick");
+		horizontalGrid.selectAll("line").attr("class", "sap_viz_ext_extendedbubblematrix_htick")
+			.attr("stroke", "#fff")
+			.attr("opacity", "1")
+			.attr("stroke-dasharray", "10, 10");
 
 		//horizontal black origin grid line
 		function horizontalBlackGridLine() {
@@ -172,8 +179,11 @@ define("sap_viz_ext_extendedbubblematrix-src/js/render", [], function() {
 			.call(horizontalBlackGridLine()
 				.tickSize(-width, 0, 0)
 				.tickFormat("")
-		);
-		blackGrid.selectAll(".tick").attr("class", "sap_viz_ext_extendedbubblematrix_btick");
+			);
+		blackGrid.selectAll("line").attr("class", "sap_viz_ext_extendedbubblematrix_btick")
+			.attr("stroke", "#000")
+			.attr("opacity", "1")
+			.attr("stroke-dasharray", "10, 10");
 
 		/*******DRAW BUBBLES*******/
 

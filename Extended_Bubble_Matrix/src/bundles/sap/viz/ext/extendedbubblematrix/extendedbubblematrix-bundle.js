@@ -17,7 +17,7 @@ define("extendedbubblematrix-bundle", ["sap_viz_ext_extendedbubblematrix-src/js/
 	};
 	var vizExtBundle = sap.bi.framework.declareBundle({
 		"id": "sap.viz.ext.extendedbubblematrix",
-		"version": "1.0.0",
+		"version": "1.0.1",
 		"components": [{
 			"id": "sap.viz.ext.extendedbubblematrix",
 			"provide": "sap.viz.impls",
