@@ -1,23 +1,19 @@
 {
-    "metadataVersion": "1.0",
-    "id": "sap.viz.ext.geomapsleaflet",
-    "name": "Geo Maps (Leaflet)",
-    "description": "Geo Maps (Leaflet)",
-    "version": "1.0.1",
-    "vendor": {
-        "name": "Mustafa Aydogdu",
-        "url": ""
-    },
-    "requires": [
-        {
-            "id": "sap.viz.common.core",
-            "version": "5.10.2"
-        }
-    ],
-    "bundles": [
-        {
-            "id": "sap.viz.ext.geomapsleaflet",
-            "version": "1.0.0"
-        }
-    ]
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.geomapsleaflet",
+	"name": "Geo Maps Leaflet",
+	"description": "A leaflet library based geographic extension",
+	"version": "1.0.2",
+	"vendor": {
+		"name": "Mustafa Aydogdu",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.14.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.geomapsleaflet",
+		"version": "1.0.2"
+	}]
 }
