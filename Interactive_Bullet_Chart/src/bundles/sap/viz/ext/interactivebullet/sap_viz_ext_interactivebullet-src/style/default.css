@@ -1,0 +1,127 @@
+.sap_viz_ext_interactivebullet_titleLegend {
+    font-size: 14px;
+    font-family: Arial;
+    text-overflow: ellipsis;
+}
+.sap_viz_ext_interactivebullet_totalBar {
+    fill: #EAEBEB;
+}
+.sap_viz_ext_interactivebullet_plannedBar {
+    fill: #5F2D2E;
+}
+.sap_viz_ext_interactivebullet_actualBar {
+    fill: #5F2D2E;
+}
+.colorBar {
+    cursor: pointer;
+}
+.highlighted {
+    stroke: #A5A5A5;
+    stroke-width: 1px;
+}
+#sap_viz_ext_interactivebullet_resizer {
+    cursor: ew-resize;
+    opacity: 0;
+}
+.sap_viz_ext_interactivebullet_xAxis path,
+.sap_viz_ext_interactivebullet_xAxis line {
+    fill: none;
+    stroke: black;
+}
+.sap_viz_ext_interactivebullet_plusSymbol circle {
+    cursor: pointer;
+}
+.sap_viz_ext_interactivebullet_plusSymbol line {
+    stroke: white;
+    stroke-width: 2;
+    stroke-opacity: 1;
+}
+.highlightSymbol {
+    cursor: pointer;
+}
+#tooltip {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    padding: 10px;
+    background-color: black;
+    pointer-events: none;
+}
+#tooltip.hidden {
+    display: none;
+}
+#tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+#sap_viz_ext_interactivebullet_t-tip {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    font-size: 13px;
+    font-family: Arial;
+}
+.sap_viz_ext_interactivebullet_tt-item {
+    width: 100%;
+    padding: 2px;
+}
+span.sap_viz_ext_interactivebullet_tt-item-price {
+    float: right;
+    margin-left: 10px;
+}
+.sap_viz_ext_interactivebullet_tt-combo {
+    font-weight: bold;
+}
+.sap_viz_ext_interactivebullet_tt-inner {
+    background: #334450;
+    width: auto;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 1px;
+}
+#sap_viz_ext_interactivebullet_triangle {
+    display: block;
+    position: absolute;
+}
+#sap_viz_ext_interactivebullet_triangle.bottom {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 9px 0px 9px;
+    border-color: #334450 transparent transparent transparent;
+    bottom: -10px;
+    left: 45%;
+}
+#sap_viz_ext_interactivebullet_triangle.left {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 10px 9px 0;
+    border-color: transparent #334450 transparent transparent;
+    left: -9px;
+    float: left;
+    top: 40%;
+}
+#sap_viz_ext_interactivebullet_triangle.top {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 9px 10px 9px;
+    border-color: transparent transparent #334450 transparent;
+    top: -10px;
+    left: 45%;
+}
+#sap_viz_ext_interactivebullet_triangle.right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 10px;
+    border-color: transparent transparent transparent #334450;
+    right: -9px;
+    top: 40%;
+}
