@@ -1,0 +1,126 @@
+.arrow-up {
+    width: 300px;
+    height: 100px;
+    border-top: 200px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 20px solid green;
+    display: inline-block;
+}
+rect.sap_viz_ext_affinity_pane {
+    cursor: move;
+    fill: none;
+    pointer-events: all;
+}
+.sap_viz_ext_affinity_bagHandle {
+    fill: #dadada;
+}
+.sap_viz_ext_affinity_bagPacking {
+    fill: #dadada;
+}
+.sap_viz_ext_affinity_tag {
+    fill: #ffbb10;
+}
+.sap_viz_ext_affinity_tagcircle {
+    fill: white;
+}
+.bar_line {
+    fill: grey;
+    stroke: grey;
+    stroke-width: 2px;
+    stroke-dasharray: 10, 10, 10, 10;
+    shape-rendering: crispEdges;
+}
+.sap_viz_ext_affinity_aaxis path,
+.sap_viz_ext_affinity_aaxis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+.sap_viz_ext_affinity_aaxis text {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+body {
+    font-family: helvetica;
+}
+#tooltip {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    padding: 10px;
+    background-color: black;
+    /*  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);*/
+    pointer-events: none;
+}
+.sap_viz_ext_affinity_tmapEle {
+    fill: none;
+}
+#tooltip.hidden {
+    display: none;
+}
+#tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+.sap_viz_ext_affinity_att-item {
+    width: 100%;
+    padding: 2px;
+}
+span.sap_viz_ext_affinity_att-item-name {
+    margin-left: 5px;
+    font-size: 1em;
+}
+span.sap_viz_ext_affinity_att-item-color {
+    margin-top: 3px;
+    border-radius: 10px;
+}
+span.sap_viz_ext_affinity_att-item-price {
+    float: right;
+    margin-left: 10px;
+}
+.sap_viz_ext_affinity_att-combo {
+    font-weight: bold;
+}
+.sap_viz_ext_affinity_att-inner {
+    background: #334450;
+    height: auto;
+    padding: 10px;
+    border-radius: 1px;
+    width: auto;
+}
+#sap_viz_ext_affinity_triangle {
+    display: block;
+    position: absolute;
+}
+#sap_viz_ext_affinity_triangle.left {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 10px 9px 0;
+    border-color: transparent #334450 transparent transparent;
+    left: -9px;
+    float: left;
+}
+#sap_viz_ext_affinity_triangle.right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 10px;
+    border-color: transparent transparent transparent #334450;
+    right: -9px;
+}
+#sap_viz_ext_affinity_t-tip {
+    position: absolute;
+    z-index: 10;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    font-family: helvetica;
+}

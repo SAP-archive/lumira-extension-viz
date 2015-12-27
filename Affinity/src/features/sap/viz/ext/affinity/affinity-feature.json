@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.affinity",
+	"name": "Affinity",
+	"description": "A chart representing items for comparison",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Vidur Bhatnagar",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.14.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.affinity",
+		"version": "1.0.1"
+	}]
+}
