@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.dynabars",
+	"name": "Dynabars",
+	"description": "Dynamic bars that display the growth of data over time",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Shiney Sooraj",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.14.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.dynabars",
+		"version": "1.0.1"
+	}]
+}
