@@ -1,5 +1,8 @@
 Bitcoins - SAP Lumira visualization extension
 =================================================
+* By <strong>Shailesh Borkar</strong><br>
+
+A hierarchical, collapsible tree structure chart
 
 ![Bitcoins](https://github.com/SAP/lumira-extension-viz/blob/master/Bitcoins/Bitcoins.PNG)
 

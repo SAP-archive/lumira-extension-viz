@@ -1,5 +1,8 @@
 Affinity - SAP Lumira visualization extension
 =================================================
+* By <strong>Shailesh Borkar</strong><br>
+
+A chart representing items for comparison
 
 ![Affinity](https://github.com/SAP/lumira-extension-viz/blob/master/Affinity/Affinity.PNG)
 

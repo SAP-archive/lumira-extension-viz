@@ -1,5 +1,6 @@
 Loss Incident Optimization Chart - SAP Lumira visualization extension
 =================================================
+* By [Vidur Bhatnagar](http://scn.sap.com/people/vidur.bhatnagar)<br>
 
 ![Loss Incident Optimization](https://github.com/SAP/lumira-extension-viz/blob/master/Loss_Incident_Optimization/LossIncidentOptimization.PNG)
 

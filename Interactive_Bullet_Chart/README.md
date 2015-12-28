@@ -1,5 +1,8 @@
 Interactive Bullet Chart - SAP Lumira visualization extension
 =================================================
+* By [Ankush Mehta](http://scn.sap.com/people/ankush.mehta)<br>
+
+An interactive bullet chart with a color picker and mouse-click updates
 
 ![Interactive Bullet Chart](https://github.com/SAP/lumira-extension-viz/blob/master/Interactive_Bullet_Chart/InteractiveBulletChart.PNG)
 

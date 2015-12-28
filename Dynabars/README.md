@@ -1,5 +1,7 @@
 Dynabars - SAP Lumira visualization extension
 =================================================
+* By [Shiney Sooraj](http://scn.sap.com/people/shiney.sooraj)<br>
+
 Dynamic bars that display the growth of data over time
 
 ![Dynabars](https://github.com/SAP/lumira-extension-viz/blob/master/Dynabars/dynabars.gif)
@@ -19,3 +21,6 @@ Data Binding
 * Date (Year)
 * City (City)
 
+Resources
+-----------
+* Blog post - [Dynabars - Can we travel in time?](http://scn.sap.com/community/lumira/blog/2014/05/30/dynabars--can-we-travel-in-time)
