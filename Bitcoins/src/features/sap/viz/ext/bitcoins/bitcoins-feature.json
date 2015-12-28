@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.bitcoins",
+	"name": "Bitcoins",
+	"description": "A hierarchical collapsible tree structure chart",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Shailesh Borkar",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.14.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.bitcoins",
+		"version": "1.0.1"
+	}]
+}

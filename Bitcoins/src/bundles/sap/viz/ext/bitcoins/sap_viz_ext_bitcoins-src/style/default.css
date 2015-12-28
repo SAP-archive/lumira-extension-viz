@@ -1,0 +1,73 @@
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1px;
+}
+.node text {
+    font: 12px sans-serif;
+}
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+#tooltip {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    padding: 10px;
+    background-color: black;
+    pointer-events: none;
+}
+#tooltip.hidden {
+    display: none;
+}
+#tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+.sap_viz_ext_bitcoins_btt-item {
+    width: 100%;
+    padding: 2px;
+}
+.sap_viz_ext_bitcoins_btt-combo {
+    font-weight: bold;
+}
+.sap_viz_ext_bitcoins_btt-inner {
+    background: #334450;
+    height: auto;
+    padding: 10px;
+    border-radius: 1px;
+    width: auto;
+}
+#sap_viz_ext_bitcoins_triangle {
+    display: block;
+    position: absolute;
+}
+#sap_viz_ext_bitcoins_triangle.left {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 10px 9px 0;
+    border-color: transparent #334450 transparent transparent;
+    left: -9px;
+    float: left;
+}
+#sap_viz_ext_bitcoins_triangle.right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 10px;
+    border-color: transparent transparent transparent #334450;
+    right: -9px;
+}
+#sap_viz_ext_bitcoins_t-tip {
+    position: absolute;
+    z-index: 10;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    font-family: helvetica;
+}
