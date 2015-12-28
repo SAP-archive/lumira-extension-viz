@@ -1,0 +1,65 @@
+body {
+    font: 10px sans-serif;
+}
+.sap_viz_ext_quadrant_axis path,
+.sap_viz_ext_quadrant_axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.sap_viz_ext_quadrant_lines {
+    stroke: #BDBDBD;
+}
+.sap_viz_ext_quadrant_qdot {
+    stroke: #000;
+    stroke-width: 1px;
+    opacity: 0.75;
+}
+.sap_viz_ext_quadrant_qtt-item {
+    width: 100%;
+    padding: 2px;
+    color: white;
+}
+span.sap_viz_ext_quadrant_qtt-item-name {
+    margin-left: 3px;
+    font-size: 1em;
+    color: black;
+}
+span.sap_viz_ext_quadrant_qtt-item-price {
+    float: right;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 10px;
+    color: #181818;
+    font-weight: bold;
+}
+.sap_viz_ext_quadrant_qtt-comboplot {
+    font-size: 13px;
+    color: #009de0;
+}
+.sap_viz_ext_quadrant_qtt-innerplot {
+    background: #f6f6f6;
+    padding: 3px;
+    border-radius: 1px;
+    width: 100;
+    height: 100;
+}
+#sap_viz_ext_quadrant_t-tip1 {
+    position: absolute;
+    z-index: 10;
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    font-family: helvetica;
+}
+#sap_viz_ext_quadrant_t-tipb {
+    position: absolute;
+    z-index: 10;
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    font-family: helvetica;
+}
+#sap_viz_ext_quadrant_txtf {
+    color: black;
+}

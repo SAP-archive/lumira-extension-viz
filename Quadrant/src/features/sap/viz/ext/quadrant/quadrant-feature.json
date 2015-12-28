@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.quadrant",
+	"name": "Quadrant",
+	"description": "A scatter plot to visualize data points divided into quadrants",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Vidur Bhatnagar",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.14.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.quadrant",
+		"version": "1.0.1"
+	}]
+}
