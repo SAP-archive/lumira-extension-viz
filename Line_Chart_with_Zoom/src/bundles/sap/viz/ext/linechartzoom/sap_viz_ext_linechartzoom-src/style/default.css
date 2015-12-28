@@ -1,0 +1,93 @@
+ body {
+     font: 10px sans-serif;
+ }
+ path {
+     stroke-width: 1;
+ }
+ .sap_viz_ext_linechartzoom_linechart {
+     fill: none;
+     stroke-width: 1.5px;
+ }
+ .sap_viz_ext_linechartzoom_axisl {
+     shape-rendering: crispEdges;
+ }
+ .x.sap_viz_ext_linechartzoom_axisl line {
+     stroke: lightgrey;
+ }
+ .x.sap_viz_ext_linechartzoom_axisl .minor {
+     stroke-opacity: .5;
+ }
+ .y.sap_viz_ext_linechartzoom_axisl line,
+ .y.sap_viz_ext_linechartzoom_axisl path {
+     fill: none;
+     stroke: #000;
+ }
+ .x.sap_viz_ext_linechartzoom_axisl line,
+ .x.sap_viz_ext_linechartzoom_axisl path {
+     fill: none;
+     stroke: #000;
+ }
+ .sap_viz_ext_linechartzoom_brush .extent {
+     stroke: #fff;
+     fill-opacity: .125;
+     shape-rendering: crispEdges;
+ }
+ .sap_viz_ext_linechartzoom_ltt-item {
+     width: 100%;
+     padding: 2px;
+ }
+ span.sap_viz_ext_linechartzoom_ltt-item-name {
+     margin-left: 5px;
+     font-size: 13px;
+     color: black;
+ }
+ span.sap_viz_ext_linechartzoom_ltt-item-color {
+     margin-top: 3px;
+     border-radius: 10px;
+ }
+ span.sap_viz_ext_linechartzoom_ltt-item-price {
+     font-size: 13px;
+     color: #181818;
+     font-weight: bold;
+ }
+ .sap_viz_ext_linechartzoom_ltt-combo {
+     font-size: 13px;
+     color: #009de0;
+ }
+ .sap_viz_ext_linechartzoom_ltt-inner {
+     background: #f6f6f6;
+     height: auto;
+     padding: 10px;
+     border-radius: 1px;
+     opacity: 0.95;
+     width: auto;
+ }
+ #sap_viz_ext_linechartzoom_triangle {
+     display: block;
+     position: absolute;
+ }
+ #sap_viz_ext_linechartzoom_triangle.left {
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 9px 10px 9px 0;
+     border-color: transparent #334450 transparent transparent;
+     left: -9px;
+     float: left;
+ }
+ #sap_viz_ext_linechartzoom_triangle.right {
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 9px 0 9px 10px;
+     border-color: transparent transparent transparent #334450;
+     right: -9px;
+ }
+ #sap_viz_ext_linechartzoom_t-tip {
+     position: absolute;
+     z-index: 10;
+     position: absolute;
+     color: white;
+     font-size: 12px;
+     font-family: helvetica;
+ }

@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.linechartzoom",
+	"name": "Line Chart with Zoom",
+	"description": "A line chart with zooming and filtering capability",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Vidur Bhatnagar",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.14.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.linechartzoom",
+		"version": "1.0.1"
+	}]
+}
