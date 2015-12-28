@@ -4,7 +4,7 @@ Affinity - SAP Lumira visualization extension
 
 A chart representing items for comparison
 
-![Affinity](https://github.com/SAP/lumira-extension-viz/blob/master/Affinity/Affinity.PNG)
+![Affinity](https://github.com/SAP/lumira-extension-viz/blob/master/Affinity/affinity.gif)
 
 Files
 -----------
