@@ -23,5 +23,5 @@ Data Binding
 
 Resources
 ---------
-* Blog [Coming Soon]()
+* Blog [Country Visas: A Chart with Tooltips and Images](http://scn.sap.com/community/lumira/blog/2015/12/30/country-visas-a-chart-with-tooltips-and-images)
 
