@@ -1,0 +1,42 @@
+.sap_viz_ext_sequencessunburst_sequence {
+    width: 600px;
+    height: 70px;
+}
+.sap_viz_ext_sequencessunburst_legend {
+    padding: 50px 0 0 0px;
+}
+.sap_viz_ext_sequencessunburst_sequence text,
+.sap_viz_ext_sequencessunburst_legend text {
+    font-weight: 600;
+    fill: #fff;
+    font-family: Sans-serif;
+}
+.sap_viz_ext_sequencessunburst_arc {
+    stroke: #fff;
+}
+.sap_viz_ext_sequencessunburst_explanation {
+    top: 260px;
+    width: 140px;
+    text-align: center;
+    fill: #191919;
+    stroke-width: 1px;
+    z-index: -1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.sap_viz_ext_sequencessunburst_explanation2 {
+    top: 260px;
+    width: 140px;
+    text-align: center;
+    fill: #191919;
+    stroke-width: 1px;
+    z-index: -1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.sap_viz_ext_sequencessunburst_percentage {
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    fill: #191919;
+    stroke-width: 1px;
+}

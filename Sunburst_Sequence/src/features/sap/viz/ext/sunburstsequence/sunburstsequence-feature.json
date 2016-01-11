@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.sunburstsequence",
+	"name": "Sunburst Sequence",
+	"description": "A sunburst chart with sequences in a partitioned layout.",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Annie Suantak Niangneihoi",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.14.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.sunburstsequence",
+		"version": "1.0.1"
+	}]
+}
