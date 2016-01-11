@@ -46,6 +46,7 @@ List of current visualization extensions in the repo
 * Sample Bar Chart
 * Sankey Diagram (based on Google visualization API)
 * Stacked Column with Line Chart
+* (new) Sunburst Clock Chart
 
 Get it!
 -----------
