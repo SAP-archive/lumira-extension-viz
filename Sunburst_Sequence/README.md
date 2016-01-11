@@ -1,4 +1,4 @@
-Extended Bubble Matrix
+Sunburst Sequence
 =================================================
 By [Annie Suantak Niangneihoi](http://scn.sap.com/people/suantak.niangneihoi)<br>
 
