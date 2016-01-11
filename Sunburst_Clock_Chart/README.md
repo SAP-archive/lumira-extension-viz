@@ -2,6 +2,8 @@ Sunburst Clock
 =================================================
 By [Xin Wen](http://scn.sap.com/people/wendy.xin.wen)<br>
 
+It is a triple layer extension, which combine a sunburst chart and two pie chart. It calculates and present garage door-opening status in 24 hours.
+
 ![Sunburst Clock_Legend](https://github.com/SAP/lumira-extension-viz/blob/master/Sunburst_Clock_Chart/images/Sunburst_Clock_Legend.png)
 Sunburst Clock Chart with legend
 
