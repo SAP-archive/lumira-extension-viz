@@ -2,10 +2,10 @@ Sunburst Clock
 =================================================
 By [Xin Wen](http://scn.sap.com/people/wendy.xin.wen)<br>
 
-![Sunburst Clock](https://github.com/SAP/lumira-extension-viz/blob/master/Sunburst_Clock_Chart/Sunburst_Clock_legend.png)
+![Sunburst Clock_Legend](https://github.com/SAP/lumira-extension-viz/blob/master/Sunburst_Clock_Chart/images/Sunburst_Clock_Legend.png)
 Sunburst Clock Chart with legend
 
-![Sunburst Clock_tooltip](https://github.com/SAP/lumira-extension-viz/blob/master/Sunburst_Clock_Chart/Sunburst_Clock_basic.png)
+![Sunburst Clock](https://github.com/SAP/lumira-extension-viz/blob/master/Sunburst_Clock_Chart/images/Sunburst_Clock_basic.png)
 Sunburst Clock Chart without legend
 
 Files
@@ -27,7 +27,10 @@ Data Binding
 * LocalTime(2)
 
 - You have to add filter for **EndpointSerialNumber** & **Date** to limit data to one day/door
-![Sunburst Clock_tooltip](https://github.com/SAP/lumira-extension-viz/blob/master/Sunburst_Clock_Chart/Sunburst_Clock_filters.png)
+![Sunburst Clock_tooltip](https://github.com/SAP/lumira-extension-viz/blob/master/Sunburst_Clock_Chart/images/Sunburst_Clock_filters.png)
 
 Resources
 -----------
+* [Xin Wen's Portfolio](http://www.wenwebdz.com)
+* [Xin Wen's Sunburst Clock Chart](https://github.com/SAP/lumira-extension-viz/tree/master/Sunburst_Clock_Chart)
+* [Xin Wen's SWOT Analysis](https://github.com/SAP/lumira-extension-viz/tree/master/SWOT_Analysis)
