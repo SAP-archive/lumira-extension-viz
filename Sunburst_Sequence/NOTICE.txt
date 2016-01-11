@@ -1,2 +1,2 @@
-SAP Lumira Visualization Extension - Dynabars
+SAP Lumira Visualization Extension - Sequences Sunburst
 Copyright (c) 2015 SAP SE or an SAP affiliate company. All rights reserved.
