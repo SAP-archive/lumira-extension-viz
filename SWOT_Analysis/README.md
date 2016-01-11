@@ -1,7 +1,6 @@
 SWOT Analysis(v1.2 with custom property 1.29)
 =================================================
 By [Xin Wen](http://scn.sap.com/people/wendy.xin.wen)<br>
-[Xin Wen's portfolio](http://www.wenwebdz.com)<br>
 
 ![SWOT Analysis](https://github.com/SAP/lumira-extension-viz/blob/master/SWOT_Analysis/SWOT.PNG)
 - Basic version
@@ -41,3 +40,7 @@ Data Binding 2 - sap.viz.ext.swotanalysis_customprop.zip
 Resources
 -----------
 * Blog post - [Trick or Treat? Here’s your trick to create a Lumira extension using <div>](http://scn.sap.com/community/lumira/blog/2015/10/19/trick-or-treat-here-s-your-trick-to-create-a-lumira-extension-using-div)
+
+* [Xin Wen's Portfolio](http://www.wenwebdz.com)
+* [Xin Wen's Sunburst Clock Chart](https://github.com/SAP/lumira-extension-viz/tree/master/Sunburst_Clock_Chart)
+
