@@ -1,0 +1,36 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+.sunbrustclock {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.sunbrustclock g.dayClock g.arc text{
+    font-size: 1.4em;
+}
+
+/*sunbrustclock - dayclock stroke*/
+path.sunbrustclock {
+/*      stroke: transparent;*/
+  stroke: #fff;
+  fill-rule: evenodd;
+}
+path.sunbrustclock-bg{
+  stroke: #FEFAFA;
+  fill-rule: evenodd;
+}
+
+.sunbrustTooltip rect.label {
+    fill: #444;
+    stroke-width = 1;
+    stroke = #aaa;
+}
+
+.sunbrustTooltip g.label_detail text{
+    fill: #fff;
+    font-size: 1.1em;
+}
