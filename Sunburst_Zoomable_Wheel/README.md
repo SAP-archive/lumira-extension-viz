@@ -20,4 +20,4 @@ Data Binding
 
 Resources
 -----------
-* Blog post - [Zoomable Sunburst Wheel]()
+* Blog post - [Zoomable Sunburst Wheel](http://scn.sap.com/community/lumira/blog/2016/01/18/visualize-hierarchy-with-a-zoomable-sunburst-wheel)
