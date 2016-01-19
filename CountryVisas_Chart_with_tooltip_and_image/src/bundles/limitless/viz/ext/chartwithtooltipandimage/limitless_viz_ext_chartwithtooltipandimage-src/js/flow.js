@@ -17,7 +17,7 @@ define("limitless_viz_ext_chartwithtooltipandimage-src/js/flow", ["limitless_viz
 		/*Feeds Definition*/
 		var ds1 = {
 			"id": "limitless.viz.ext.chartwithtooltipandimage.PlotModule.DS1",
-			"name": "Country",
+			"name": "X Axis",
 			"type": "Dimension",
 			"min": 0, //minimum number of data container
 			"max": 2, //maximum number of data container
@@ -27,7 +27,7 @@ define("limitless_viz_ext_chartwithtooltipandimage-src/js/flow", ["limitless_viz
 
 		var ms1 = {
 			"id": "limitless.viz.ext.chartwithtooltipandimage.PlotModule.MS1",
-			"name": "Type of visa applicant",
+			"name": "Y Axis",
 			"type": "Measure",
 			"min": 0, //minimum number of measures
 			"max": Infinity, //maximum number of measures
