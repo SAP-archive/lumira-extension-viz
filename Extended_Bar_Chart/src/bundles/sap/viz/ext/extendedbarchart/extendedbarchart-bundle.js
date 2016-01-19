@@ -16,7 +16,7 @@ define("extendedbarchart-bundle", ["sap_viz_ext_extendedbarchart-src/js/flow", "
 		};
 		var vizExtBundle = sap.bi.framework.declareBundle({
 			"id": "sap.viz.ext.extendedbarchart",
-			"version": "1.0.0",
+			"version": "1.0.2",
 			"components": [{
 				"id": "sap.viz.ext.extendedbarchart",
 				"provide": "sap.viz.impls",

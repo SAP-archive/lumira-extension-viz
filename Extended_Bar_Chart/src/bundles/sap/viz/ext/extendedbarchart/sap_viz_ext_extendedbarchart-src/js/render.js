@@ -11,34 +11,37 @@ define("sap_viz_ext_extendedbarchart-src/js/render", [], function() {
 	 *   measures info:      data.meta.measures()
 	 */
 	var render = function(data, container) {
+		var meas1 = data.meta.measures(0),
+			meas2 = data.meta.measures(0),
+			meas3 = data.meta.measures(0),
+			dset1 = data.meta.dimensions(0),
+			dset2 = data.meta.dimensions(0);
+
+		//find names of measures and dimensions
+		var measure1 = meas1[0],
+			measure2 = meas2[1],
+			measure3 = meas3[2],
+			dim1 = dset1[0],
+			dim2 = dset2[1]; 
+
+		//convert measures into numbers
+		data.forEach(function(d) {
+			d[measure1] = +d[measure1];
+			d[measure2] = +d[measure2];
+			d[measure3] = +d[measure3];
+		});
+		// console.log(data);
 		//prepare canvas with width and height of container
 		var width = this.width(),
 			height = this.height(),
-			colorPalette = this.colorPalette(),
-			properties = this.properties(),
-			dispatch = this.dispatch();
-		//Prepare canvas with width and height of container 
+			colorPalette = this.colorPalette();
+		// properties = this.properties(),
+		// dispatch = this.dispatch();
 
 		container.selectAll('svg').remove();
 		var vis = container.append('svg').attr('width', width).attr('height', height)
 			.append('g').attr('class', 'vis').attr('width', width).attr('height', height);
 
-		// START: sample render code for a column chart
-		// Replace the code below with your own one to develop a new extension
-
-		/**
-		 * To get the dimension set, you can use either name or index of the dimension set, for example
-		 *     var dset_xaxis = data.meta.dimensions('X Axis’);    // by name
-		 *     var dset1 = data.meta.dimensions(0);                // by index
-		 *
-		 * To get the dimension or measure name, you should only use index of the dimension and avoid
-		 * hardcoded names.
-		 *     var dim1= dset_xaxis[0];        // the name of first dimension of dimension set ‘X Axis'
-		 *
-		 * The same rule also applies to get measures by using data.meta.measures()
-		 */
-
-		console.log(data);
 		var margin = {
 				top: 20,
 				right: 20,
@@ -59,7 +62,7 @@ define("sap_viz_ext_extendedbarchart-src/js/render", [], function() {
 			.range([0, plotWidth]);
 
 		x.domain([0, d3.max(data, function(d) {
-			return +d.enddepth * 1.1;
+			return d[measure2] * 1.1;
 		})]);
 
 		var y = d3.scale.linear()
@@ -89,20 +92,20 @@ define("sap_viz_ext_extendedbarchart-src/js/render", [], function() {
 			.data(data)
 			.enter().append("rect")
 			.attr("x", function(d) {
-				return x(+d.startdepth);
+				return x(d[measure1]);
 			})
 			.attr("y", function(d) {
-				console.log(d["Hg ng/g(dm)"]);
-				return y(+d["Hg ng/g(dm)"]);
+				console.log(d[measure3]);
+				return y(d[measure3]);
 			})
 			.attr("width", function(d) {
-				return x(+d.enddepth - d.startdepth);
+				return x(d[measure2] - d[measure1]);
 			})
 			.attr("height", function(d) {
-				return y(0) - y(+d["Hg ng/g(dm)"]);
+				return y(0) - y(d[measure3]);
 			})
 			.style("fill", function(d) {
-				return color(d.needletype);
+				return color(d[dim2]);
 			})
 			.style("stroke", "black")
 			.style("shape-rendering", "crispEdges");
@@ -120,7 +123,7 @@ define("sap_viz_ext_extendedbarchart-src/js/render", [], function() {
 		vis.append("text")
 			.attr("transform", "translate(" + (plotWidth / 2) + " ," + (plotHeight + margin.bottom - 5) + ")")
 			.style("text-anchor", "middle")
-			.text("Depth (cm)");
+			.text("X Axis");
 
 		vis.append("text")
 			.attr("transform", "rotate(-90)")
@@ -128,7 +131,7 @@ define("sap_viz_ext_extendedbarchart-src/js/render", [], function() {
 			.attr("x", 0 - (plotHeight / 2))
 			.attr("dy", "1em")
 			.style("text-anchor", "middle")
-			.text("Hg ng/g(dm)");
+			.text(measure3);
 
 		//set style of axis and its ticks and text
 		// $(".axis path, .axis line").css({
