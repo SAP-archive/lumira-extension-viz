@@ -1,4 +1,4 @@
-define("limitless_viz_ext_chartwithtooltipandimage-src/js/render", ['require','LimitlessTooltip'], function(require,LimitlessTooltip) {
+define("limitless_viz_ext_chartwithtooltipandimage-src/js/render", ['require', 'd3tooltip'], function(require, d3tooltip) {
 	/*
 	 * This function is a drawing function; you should put all your drawing logic in it.
 	 * it's called in moduleFunc.prototype.render
@@ -26,8 +26,8 @@ define("limitless_viz_ext_chartwithtooltipandimage-src/js/render", ['require','L
 			.attr('height', height);
 
 		var meta = data.meta;
-		var countryName = meta.dimensions('Country')[0];
-		var visaValues = meta.measures('Type of visa applicant');
+		var dim = meta.dimensions('X Axis')[0];
+		var measures = meta.measures('Y Axis');
 
 		var margin = {
 			top: 40,
@@ -77,14 +77,14 @@ define("limitless_viz_ext_chartwithtooltipandimage-src/js/render", ['require','L
 
 		// Make sure our numbers are really numbers
 		data.forEach(function(d) {
-			d[visaValues[0]] = +d[visaValues[0]];
-			d[visaValues[1]] = +d[visaValues[1]];
-			d[visaValues[2]] = +d[visaValues[2]];
+			d[measures[0]] = +d[measures[0]];
+			d[measures[1]] = +d[measures[1]];
+			d[measures[2]] = +d[measures[2]];
 		});
 
 		// Map our columns to our colors
 		color.domain(d3.keys(data[0]).filter(function(key) {
-			return key !== 'Country';
+			return key !== dim;
 		}));
 
 		data.forEach(function(d) {
@@ -106,7 +106,7 @@ define("limitless_viz_ext_chartwithtooltipandimage-src/js/render", ['require','L
 
 		// Our X domain is our set of Countries
 		x.domain(data.map(function(d) {
-			return d[countryName];
+			return d[dim];
 		}));
 
 		// Our Y domain is from zero to our highest total
@@ -123,12 +123,12 @@ define("limitless_viz_ext_chartwithtooltipandimage-src/js/render", ['require','L
 			.attr("class", "limitless_viz_ext_chartwithtooltipandimage_y_axis")
 			.call(yAxis);
 
-		var countries = svg.selectAll(".Country")
+		var countries = svg.selectAll(".X Axis")
 			.data(data)
 			.enter().append("g")
 			.attr("class", "g")
 			.attr("transform", function(d) {
-				return "translate(" + x(d[countryName]) + ",0)";
+				return "translate(" + x(d[dim]) + ",0)";
 			});
 
 		countries.selectAll("rect")
@@ -152,11 +152,11 @@ define("limitless_viz_ext_chartwithtooltipandimage-src/js/render", ['require','L
 		svg.selectAll("image").
 		//data(data).enter().append("image").attr("xlink:href","https://upload.wikimedia.org/wikipedia/commons/d/d8/Compass_card_(de).svg")
 		data(data).enter().append("image").attr("xlink:href", function(d) {
-			var imgUrl = require.toUrl("limitless_viz_ext_chartwithtooltipandimage-src/resources/Images/" + d[countryName] + ".png");
+			var imgUrl = require.toUrl("limitless_viz_ext_chartwithtooltipandimage-src/resources/Images/" + d[dim] + ".png");
 			return imgUrl;
 		})
 			.attr("x", function(d) {
-				return x(d[countryName]);
+				return x(d[dim]);
 			}).attr("y", function(d) {
 				return y(d.total) - 30;
 			})

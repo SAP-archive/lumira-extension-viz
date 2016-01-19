@@ -2,18 +2,18 @@
 	"metadataVersion": "1.0",
 	"id": "limitless.viz.ext.chartwithtooltipandimage",
 	"name": "Chart with Tooltip and Image",
-	"description": "A chart extension with tooltip and images of country flags to visualize visa count",
-	"version": "1.0.0",
+	"description": "A stacked column chart with tooltips and custom images to visualize collective counts.",
+	"version": "1.0.2",
 	"vendor": {
 		"name": "Team Limitless",
-		"url": "Your company website"
+		"url": "An SAP Lumira BizViz Hackathon 2015 entry"
 	},
 	"requires": [{
 		"id": "sap.viz.common.core",
-		"version": "5.7.3"
+		"version": "5.6.0"
 	}],
 	"bundles": [{
 		"id": "limitless.viz.ext.chartwithtooltipandimage",
-		"version": "1.0.0"
+		"version": "1.0.2"
 	}]
 }

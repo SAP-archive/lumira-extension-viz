@@ -17,7 +17,7 @@ define("chartwithtooltipandimage-bundle", ["limitless_viz_ext_chartwithtooltipan
 	};
 	var vizExtBundle = sap.bi.framework.declareBundle({
 		"id": "limitless.viz.ext.chartwithtooltipandimage",
-		"version": "1.0.0",
+		"version": "1.0.2",
 		"components": [{
 			"id": "limitless.viz.ext.chartwithtooltipandimage",
 			"provide": "sap.viz.impls",
@@ -31,7 +31,7 @@ define("chartwithtooltipandimage-bundle", ["limitless_viz_ext_chartwithtooltipan
 				"category": [],
 				"requires": [{
 					"id": "sap.viz.common.core",
-					"version": "5.7.3"
+					"version": "5.6.0"
 				}],
 				"resources": [{
 					"key": "sap.viz.api.env.Template.loadPaths",
