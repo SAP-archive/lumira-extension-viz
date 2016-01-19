@@ -2,6 +2,8 @@ Sunburst Clock
 =================================================
 By [Xin Wen](http://scn.sap.com/people/wendy.xin.wen)<br>
 
+Blog
+-----------
 [Sunburst Clock Chart - Customize to particular data set](http://scn.sap.com/community/lumira/blog/2016/01/19/sunburst-clock-chart--customize-to-particular-data-set)
 
 ![Sunburst Clock_Legend](https://github.com/SAP/lumira-extension-viz/blob/master/Sunburst_Clock_Chart/images/Sunburst_Clock_Legend.png)
