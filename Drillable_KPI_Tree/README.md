@@ -26,5 +26,5 @@ Data Binding
 
 Resources
 ---------
-* Blog ["Drillable" KPI Tree with Animation Custom Lumira Extension](http://scn.sap.com/community/lumira/blog/2015/04/01/drillable-kpi-tree-with-animation-custom-lumira-extension)
+* Blog Post - ["Drillable" KPI Tree with Animation Custom Lumira Extension](http://scn.sap.com/community/lumira/blog/2015/04/01/drillable-kpi-tree-with-animation-custom-lumira-extension)
 
