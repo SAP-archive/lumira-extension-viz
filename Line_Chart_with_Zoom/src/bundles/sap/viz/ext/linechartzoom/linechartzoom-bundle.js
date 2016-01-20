@@ -16,7 +16,7 @@ define("linechartzoom-bundle", ["sap_viz_ext_linechartzoom-src/js/flow", "css!sa
 	};
 	var vizExtBundle = sap.bi.framework.declareBundle({
 		"id": "sap.viz.ext.linechartzoom",
-		"version": "1.0.1",
+		"version": "1.0.2",
 		"components": [{
 			"id": "sap.viz.ext.linechartzoom",
 			"provide": "sap.viz.impls",
