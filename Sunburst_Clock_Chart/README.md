@@ -31,4 +31,4 @@ Data Binding
 
 Resources
 -----------
-* Blog [Sunburst Clock Chart - Customize to particular data set](http://scn.sap.com/community/lumira/blog/2016/01/19/sunburst-clock-chart--customize-to-particular-data-set)
+* Blog Post - [Sunburst Clock Chart - Customize to particular data set](http://scn.sap.com/community/lumira/blog/2016/01/19/sunburst-clock-chart--customize-to-particular-data-set)
