@@ -16,7 +16,7 @@ define("powerflowmaps-bundle", ["sap_viz_ext_powerflowmaps-src/js/flow", "css!sa
 	};
 	var vizExtBundle = sap.bi.framework.declareBundle({
 		"id": "sap.viz.ext.powerflowmaps",
-		"version": "1.0.0",
+		"version": "1.0.2",
 		"components": [{
 			"id": "sap.viz.ext.powerflowmaps",
 			"provide": "sap.viz.impls",

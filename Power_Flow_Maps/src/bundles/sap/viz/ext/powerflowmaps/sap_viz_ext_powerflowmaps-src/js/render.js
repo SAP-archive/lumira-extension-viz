@@ -10,15 +10,16 @@ define("sap_viz_ext_powerflowmaps-src/js/render", [], function() {
 	 *   dimensions info:    data.meta.dimensions()
 	 *   measures info:      data.meta.measures()
 	 */
+	 
 	var render = function(data, container) {
 		coords = [];
 		power_countries = [];
 
 		var width = this.width(),
-			height = this.height(),
-			colorPalette = this.colorPalette(),
-			properties = this.properties(),
-			dispatch = this.dispatch();
+			height = this.height();
+			// colorPalette = this.colorPalette(),
+			// properties = this.properties(),
+			// dispatch = this.dispatch();
 		//prepare canvas with width and height of container
 		container.selectAll("svg").remove();
 		vis = container.append("svg").attr("width", width).attr("height", height)
@@ -47,7 +48,7 @@ define("sap_viz_ext_powerflowmaps-src/js/render", [], function() {
 		var defs = vis.append("defs");
 
 		defs.append("marker")
-			.attr("id", "arrow_back")
+			.attr("id", "sap_viz_ext_powerflowmaps_arrow_back")
 			.attr("viewBox", "-2.5 -2.5 5 5")
 			.attr("refX", 0)
 			.attr("refY", 0)
@@ -61,7 +62,7 @@ define("sap_viz_ext_powerflowmaps-src/js/render", [], function() {
 			.attr("fill", "white");
 
 		defs.append("marker")
-			.attr("id", "arrow_front_in")
+			.attr("id", "sap_viz_ext_powerflowmaps_arrow_front_in")
 			.attr("viewBox", "-2.5 -2.5 5 5")
 			.attr("refX", 0)
 			.attr("refY", 0)
@@ -74,7 +75,7 @@ define("sap_viz_ext_powerflowmaps-src/js/render", [], function() {
 			.attr("fill", "orange");
 
 		defs.append("marker")
-			.attr("id", "arrow_front_out")
+			.attr("id", "sap_viz_ext_powerflowmaps_arrow_front_out")
 			.attr("viewBox", "-2.5 -2.5 5 5")
 			.attr("refX", 0)
 			.attr("refY", 0)
@@ -123,7 +124,7 @@ define("sap_viz_ext_powerflowmaps-src/js/render", [], function() {
 					topojson: topojson,
 					eur: eur
 
-				}
+				};
 			});
 
 			// Exception handling for require.js In case of an error it alerts the message. For example if gmaps could not be loaded
@@ -319,7 +320,7 @@ define("sap_viz_ext_powerflowmaps-src/js/render", [], function() {
 			});
 
 		} catch (Exception) {
-			console.log("Error: " + Exception)
+			console.log("Error: " + Exception);
 		}
 
 	};
@@ -541,7 +542,7 @@ var updateMap = function(level) {
 			.attr("stroke", "white")
 			.attr("stroke-width", powerscale(arrow_filtered[n].power) + 2)
 			.attr("opacity", 0.9)
-			.attr("marker-end", "url(#arrow_back)")
+			.attr("marker-end", "url(#sap_viz_ext_powerflowmaps_arrow_back)")
 			.attr("fill", "none");
 
 		var real_arrow_front = vis.append("path")
@@ -558,9 +559,9 @@ var updateMap = function(level) {
 			.attr("opacity", 0.85)
 			.attr("marker-end", function(d) {
 				if (arrow_filtered[n].from === filterval) {
-					return "url(#arrow_front_out)";
+					return "url(#sap_viz_ext_powerflowmaps_arrow_front_out)";
 				} else {
-					return "url(#arrow_front_in)";
+					return "url(#sap_viz_ext_powerflowmaps_arrow_front_in)";
 				}
 			})
 			.attr("fill", "none");
