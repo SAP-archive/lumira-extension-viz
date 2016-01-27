@@ -1,8 +1,4 @@
-/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
-
-/* For example, adding the extension id as prefix of CSS class name. */
-
-.sap_viz_ext_capacityplanning_x_axis path, 
+.sap_viz_ext_capacityplanning_x_axis path,
 .sap_viz_ext_capacityplanning_y_axis path,
 .sap_viz_ext_capacityplanning_x_axis line,
 .sap_viz_ext_capacityplanning_y_axis line {
@@ -10,22 +6,18 @@
     stroke: #000;
     shape-rendering: crispEdges;
 }
-
 .sap_viz_ext_capacityplanning_x_axis text,
-.sap_viz_ext_capacityplanning_y_axis text{
+.sap_viz_ext_capacityplanning_y_axis text {
     font-size: 12px;
 }
-
 .sap_viz_ext_capacityplanning_x_axis > text,
-.sap_viz_ext_capacityplanning_y_axis > text{
+.sap_viz_ext_capacityplanning_y_axis > text {
     font-size: 16px;
     font-weight: bold;
 }
-
 .sap_viz_ext_capacityplanning_legend {
     font-size: 10px;
 }
-
 .sap_viz_ext_capacityplanning_rect {
     shape-rendering: crispEdges;
 }

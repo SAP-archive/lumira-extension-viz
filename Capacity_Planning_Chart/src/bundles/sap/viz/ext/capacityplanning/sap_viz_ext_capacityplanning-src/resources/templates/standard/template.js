@@ -3,11 +3,7 @@ var sampleTemplate = {
 	"name": "Standard",
 	"properties": {
 		"sap.viz.ext.capacityplanning": {
-			"legend": {
-				"title": {
-					"visible": true
-				}
-			}
+
 		}
 	}
 };

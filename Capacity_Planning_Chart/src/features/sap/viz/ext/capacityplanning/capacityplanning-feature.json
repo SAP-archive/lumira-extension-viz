@@ -2,18 +2,18 @@
 	"metadataVersion": "1.0",
 	"id": "sap.viz.ext.capacityplanning",
 	"name": "Capacity Planning Chart",
-	"description": "A capacity planning chart with a past-future element included",
-	"version": "1.0.0",
+	"description": "A capacity planning chart with a past-future element included.",
+	"version": "1.0.2",
 	"vendor": {
 		"name": "Jay Thoden van Velzen",
 		"url": "Your company website"
 	},
 	"requires": [{
 		"id": "sap.viz.common.core",
-		"version": "5.7.3"
+		"version": "5.14.0"
 	}],
 	"bundles": [{
 		"id": "sap.viz.ext.capacityplanning",
-		"version": "1.0.0"
+		"version": "1.0.2"
 	}]
 }

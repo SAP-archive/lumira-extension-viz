@@ -11,12 +11,23 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 	 *   measures info:      data.meta.measures()
 	 */
 	var render = function(data, container) {
+		// var dset = data.meta.dimensions(),
+		// 	mset = data.meta.measures();
+
+		var dim = data.meta.dimensions(0);
+		var measures = data.meta.measures(0);
+
+		//convert measures into numbers
+		data.forEach(function(d) {
+			d[measures] = +d[measures];
+		});
+
 		//prepare canvas with width and height of container
 		var width = this.width(),
-			height = this.height(),
-			colorPalette = this.colorPalette(),
-			properties = this.properties(),
-			dispatch = this.dispatch();
+			height = this.height();
+			// colorPalette = this.colorPalette(),
+			// properties = this.properties(),
+			// dispatch = this.dispatch();
 		container.selectAll('svg').remove();
 		var vis = container.append('svg').attr('width', width).attr('height', height)
 			.append('g').attr('class', 'vis').attr('width', width).attr('height', height);
@@ -27,38 +38,36 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 
 		dataset = data.map(function(d) {
 			//console.log(d);
-
-		var	month = dateparse(d.Month),
-			full_abs_line = +d["Full Absorption Line"],
-			base_cap = +d["Base Capacity (In House)"],
-			max_cap_ih = +d["Maximum Capacity (In House)"],
-			max_cap_sub = +d["Maximum Capacity (incl. subcontracting)"],
-			comp_hours = +d["Completed Hours"],
-			sub_prev_month = (d["Subcontracting previous month"] ? +d["Subcontracting previous month"] : -1),
-			lab_prev_month = (d["Direct Labor Completed Hours"] ? +d["Direct Labor Completed Hours"] : -1),
-			orders_not_rel = (d["Orders on Hand: Not Released"] ? +d["Orders on Hand: Not Released"] : -1),
-			orders_rel = (d["Orders on Hand: Released"] ? +d["Orders on Hand: Released"] : -1),
-			backlog = (d["Backlog"] ? +d["Backlog"] : -1),
-			backlog_prev = (d["Backlog previous year"] ? +d["Backlog previous year"] : -1),
-			forecast = (d["Sales forecast"] ? +d["Sales forecast"] : -1);
+			var dimension = dateparse(d[dim]),
+				measure0 = (d[measures[0]] ? d[measures[0]] : -1),
+				measure1 = d[measures[1]],
+				measure2 = d[measures[2]],
+				measure3 = (d[measures[3]] ? d[measures[3]] : -1),
+				measure4 = d[measures[4]],
+				measure5 = d[measures[5]],
+				measure6 = d[measures [6]],
+				measure7 = (d[measures[7]] ? d[measures[7]] : -1),
+				measure8 = (d[measures[8]] ? d[measures[8]] : -1),
+				measure9 = (d[measures[9]] ? d[measures[9]] : -1),
+				measure10 = (d[measures[10]] ? d[measures[10]] : -1),
+				measure11 = (d[measures[11]] ? d[measures[11]] : -1);
 
 			return {
-				"month": month,
-				"full_abs_line": full_abs_line,
-				"base_cap": base_cap,
-				"max_cap_ih": max_cap_ih,
-				"max_cap_sub": max_cap_sub,
-				"comp_hours": comp_hours,
-				"sub_prev_month": sub_prev_month,
-				"lab_prev_month": lab_prev_month,
-				"orders_not_rel": orders_not_rel,
-				"orders_rel": orders_rel,
-				"backlog": backlog,
-				"backlog_prev": backlog_prev,
-				"forecast": forecast
+				"dimension": dimension,
+				"measure0": measure0,
+				"measure1": measure1,
+				"measure2": measure2,
+				"measure3": measure3,
+				"measure4": measure4,
+				"measure5": measure5,
+				"measure6": measure6,
+				"measure7": measure7,
+				"measure8": measure8,
+				"measure9": measure9,
+				"measure10": measure10,
+				"measure11": measure11
 			};
 		});
-		//console.log(dataset);
 
 		var margin = {
 				top: 20,
@@ -76,7 +85,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.range([0, plotWidth]);
 		x.domain(d3.extent(dataset, function(d) {
 			//console.log(d.month);
-			return d.month;
+			return d.dimension;
 		}));
 
 		//2 y scales: 
@@ -84,13 +93,13 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 		var y1 = d3.scale.linear()
 			.range([plotHeight, 0]);
 		y1.domain([0, d3.max(dataset, function(d) {
-			return d.max_cap_sub * 1.1;
+			return d.measure6 * 1.1;
 		})]);
 
 		var y2 = d3.scale.linear()
 			.range([plotHeight, 0]);
 		y2.domain([0, d3.max(dataset, function(d) {
-			return d3.max([d.backlog * 1.1, d.backlog_prev * 1.1]);
+			return d3.max([d.measure0 * 1.1, d.measure11 * 1.1]);
 		})]);
 
 		var xAxis = d3.svg.axis()
@@ -113,37 +122,37 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 		 */
 		var max_cap = d3.svg.area()
 			.x(function(d) {
-				return x(d.month);
+				return x(d.dimension);
 			})
 			.y0(y1(0))
 			.y1(function(d) {
-				return y1(d.max_cap_sub);
+				return y1(d.measure6);
 			});
 
 		var norm_cap = d3.svg.area()
 			.x(function(d) {
-				return x(d.month);
+				return x(d.dimension);
 			})
 			.y0(y1(0))
 			.y1(function(d) {
-				return y1(d.max_cap_ih);
+				return y1(d.measure5);
 			});
 
 		var min_cap = d3.svg.area()
 			.x(function(d) {
-				return x(d.month);
+				return x(d.dimension);
 			})
 			.y0(y1(0))
 			.y1(function(d) {
-				return y1(d.base_cap);
+				return y1(d.measure1);
 			});
 
 		var abs_line = d3.svg.line()
 			.x(function(d) {
-				return x(d.month);
+				return x(d.dimension);
 			})
 			.y(function(d) {
-				return y1(d.full_abs_line);
+				return y1(d.measure4);
 			})
 			.interpolate("linear");
 
@@ -180,7 +189,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 		//detect past from future. Run through lab_prev_month and see where the -1 starts.
 		var present_split = 0;
 		for (var i = 0; i < dataset.length; i++) {
-			if (+dataset[i].lab_prev_month === -1) {
+			if (+dataset[i].measure3 === -1) {
 				present_split = i;
 				break;
 			}
@@ -189,8 +198,8 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 		var past = dataset.slice(0, present_split);
 		var future = dataset.slice(present_split);
 
-		var labelVar = "month";
-		var varNames = ["lab_prev_month", "sub_prev_month"];
+		var labelVar = "dimension";
+		var varNames = ["measure3", "measure10"];
 		var color = d3.scale.ordinal()
 			.range(["#0000FF", "#00BFFF", "#008000", "#FF0000", "#FFFF80"]);
 
@@ -212,7 +221,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.enter().append("g")
 			.attr("class", "sap_viz_ext_capacityplanning_pastbars")
 			.attr("transform", function(d) {
-				return "translate(" + x(d.month) + ",0)";
+				return "translate(" + x(d.dimension) + ",0)";
 			});
 		pastbars.selectAll("rect")
 			.data(function(d) {
@@ -235,7 +244,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 
 		//future bars
 
-		varNames = ["orders_rel", "orders_not_rel", "forecast"];
+		varNames = ["measure8", "measure7", "measure9"];
 
 		future.forEach(function(d) {
 			var y0 = 0;
@@ -255,7 +264,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.enter().append("g")
 			.attr("class", "sap_viz_ext_capacityplanning_futurebars")
 			.attr("transform", function(d) {
-				return "translate(" + x(d.month) + ",0)";
+				return "translate(" + x(d.dimension) + ",0)";
 			});
 		futurebars.selectAll("rect")
 			.data(function(d) {
@@ -303,15 +312,15 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 		var pendown = false;
 		var dpath = "";
 		for (i = 0; i < dataset.length - 1; i++) {
-			if (dataset[i].backlog > -1) {
+			if (dataset[i].measure0 > -1) {
 				if (!pendown) {
 					dpath += "M";
 					pendown = true;
 				} else {
 					dpath += "L";
 				}
-				dpath += x(dataset[i].month);
-				dpath = dpath + "," + y2(dataset[i].backlog);
+				dpath += x(dataset[i].dimension);
+				dpath = dpath + "," + y2(dataset[i].measure0);
 			}
 		}
 
@@ -327,15 +336,15 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 		pendown = false;
 		dpath = "";
 		for (i = 0; i < dataset.length - 1; i++) {
-			if (dataset[i].backlog_prev > -1) {
+			if (dataset[i].measure11 > -1) {
 				if (!pendown) {
 					dpath += "M";
 					pendown = true;
 				} else {
 					dpath += "L";
 				}
-				dpath += x(dataset[i].month);
-				dpath = dpath + "," + y2(dataset[i].backlog_prev);
+				dpath += x(dataset[i].dimension);
+				dpath = dpath + "," + y2(dataset[i].measure11);
 			}
 		}
 
@@ -377,7 +386,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.attr("y", 0)
 			.attr("width", "16")
 			.attr("height", "8")
-			.style("fill", color("lab_prev_month"))
+			.style("fill", color("measure3"))
 			.style("stroke", "#404040")
 			.style("stroke-width", "1");
 		legend_g.append("text")
@@ -386,13 +395,13 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.attr("y", "0")
 			.attr("dy", ".75em")
 			.style("text-anchor", "start")
-			.text("Direct Labor Completed Hours");
+			.text(measures[3]);
 
 		legend_g.append("rect")
 			.attr("y", 15)
 			.attr("width", "16")
 			.attr("height", "8")
-			.style("fill", color("sub_prev_month"))
+			.style("fill", color("measure10"))
 			.style("stroke", "#404040")
 			.style("stroke-width", "1");
 		legend_g.append("text")
@@ -401,13 +410,13 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.attr("y", 15)
 			.attr("dy", ".75em")
 			.style("text-anchor", "start")
-			.text("Subcontracting previous month");
+			.text(measures[10]);
 
 		legend_g.append("rect")
 			.attr("y", 30)
 			.attr("width", "16")
 			.attr("height", "8")
-			.style("fill", color("orders_rel"))
+			.style("fill", color("measure8"))
 			.style("stroke", "#404040")
 			.style("stroke-width", "1");
 		legend_g.append("text")
@@ -416,13 +425,13 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.attr("y", 30)
 			.attr("dy", ".75em")
 			.style("text-anchor", "start")
-			.text("Orders on Hand: Released");
+			.text(measures[8]);
 
 		legend_g.append("rect")
 			.attr("y", 45)
 			.attr("width", "16")
 			.attr("height", "8")
-			.style("fill", color("orders_not_rel"))
+			.style("fill", color("measure7"))
 			.style("stroke", "#404040")
 			.style("stroke-width", "1");
 		legend_g.append("text")
@@ -431,13 +440,13 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.attr("y", 45)
 			.attr("dy", ".75em")
 			.style("text-anchor", "start")
-			.text("Orders on Hand: Not Released");
+			.text(measures[7]);
 
 		legend_g.append("rect")
 			.attr("y", 60)
 			.attr("width", "16")
 			.attr("height", "8")
-			.style("fill", color("forecast"))
+			.style("fill", color("measure9"))
 			.style("stroke", "#404040")
 			.style("stroke-width", "1");
 		legend_g.append("text")
@@ -446,7 +455,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.attr("y", 60)
 			.attr("dy", ".75em")
 			.style("text-anchor", "start")
-			.text("Sales forecast");
+			.text(measures[9]);
 
 		legend_g.append("rect")
 			.attr("y", 80)
@@ -461,7 +470,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.attr("y", 80)
 			.attr("dy", ".75em")
 			.style("text-anchor", "start")
-			.text("Base Capacity (In House)");
+			.text(measures[1]);
 
 		legend_g.append("rect")
 			.attr("y", 95)
@@ -476,7 +485,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.attr("y", 95)
 			.attr("dy", ".75em")
 			.style("text-anchor", "start")
-			.text("Max. Capacity (In House)");
+			.text(measures[5]);
 
 		legend_g.append("rect")
 			.attr("y", 110)
@@ -491,7 +500,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.attr("y", 110)
 			.attr("dy", ".75em")
 			.style("text-anchor", "start")
-			.text("Max. Capacity (incl. subcontracting)");
+			.text(measures[6]);
 
 		var legend_abs_line = d3.svg.line()
 			.x(function(d) {
@@ -520,7 +529,7 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.attr("y", 130)
 			.attr("dy", ".75em")
 			.style("text-anchor", "start")
-			.text("Full Absorption Line");
+			.text(measures[4]);
 
 		var legend_backlog = d3.svg.line()
 			.x(function(d) {
@@ -549,9 +558,9 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.attr("y", 145)
 			.attr("dy", ".75em")
 			.style("text-anchor", "start")
-			.text("Backlog");
+			.text(measures[0]);
 
-		var legend_prevbacklog = d3.svg.line()
+		d3.svg.line()
 			.x(function(d) {
 				return d.x;
 			})
@@ -578,8 +587,8 @@ define("sap_viz_ext_capacityplanning-src/js/render", [], function() {
 			.attr("y", 160)
 			.attr("dy", ".75em")
 			.style("text-anchor", "start")
-			.text("Backlog previous year");
-		
+			.text(measures[11]);
+
 		// END: sample render code
 
 	};
