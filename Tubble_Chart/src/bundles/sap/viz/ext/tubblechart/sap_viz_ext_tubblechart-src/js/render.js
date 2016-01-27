@@ -12,10 +12,10 @@ define("sap_viz_ext_tubblechart-src/js/render", [], function() {
 	 */
 	var render = function(data, container) {
 		var width = this.width(),
-			height = this.height();
-			// colorPalette = this.colorPalette(),
-			// properties = this.properties(),
-			// dispatch = this.dispatch();
+			height = this.height(),
+			colorPalette = this.colorPalette(),
+			properties = this.properties(),
+			dispatch = this.dispatch();
 		//prepare canvas with width and height of container
 		container.selectAll("svg").remove();
 		var vis = container.append("svg").attr("width", width).attr("height", height)
@@ -31,8 +31,8 @@ define("sap_viz_ext_tubblechart-src/js/render", [], function() {
 		};
 
 		//Read data feeds   
-		// var dsets = data.meta.dimensions(),
-		// 	msets = data.meta.measures();
+		var dsets = data.meta.dimensions(),
+			msets = data.meta.measures();
 
 		var mset1 = data.meta.measures(0),
 			dset1 = data.meta.dimensions(0),
@@ -176,7 +176,6 @@ define("sap_viz_ext_tubblechart-src/js/render", [], function() {
 			.attr("r", function(d) {
 				return r(d[measureName]);
 			});
-
 	};
 
 	return render;

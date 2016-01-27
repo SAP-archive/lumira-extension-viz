@@ -30,7 +30,7 @@ define("tubblechart-bundle", ["sap_viz_ext_tubblechart-src/js/flow", "css!sap_vi
 				"category": [],
 				"requires": [{
 					"id": "sap.viz.common.core",
-					"version": "5.7.3"
+					"version": "5.14.0"
 				}],
 				"resources": [{
 					"key": "sap.viz.api.env.Template.loadPaths",
