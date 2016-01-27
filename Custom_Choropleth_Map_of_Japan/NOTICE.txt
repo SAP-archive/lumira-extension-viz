@@ -1,0 +1,2 @@
+Lumira Visualization Extension - Custom Choropleth Map of Japan
+Copyright (c) 2015 Robert Russell. All rights reserved.
