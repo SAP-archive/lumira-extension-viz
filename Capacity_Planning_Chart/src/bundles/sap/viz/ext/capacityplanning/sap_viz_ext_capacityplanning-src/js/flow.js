@@ -6,7 +6,6 @@ define("sap_viz_ext_capacityplanning-src/js/flow", ["sap_viz_ext_capacityplannin
 			dataModel: "sap.viz.api.data.CrosstableDataset",
 			type: "BorderSVGFlow"
 		});
-		
 
 		var element = sap.viz.extapi.Flow.createElement({
 			id: "sap.viz.ext.capacityplanning.PlotModule",
@@ -17,7 +16,7 @@ define("sap_viz_ext_capacityplanning-src/js/flow", ["sap_viz_ext_capacityplannin
 		/*Feeds Definition*/
 		var ds1 = {
 			"id": "sap.viz.ext.capacityplanning.PlotModule.DS1",
-			"name": "Dimensions",
+			"name": "Time",
 			"type": "Dimension",
 			"min": 0, //minimum number of data container
 			"max": 2, //maximum number of data container

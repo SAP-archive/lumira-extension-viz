@@ -16,7 +16,7 @@ define("capacityplanning-bundle", ["sap_viz_ext_capacityplanning-src/js/flow", "
 		};
 		var vizExtBundle = sap.bi.framework.declareBundle({
 			"id": "sap.viz.ext.capacityplanning",
-			"version": "1.0.0",
+			"version": "1.0.2",
 			"components": [{
 				"id": "sap.viz.ext.capacityplanning",
 				"provide": "sap.viz.impls",
@@ -30,7 +30,7 @@ define("capacityplanning-bundle", ["sap_viz_ext_capacityplanning-src/js/flow", "
 					"category": [],
 					"requires": [{
 						"id": "sap.viz.common.core",
-						"version": "5.7.3"
+						"version": "5.14.0"
 					}],
 					"resources": [{
 						"key": "sap.viz.api.env.Template.loadPaths",
