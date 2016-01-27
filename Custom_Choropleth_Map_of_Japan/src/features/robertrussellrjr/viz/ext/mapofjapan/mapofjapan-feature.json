@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "robertrussellrjr.viz.ext.mapofjapan",
+	"name": "Map of Japan",
+	"description": "A Map of Japan",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Robert Russell",
+		"url": "http://www.rjruss.info"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "robertrussellrjr.viz.ext.mapofjapan",
+		"version": "1.0.0"
+	}]
+}
