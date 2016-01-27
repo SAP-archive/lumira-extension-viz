@@ -16,7 +16,7 @@ define("sap_viz_ext_tubblechart-src/js/flow", ["sap_viz_ext_tubblechart-src/js/m
 		/*Feeds Definition*/
 		var ds1 = {
 			"id": "sap.viz.ext.tubblechart.PlotModule.DS1",
-			"name": "University",
+			"name": "X Axis",
 			"type": "Dimension",
 			"min": 0, //minimum number of data container
 			"max": 2, //maximum number of data container
@@ -26,7 +26,7 @@ define("sap_viz_ext_tubblechart-src/js/flow", ["sap_viz_ext_tubblechart-src/js/m
 
 		var ds2 = {
 			"id": "sap.viz.ext.tubblechart.PlotModule.DS2",
-			"name": "Grade",
+			"name": "Y Axis",
 			"type": "Dimension",
 			"min": 0, //minimum number of data container
 			"max": 2, //maximum number of data container

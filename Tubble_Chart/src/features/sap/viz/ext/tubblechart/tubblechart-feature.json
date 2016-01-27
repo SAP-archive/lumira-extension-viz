@@ -3,7 +3,7 @@
 	"id": "sap.viz.ext.tubblechart",
 	"name": "Tubble Chart",
 	"description": " ",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"vendor": {
 		"name": "Mustafa Aydogdu",
 		"url": "Your company website"
@@ -14,6 +14,6 @@
 	}],
 	"bundles": [{
 		"id": "sap.viz.ext.tubblechart",
-		"version": "1.0.0"
+		"version": "1.0."
 	}]
 }
