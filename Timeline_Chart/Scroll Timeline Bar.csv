@@ -1,0 +1,31 @@
+What,Phase,Start Date,Duration,End Date,TaskName,Status
+Task 1,Preparation,10/14/14,1,10/15/14,Task 1,RUNNING
+Task 2,Preparation,10/15/14,16,10/31/14,Task 2,SUCCEEDED
+Task 3,Preparation,10/15/14,16,10/31/14,Task 3,RUNNING
+Task 4,Content Development,10/15/14,28,11/12/14,Task 4,SUCCEEDED
+Task 5,Content Development,11/1/14,50,12/21/14,Task 5,SUCCEEDED
+Task 6,Content Development,11/1/14,50,12/21/14,Task 6,KILLED
+Task 7,Content Development,12/21/14,30,1/20/15,Task 7,RUNNING
+task 8,Production,1/20/15,22,2/11/15,task 8,SUCCEEDED
+task 9,Production,2/12/15,35,3/19/15,task 9,SUCCEEDED
+Task 9,Final Prep,2/23/15,0.5,2/23/15,Task 9,KILLED
+Task 10,Final Prep,2/23/15,42,4/6/15,Task 10,RUNNING
+Task 11,Final Prep,3/19/15,16,4/4/15,Task 11,SUCCEEDED
+Task 12,Delivery,4/6/15,51,5/27/15,Task 12,FAILED
+Task 13,Delivery,5/13/15,14,5/27/15,Task 13,KILLED
+Task 14,Delivery,5/28/15,8,6/5/15,Task 14,RUNNING
+Task 15,Project Close,5/28/15,7,6/4/15,Task 15,RUNNING
+Task 16,Project Close,6/4/15,1,6/5/15,Task 16,FAILED
+Task 17,Ideation,10/9/14,5,10/14/14,Task 17,KILLED
+Task 18,Iteration 1,10/19/14,14,11/2/14,Task 18,RUNNING
+Task 19,Iteration 2,10/22/14,5,10/27/14,Task 19,SUCCEEDED
+Task 20,Iteration 3,10/29/14,21,11/19/14,Task 20,SUCCEEDED
+Task 21,Iteration 4,11/15/14,9,11/24/14,Task 21,KILLED
+Task 22,Iteration 1,11/10/14,14,11/24/14,Task 22,RUNNING
+Task 23,Iteration 2,11/3/14,8,11/11/14,Task 23,SUCCEEDED
+Task 24,Iteration 3,11/20/14,7,11/27/14,Task 24,SUCCEEDED
+Task 25,Iteration 4,11/29/14,1,11/30/14,Task 25,KILLED
+Task 26,Iteration 1,12/15/14,5,12/20/14,Task 26,RUNNING
+Task 27,Iteration 2,11/20/14,21,12/11/14,Task 27,SUCCEEDED
+Task 28,Iteration 3,12/11/14,9,12/20/14,Task 28,FAILED
+Task 29,Iteration 4,11/30/14,14,12/14/14,Task 29,KILLED
