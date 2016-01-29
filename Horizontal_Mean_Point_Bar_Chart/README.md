@@ -14,13 +14,13 @@ Files
 
 Data Binding
 ------------
-`<strong>Measures</strong>`
+`<strong>Item Values</strong>`
 * Fall2014
 * Spring2014
 * Fall2015
 * Spring2015 (Sequence can random)
 
-`<strong>Dimensions</strong>`
+`<strong>Group, Item and Category</strong>`
 * Name
 * Course
 * School
