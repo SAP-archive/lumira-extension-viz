@@ -1,0 +1,37 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+.sap_viz_ext_vermeanptbar .sap_viz_ext_vermeanptbar_axis path, 
+.sap_viz_ext_vermeanptbar .sap_viz_ext_vermeanptbar_axis line{
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+.sap_viz_ext_vermeanptbar .sap_viz_ext_vermeanptbar_axis_hint line,
+.sap_viz_ext_vermeanptbar .sap_viz_ext_vermeanptbar_axis_hint path{
+	fill: none;
+	stroke: #ccc;
+	shape-rendering: crispEdges;
+}
+.sap_viz_ext_vermeanptbar .sap_viz_ext_vermeanptbar_axis_hint text{
+	fill: none;
+}
+
+.sap_viz_ext_vermeanptbar .sap_viz_ext_vermeanptbar_depMeanLine{
+	border-style: dashed;
+	stroke: rgba(60,60,60, .6);
+	stroke-width: 3;
+}
+
+.sap_viz_ext_vermeanptbar .sap_viz_ext_vermeanptbar_axis .x_axis_percentTittle{
+	font-size: 1.6em;
+}
+
+.sap_viz_ext_vermeanptbar_models .sap_viz_ext_vermeanptbar_modelLines{
+	border-style: dashed;
+	stroke-width: 4;
+}

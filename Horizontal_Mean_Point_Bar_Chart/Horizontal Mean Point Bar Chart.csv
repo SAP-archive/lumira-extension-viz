@@ -1,0 +1,154 @@
+Name,Course,Country,School,Fall2014,Spring2014,Fall2015,Spring2015
+James,Math,USA,Bowen,3,4,5,1
+James,English II,USA,Bowen,1,4,1,3
+James,Latin I,USA,Bowen,5,5,5,3
+James,World History,USA,Bowen,2,0,0,4
+John,Spanish,USA,UCSB,4,0,5,4
+John,Math,USA,UCSB,4,5,3,3
+John,Piano I,USA,UCSB,3,2,4,5
+John,US History,USA,UCSB,3,0,4,4
+John,Computer I,USA,UCSB,1,2,1,0
+John,Computer II,USA,UCSB,4,3,4,0
+Robert,Latin I,USA,AUM,1,3,4,2
+Robert,World History,USA,AUM,2,4,0,0
+Robert,Spanish,USA,AUM,3,1,2,2
+Robert,Math,USA,AUM,4,0,3,0
+Robert,Piano I,USA,AUM,4,2,4,0
+Robert,Philosophy,USA,AUM,5,5,2,3
+Michael,Drawing,USA,LSU,2,5,5,5
+Michael,Apologetics,USA,LSU,4,5,5,3
+Michael,Speech,USA,LSU,2,0,0,3
+Michael,Spanish II,USA,LSU,2,2,2,4
+William,Logic,USA,UIUC,2,5,0,1
+William,Biology Lab,USA,UIUC,1,0,3,5
+William,Geometry,USA,UIUC,1,0,0,0
+William,English III,USA,UIUC,3,2,0,3
+William,US History,USA,UIUC,3,2,5,0
+David,Apologetics,USA,NMU ,5,4,5,0
+David,Spanish II,USA,NMU ,4,4,0,0
+David,Algebra II,USA,NMU ,3,2,0,1
+David,Rhetoric,USA,NMU ,5,3,5,0
+David,Piano I,USA,NMU ,3,4,0,5
+David,Piano II,USA,NMU ,1,1,1,3
+Richard,Computer I,USA,CMU,4,5,0,3
+Richard,Computer II,USA,CMU,3,0,5,1
+Richard,Latin I,USA,CMU,1,2,0,1
+Richard,World History,USA,CMU,2,0,5,4
+Richard,Spanish,USA,CMU,4,4,1,0
+Charles,Math,USA,IUP,3,1,5,2
+Charles,Piano I,USA,IUP,2,1,5,2
+Charles,Philosophy,USA,IUP,1,0,0,1
+Joseph,Drawing,UK,UC Irvine,4,5,3,0
+Joseph,Apologetics,UK,UC Irvine,1,3,4,5
+Joseph,Speech,UK,UC Irvine,1,2,2,1
+Joseph,Spanish II,UK,UC Irvine,5,3,0,1
+Joseph,Logic,UK,UC Irvine,5,4,1,2
+Joseph,Latin I,UK,UC Irvine,5,3,5,5
+Joseph,World History,UK,UC Irvine,3,1,0,2
+Thomas,Spanish,UK,UCSB,3,4,5,4
+Thomas,Math,UK,UCSB,1,2,1,4
+Thomas,Piano I,UK,UCSB,4,0,4,3
+Thomas,US History,UK,UCSB,5,1,5,5
+Thomas,Computer I,UK,UCSB,3,3,4,0
+Thomas,Computer II,UK,UCSB,4,1,0,2
+Thomas,Latin I,UK,UCSB,3,0,0,2
+Thomas,World History,UK,UCSB,4,3,1,1
+Thomas,Spanish I,UK,UCSB,2,1,1,2
+Thomas,Spanish II,UK,UCSB,3,1,3,1
+Christopher,Piano I,UK,UCSD,5,1,2,2
+Christopher,Piano II,UK,UCSD,1,4,4,3
+Christopher,Computer I,UK,UCSD,3,2,3,4
+Christopher,Computer II,UK,UCSD,3,2,0,2
+Christopher,Latin I,UK,UCSD,3,4,5,4
+Christopher,World History,UK,UCSD,4,1,5,0
+Christopher,Spanish,UK,UCSD,3,5,2,2
+Christopher,Math,UK,UCSD,3,5,4,5
+Christopher,Piano I,UK,UCSD,3,2,5,1
+Christopher,English II,UK,UCSD,2,5,3,3
+Daniel,Apologetics,UK,UCSD,5,5,3,2
+Daniel,Speech,UK,UCSD,2,0,1,2
+Daniel,Spanish II,UK,UCSD,3,0,5,0
+Daniel,Logic,UK,UCSD,3,2,5,0
+Paul,Biology Lab,UK,LSU,2,2,5,4
+Paul,Geometry,UK,LSU,4,4,3,5
+Paul,English III,UK,LSU,2,5,0,1
+Mark,US History,Canada,IUP,4,3,4,3
+Mark,Apologetics,Canada,IUP,4,1,0,0
+Mark,Spanish II,Canada,IUP,1,0,2,0
+Mark,Algebra II,Canada,IUP,5,2,1,1
+Mark,Rhetoric,Canada,IUP,2,0,5,3
+Donald,Piano I,Canada,CMU,3,0,2,5
+Donald,Piano II,Canada,CMU,2,4,0,1
+Donald,Computer I,Canada,CMU,2,5,4,4
+Mary,Computer II,Canada,NMU ,3,1,4,1
+Mary,Latin I,Canada,NMU ,2,4,0,3
+Mary,World History,Canada,NMU ,1,4,4,3
+Mary,Spanish,Canada,NMU ,3,1,2,5
+Patricia,Math,Canada,UC Irvine,3,3,0,0
+Patricia,Piano I,Canada,UC Irvine,3,2,1,2
+Patricia,Philosophy,Canada,UC Irvine,2,4,0,2
+Patricia,Drawing,Canada,UC Irvine,4,3,2,5
+Patricia,Apologetics,Canada,UC Irvine,3,1,0,5
+Patricia,Speech,Canada,UC Irvine,5,2,1,1
+Linda,Spanish II,Canada,Bowen,4,5,3,4
+Linda,Math,Canada,Bowen,3,4,1,5
+Linda,English II,Canada,Bowen,3,1,4,1
+Barbara,Latin I,USA,LSU,2,0,4,0
+Barbara,World History,USA,LSU,2,5,4,1
+Barbara,Spanish,USA,LSU,1,3,2,2
+Barbara,Math,USA,LSU,4,5,2,4
+Elizabeth,Piano I,USA,UIUC,2,4,3,2
+Elizabeth,US History,USA,UIUC,5,2,4,2
+Elizabeth,Computer I,USA,UIUC,4,0,3,3
+Elizabeth,Computer II,USA,UIUC,5,2,2,1
+Elizabeth,Latin I,USA,UIUC,3,3,1,4
+Elizabeth,World History,USA,UIUC,4,1,4,0
+Maria,Spanish,USA,NMU ,5,0,3,1
+Maria,Math,USA,NMU ,5,3,1,4
+Maria,Piano I,USA,NMU ,5,1,2,4
+Susan,Philosophy,USA,NAU ,4,2,0,4
+Susan,Drawing,USA,NAU ,5,5,5,4
+Susan,World History,USA,NAU ,1,0,4,1
+Susan,Spanish,USA,NAU ,5,3,1,0
+Susan,Math,USA,NAU ,5,3,4,0
+Susan,Piano I,USA,NAU ,4,5,5,3
+Margaret,English II,USA,MIT,5,3,0,5
+Margaret,Apologetics,USA,MIT,1,5,1,4
+Margaret,Speech,USA,MIT,5,2,5,4
+Margaret,Spanish II,USA,MIT,1,4,4,0
+Dorothy,Logic,USA,IUP,2,0,2,5
+Dorothy,Biology Lab,USA,IUP,4,0,0,5
+Dorothy,Geometry,USA,IUP,5,0,4,3
+Dorothy,English III,USA,IUP,2,1,4,0
+Dorothy,US History,USA,IUP,5,4,2,4
+Dorothy,Apologetics,USA,IUP,1,4,1,1
+Lisa,Spanish II,UK,NAU ,1,2,4,1
+Lisa,Rhetoric,UK,NAU ,1,0,2,0
+Lisa,Piano I,UK,NAU ,4,3,5,5
+Karen,Piano II,UK,MIT,2,3,0,2
+Karen,Computer I,UK,MIT,1,0,0,4
+Karen,Computer II,UK,MIT,4,0,2,5
+Karen,Latin I,UK,MIT,1,4,0,0
+Karen,World History,UK,MIT,2,1,1,0
+Betty,Spanish,UK,CMU,5,4,4,0
+Betty,Math,UK,CMU,1,0,2,3
+Betty,Piano I,UK,CMU,5,2,2,0
+Hellen,Philosophy,UK,NAU ,4,5,5,3
+Hellen,Drawing,UK,NAU ,5,5,2,2
+Hellen,Apologetics,UK,NAU ,3,4,3,4
+Hellen,Speech,UK,NAU ,4,5,5,5
+Sandra,Spanish II,UK,MIT,3,4,3,2
+Sandra,Math,UK,MIT,4,3,3,3
+Sandra,English II,UK,MIT,4,2,3,2
+Sandra,Latin I,UK,MIT,3,5,2,3
+Sandra,World History,UK,MIT,4,0,4,0
+Donna,Spanish,Canada,IUP,5,2,5,1
+Donna,Math,Canada,IUP,3,1,4,3
+Donna,Piano I,Canada,IUP,5,3,4,2
+Donna,US History,Canada,IUP,4,0,2,1
+Donna,Computer I,Canada,IUP,4,5,4,2
+Donna,Computer II,Canada,IUP,5,3,0,1
+Carol,Latin I,Canada,MIT,1,5,0,2
+Carol,World History,Canada,MIT,3,3,4,1
+Carol,Spanish,Canada,MIT,1,0,2,2
+Carol,Latin I,Canada,MIT,3,1,4,4

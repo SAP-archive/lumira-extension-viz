@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.hrztmeanptbar",
+	"name": "HorizontalMeanPointBar",
+	"description": " ",
+	"version": "1.0.1",
+	"vendor": {
+		"name": "Xin Wen",
+		"url": "www.wenwebdz.com"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.18.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.hrztmeanptbar",
+		"version": "1.0.1"
+	}]
+}
