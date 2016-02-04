@@ -17,7 +17,8 @@ Files
 * `Scroll Timeline Bar.csv` - Sample dataset
 * `sap.viz.ext.timelinescrollbar1.0.2.zip` - Extension file
 
- New legend version without scroll bar
+Files(New legend version without scroll bar)
+------
 * `Timeline Bar_legend.lums` - Sample Lumira file
 * `Timeline Bar_legend.csv` - Sample dataset
 * `sap.viz.ext.timelinelegend.1.0.2.zip` - Extension file
@@ -33,6 +34,21 @@ Data Binding
 * End Date
 * Phase or TaskName
 * Status
+
+Data Binding(New legend version without scroll bar)
+------------
+`<strong>Measures</strong>`
+* Duration
+
+`<strong>Start, end date and item</strong>`
+* Start Date
+* End Date
+* Phase or TaskName
+* Product(showing in tooltip)
+
+`<strong>Color and others</strong>`
+* Customer(showing as color and legend)
+
 
 Resources
 ---------
