@@ -27,4 +27,4 @@ Data Binding
 
 Resources
 ---------
-* Blog : coming soon)
+* Blog : [Horizontal Mean Point Bar Chart](http://scn.sap.com/community/lumira/blog/2016/02/06/horizontal-mean-point-bar-chart--range-bar-with-mean-value)
