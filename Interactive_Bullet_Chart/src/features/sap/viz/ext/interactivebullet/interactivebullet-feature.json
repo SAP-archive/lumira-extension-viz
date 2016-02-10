@@ -3,9 +3,9 @@
 	"id": "sap.viz.ext.interactivebullet",
 	"name": "Interactive Bullet Chart",
 	"description": "An interactive bullet chart with a color picker and mouse click updates",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"vendor": {
-		"name": "Ankush Meh",
+		"name": "Ankush Mehta",
 		"url": "Your company website"
 	},
 	"requires": [{
@@ -14,6 +14,6 @@
 	}],
 	"bundles": [{
 		"id": "sap.viz.ext.interactivebullet",
-		"version": "1.0.1"
+		"version": "1.0.2"
 	}]
 }

@@ -16,7 +16,7 @@ define("interactivebullet-bundle", ["sap_viz_ext_interactivebullet-src/js/flow",
 		};
 		var vizExtBundle = sap.bi.framework.declareBundle({
 			"id": "sap.viz.ext.interactivebullet",
-			"version": "1.0.1",
+			"version": "1.0.2",
 			"components": [{
 				"id": "sap.viz.ext.interactivebullet",
 				"provide": "sap.viz.impls",
