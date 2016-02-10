@@ -24,11 +24,21 @@ Check out our SAP Lumira Visualization Extension Library. This library contains 
 
 List of current visualization extensions in the repo
 
+* 3D World 
+* Affinity
+* Bitcoins
 * Bullet Chart
+* Business Bubbles
 * Capacity Planning Chart
-* Chord Diagram
+* Chord Chart
+* Competition Chart
+* Country Visas (Chart with Tooltip and Image)
+* Custom Choropleth Map of Japan
+* Drillable KPI Tree
+* Dynabars
 * Exoplanets
 * Extended Bar Chart
+* Extended Bubble Matrix
 * Football Heatmap
 * Force Diagram
 * Forecast with 2 Confidence Intervals
@@ -38,15 +48,26 @@ List of current visualization extensions in the repo
 * Google Maps Heatmap
 * Hello World
 * Holt-Winters Exponential Smoothing
+* Horizontal Mean Point Bar Chart
+* Interactive Bullet Chart
+* IoT Data Integrator and Visualization
+* Line Chart with Zoom
 * Loss of Sales
 * Loss Incident Optimization
 * Mini Charts
+* Pipeline Bubble
 * Population Pyramid Chart
 * Power Flow Maps
+* Quadrant
+* SWOT Analysis
 * Sample Bar Chart
 * Sankey Diagram (based on Google visualization API)
+* Scrollable Timeline Chart
 * Stacked Column with Line Chart
-* (new) Sunburst Clock Chart
+* Sunburst Clock Chart
+* Sunburst Sequence
+* Sunburst Zoomable Wheel
+* Tubble Chart
 
 Get it!
 -----------
