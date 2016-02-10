@@ -65,7 +65,7 @@ define("sap_viz_ext_interactivebullet-src/js/render", [], function() {
 
 				ms0 = mset0[0]; //total
 				ms1 = mset1[0]; //actual
-				if (ms0 !== "total") {
+				if (ms0 !== ms0) {
 					flag = true;
 					flagTotal = true;
 				}
@@ -597,15 +597,15 @@ define("sap_viz_ext_interactivebullet-src/js/render", [], function() {
 				} else {
 					tt_data = "<div class='sap_viz_ext_interactivebullet_tt-item sap_viz_ext_interactivebullet_tt-combo'>" + " " + "</div>";
 				}
-				tt_data = tt_data + "<div class='sap_viz_ext_interactivebullet_tt-item tt-bag-val'> actual&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+				tt_data = tt_data + "<div class='sap_viz_ext_interactivebullet_tt-item tt-bag-val'> "+ [ms1] +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 				tt_data = tt_data + "<span class='sap_viz_ext_interactivebullet_tt-item-price'>" + _dataBullet.actual + "</span></div>";
 				if (flag) {
-					tt_data = tt_data + "<div class='sap_viz_ext_interactivebullet_tt-item tt-bag-val'> Target";
+					tt_data = tt_data + "<div class='sap_viz_ext_interactivebullet_tt-item tt-bag-val'> "+ [ms2];
 					tt_data = tt_data + "<span class='sap_viz_ext_interactivebullet_tt-item-price'>" + _dataBullet.planned + "</span></div>";
 					topPos = topPos - 20;
 				}
 				if (!flagTotal) {
-					tt_data = tt_data + "<div class='sap_viz_ext_interactivebullet_tt-item tt-bag-val'> Total";
+					tt_data = tt_data + "<div class='sap_viz_ext_interactivebullet_tt-item tt-bag-val'> " + [ms0] ;
 					tt_data = tt_data + "<span class='sap_viz_ext_interactivebullet_tt-item-price'>" + _dataBullet.total + "</span></div>";
 					topPos = topPos - 20;
 				}
