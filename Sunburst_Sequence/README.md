@@ -2,7 +2,7 @@ Sunburst Sequence
 =================================================
 By [Annie Suantak Niangneihoi](http://scn.sap.com/people/suantak.niangneihoi)<br>
 
-![Sequences Sunburst](https://github.com/SAP/lumira-extension-viz/blob/master/Sunburst_Sequence/sunburst_sequence.gif)
+![Sequences Sunburst](https://github.com/SAP/lumira-extension-viz/blob/master/Sunburst_Sequence/sunburstSequence.gif)
 
 Files
 -----------
