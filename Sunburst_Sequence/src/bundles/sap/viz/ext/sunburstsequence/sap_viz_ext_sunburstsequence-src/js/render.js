@@ -57,12 +57,21 @@ define("sap_viz_ext_sunburstsequence-src/js/render", [], function() {
 		// Total size of all segments
 		var totalSize = 0;
 		// Text elements
-		var percentage = vis.append("text").text("").attr("class", "sap_viz_ext_sequencessunburst_percentage").attr("y", 0).attr("x", (-
-			margin.left));
-		var explanation = vis.append("text").text("").attr("class", "sap_viz_ext_sequencessunburst_explanation").attr("y", 25).attr("x", (-
-			margin.left - 20));
-		var explanation2 = vis.append("text").text("").attr("class", "sap_viz_ext_sequencessunburst_explanation2").attr("y", 45).attr("x", (-
-			margin.left - 35));
+		var percentage = vis.append("text")
+			.text("")
+			.attr("class", "sap_viz_ext_sequencessunburst_percentage")
+			.attr("y", 0)
+			.attr("x", (-margin.left));
+		var explanation = vis.append("text")
+			.text("")
+			.attr("class", "sap_viz_ext_sequencessunburst_explanation")
+			.attr("y", 25)
+			.attr("x", (-margin.left));
+		var explanation2 = vis.append("text")
+			.text("")
+			.attr("class", "sap_viz_ext_sequencessunburst_explanation2")
+			.attr("y", 45)
+			.attr("x", (-margin.left));
 		//Partition for sunburst
 		var partition = d3.layout.partition()
 			.size([2 * Math.PI, radius * radius])
@@ -146,8 +155,8 @@ define("sap_viz_ext_sunburstsequence-src/js/render", [], function() {
 				temp_name += sequenceArray[k].name + '>>>>';
 			}
 			d3.select(".sap_viz_ext_sequencessunburst_percentage").text(percentageString);
-			d3.select(".sap_viz_ext_sequencessunburst_explanation").text("of visits begins with");
-			d3.select(".sap_viz_ext_sequencessunburst_explanation2").text("this sequence of pages");
+			d3.select(".sap_viz_ext_sequencessunburst_explanation").text("follow this");
+			d3.select(".sap_viz_ext_sequencessunburst_explanation2").text("sequence");
 			updateBreadcrumbs(sequenceArray, percentageString);
 			// Fade all the segments.
 			d3.selectAll("path")
