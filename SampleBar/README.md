@@ -2,6 +2,8 @@ Sample Bar Chart - SAP Lumira visualization extension
 =================================================
 The Sample Bar extension can be used as is in SAP Lumira, or it can be customized in SAP Web IDE. You can add or change properties in the extension.
 
+![Sample Bar Chart](https://github.com/SAP/lumira-extension-viz/blob/master/SampleBar/SampleBar.PNG)
+
 Data Files
 -----------
 * `Sample Bar.lums` - Sample Lumira document
