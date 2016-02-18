@@ -1,26 +1,57 @@
 ParentNode,ChildNode,ParentValue,ChildValue
-flare,analytics,50,50
-flare,animate,85,85
-flare,data,60,60
-flare,display,25,25
-flare,flex,44,44
-flare,physics,15,15
-flare,query,28,28
-flare,scale,63,63
-flare,util,48,48
-flare,vis,77,77
-analytics,cluster,50,15
-analytics,graph,85,28
-analytics,optimization,60,63
-data,converters,25,48
-data,DataField,44,50
-data,DataSchema,15,85
-data,DataSet,28,60
-data,DataSource,63,25
-data,DataTable,48,44
-data,DataUtil,77,15
-converters,Converters,50,28
-converters,TextConverter,85,63
-converters,GraphMLConverter,60,48
-converters,IDataConverter,25,77
-converters,JSONConverter,44,15
+Locations,New England,85,28
+Locations,West,60,63
+Locations,Atlantic,25,48
+Locations,South,44,50
+Locations,Midwest,15,85
+Locations,Southwest,28,60
+New England,Connecticut,50,50
+New England,Maine,85,85
+New England,Massachusetts,60,60
+New England,New Hampshire,25,25
+New England,Rhode Island,44,44
+New England,Vermont,15,15
+West,Alaska,28,28
+West,California,63,63
+West,Colorado,48,48
+West,Idaho,77,77
+West,Montana,50,15
+West,Nevada,85,28
+West,Oregon,60,63
+data,Utah,25,48
+West,Washington,44,50
+West,Wyoming,15,85
+Atlantic,Delaware,28,60
+Atlantic,Maryland,63,25
+Atlantic,New Jersey,48,44
+Atlantic,New York State,77,15
+Atlantic,Pennsylvania,50,28
+Atlantic,Puerto Rico,85,63
+South,Alabama,60,48
+South,Arkansas,25,77
+South,Florida,44,15
+South,Georgia,44,50
+South,Kentucky,15,85
+South,Louisiana,28,60
+South,Mississippi,63,25
+South,Missouri,48,44
+South,North Carolina,77,15
+South,South Carolina,15,28
+South,Tennessee,28,63
+South,Virginia,63,48
+South,West Virginia,48,77
+Midwest,Illinois,50,50
+Midwest,Indiana,85,85
+Midwest,Iowa,60,60
+Midwest,Kansas,25,25
+Midwest,Michigan,44,44
+Midwest,Minnesota,15,50
+Midwest,Nebraska,28,85
+Midwest,North Dakota,63,60
+Midwest,Ohio,48,25
+Midwest,South Dakota,77,44
+Midwest,Wisconsin,15,15
+Southwest,Arizona,50,28
+Southwest,New Mexico,85,63
+Southwest,Oklahoma,60,48
+Southwest,Texas,25,77
