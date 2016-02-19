@@ -13,8 +13,8 @@ Files
 Data Binding
 -------------
 <strong>Measures</strong>
-* Min
 * Actual
+* Min
 * Max
 
 <strong>Dimensions</strong>
