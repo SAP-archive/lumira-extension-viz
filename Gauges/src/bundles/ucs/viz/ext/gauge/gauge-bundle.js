@@ -16,7 +16,7 @@ define("gauge-bundle", ["ucs_viz_ext_gauge-src/js/flow", "css!ucs_viz_ext_gauge-
 	};
 	var vizExtBundle = sap.bi.framework.declareBundle({
 		"id": "ucs.viz.ext.gauge",
-		"version": "1.0.1",
+		"version": "1.0.2",
 		"components": [{
 			"id": "ucs.viz.ext.gauge",
 			"provide": "sap.viz.impls",

@@ -67,7 +67,7 @@ define("ucs_viz_ext_gauge-src/js/render", [], function() {
 				this.config.minorTicks = configuration.minorTicks || 2;
 
 				this.config.greenColor = configuration.greenColor || "#109618";
-				this.config.yellowColor = configuration.yellowColor || "#FF9900";
+				this.config.yellowColor = configuration.yellowColor || "#FF8A00";
 				this.config.redColor = configuration.redColor || "#DC3912";
 
 				this.config.transitionDuration = configuration.transitionDuration || 500;
@@ -85,15 +85,15 @@ define("ucs_viz_ext_gauge-src/js/render", [], function() {
 					.attr("cx", this.config.cx)
 					.attr("cy", this.config.cy)
 					.attr("r", this.config.raduis)
-					.style("fill", "#ccc")
-					.style("stroke", "#000")
+					.style("fill", "#1f1f1f")
+					.style("stroke", "#353535")
 					.style("stroke-width", "0.5px");
 
 				this.body.append("svg:circle")
 					.attr("cx", this.config.cx)
 					.attr("cy", this.config.cy)
 					.attr("r", 0.9 * this.config.raduis)
-					.style("fill", "#fff")
+					.style("fill", "#1f1f1f")
 					.style("stroke", "#e0e0e0")
 					.style("stroke-width", "2px");
 
@@ -110,7 +110,7 @@ define("ucs_viz_ext_gauge-src/js/render", [], function() {
 				}
 
 				if (undefined !== this.config.label) {
-					var fontSize = Math.round(this.config.size / 9);
+					var fontSize = Math.round(this.config.size / 10.5);
 					this.body.append("svg:text")
 						.attr("x", this.config.cx)
 						.attr("y", this.config.cy / 2 + fontSize / 2)
@@ -118,8 +118,8 @@ define("ucs_viz_ext_gauge-src/js/render", [], function() {
 						.attr("text-anchor", "middle")
 						.text(this.config.label)
 						.style("font-size", fontSize + "px")
-						.style("fill", "#333")
-						.style("stroke-width", "0px");
+						.style("fill", "#e5e5e5")
+						.style("font-family", "Helvetica");
 				}
 
 				var fontSize = Math.round(this.config.size / 16);
@@ -135,7 +135,7 @@ define("ucs_viz_ext_gauge-src/js/render", [], function() {
 							.attr("y1", point1.y)
 							.attr("x2", point2.x)
 							.attr("y2", point2.y)
-							.style("stroke", "#666")
+							.style("stroke", "#e5e5e5")
 							.style("stroke-width", "1px");
 					}
 
@@ -147,7 +147,7 @@ define("ucs_viz_ext_gauge-src/js/render", [], function() {
 						.attr("y1", point1.y)
 						.attr("x2", point2.x)
 						.attr("y2", point2.y)
-						.style("stroke", "#333")
+						.style("stroke", "#e5e5e5")
 						.style("stroke-width", "2px");
 
 					if (major === this.config.min || major === this.config.max) {
@@ -160,7 +160,7 @@ define("ucs_viz_ext_gauge-src/js/render", [], function() {
 							.attr("text-anchor", major === this.config.min ? "start" : "end")
 							.text(major)
 							.style("font-size", fontSize + "px")
-							.style("fill", "#333")
+							.style("fill", "#e5e5e5")
 							.style("stroke-width", "0px");
 					}
 				}
@@ -185,17 +185,17 @@ define("ucs_viz_ext_gauge-src/js/render", [], function() {
 					.enter()
 					.append("svg:path")
 					.attr("d", pointerLine)
-					.style("fill", "#dc3912")
-					.style("stroke", "#c63310")
-					.style("fill-opacity", 0.7);
+					.style("fill", "#FFFF00")
+					.style("stroke", "#FFD700")
+					.style("fill-opacity", 1);
 
 				pointerContainer.append("svg:circle")
 					.attr("cx", this.config.cx)
 					.attr("cy", this.config.cy)
 					.attr("r", 0.12 * this.config.raduis)
-					.style("fill", "#4684EE")
-					.style("stroke", "#666")
-					.style("opacity", 1);
+					.style("fill", "#FFD700")
+					.style("stroke", "#fff")
+					.style("opacity", 0.8);
 
 				var fontSize = Math.round(this.config.size / 10);
 				pointerContainer.selectAll("text")
@@ -207,7 +207,7 @@ define("ucs_viz_ext_gauge-src/js/render", [], function() {
 					.attr("dy", fontSize / 2)
 					.attr("text-anchor", "middle")
 					.style("font-size", fontSize + "px")
-					.style("fill", "#000")
+					.style("fill", "#e5e5e5")
 					.style("stroke-width", "0px");
 
 				this.redraw(this.config.min, 0);
