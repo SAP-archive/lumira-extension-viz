@@ -23,6 +23,10 @@ Files(New legend version without scroll bar)
 * `Timeline Bar_legend.csv` - Sample dataset
 * `sap.viz.ext.timelinelegend.1.0.2.zip` - Extension file
 
+Files(Added tooltip animation + on task overlap, chart height reduced by half)
+------
+* `sap.viz.ext.timelinelegend_1.0.3.zip` - Extension file with new features
+
 
 Data Binding
 ------------
