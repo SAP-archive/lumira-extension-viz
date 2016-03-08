@@ -45,6 +45,7 @@ I built this within the Lumira folder structure: Inside the Lumira Desktop folde
 
 ## Files
 * `sap.viz.ext.powerflowmaps.zip` - SAP Lumira extension
+* `sap.viz.ext.powerflowmaps_DSLU.zip` - SAP Lumira extension compatible with both Lumira & Design Studio
 * `powerflowmaps_data.csv` - Sample dataset
 
 ## Data Binding
