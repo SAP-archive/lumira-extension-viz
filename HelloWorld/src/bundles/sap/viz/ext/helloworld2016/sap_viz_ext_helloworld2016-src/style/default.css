@@ -1,2 +1,7 @@
 /* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
 /* For example, adding the extension id as prefix of CSS class name. */
+
+.sap_viz_ext_helloworld2016 {
+	font-size: large;
+}

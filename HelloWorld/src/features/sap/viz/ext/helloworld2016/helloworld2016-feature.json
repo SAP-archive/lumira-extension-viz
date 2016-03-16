@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.helloworld2016",
+	"name": "Hello World 2016",
+	"description": "Test loading a local JS and local IMG",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Your company",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.6.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.helloworld2016",
+		"version": "1.0.0"
+	}]
+}

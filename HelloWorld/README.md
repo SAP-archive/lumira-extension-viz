@@ -5,6 +5,8 @@ Hello World - SAP Lumira visualization extension
 Files
 -----------
 * `sap.viz.ext.helloworld.zip` - SAP Lumira visualization extension, exported from SAP Web IDE
+* 'sap.viz.ext.helloworld.profile' - Profile file for extension in VizPacker
+* 'sap.viz.ext.helloworld2016.zip' - New updated Hello World example SAP Lumira visualization extension
 
 Resources
 -----------
