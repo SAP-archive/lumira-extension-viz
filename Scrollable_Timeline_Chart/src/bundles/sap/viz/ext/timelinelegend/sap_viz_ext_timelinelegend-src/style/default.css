@@ -1,0 +1,94 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+.sap_viz_ext_timelinelegend_chart {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+
+.sap_viz_ext_timelinelegend_axis path, .sap_viz_ext_timelinelegend_axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+.sap_viz_ext_timelinelegend_axis_hint path, .sap_viz_ext_timelinelegend_axis_hint line {
+	fill: none;
+	stroke: #ccc;
+	shape-rendering: crispEdges;
+}
+
+.sap_viz_ext_timelinelegend_chart .sap_viz_ext_timelinelegend_dateoverview_bg{
+	fill: #ddd;
+}
+
+.sap_viz_ext_timelinelegend_chart .sap_viz_ext_timelinelegend_dateoverview .sap_viz_ext_timelinelegend_dateoverview_grid path,
+.sap_viz_ext_timelinelegend_chart .sap_viz_ext_timelinelegend_dateoverview .sap_viz_ext_timelinelegend_dateoverview_grid .tick line{
+	stroke: #fff;
+	stroke-width: 1px;
+	fill: none;
+}
+
+.sap_viz_ext_timelinelegend_chart .sap_viz_ext_timelinelegend_dateoverview .sap_viz_ext_timelinelegend_dateoverview_axis path,
+.sap_viz_ext_timelinelegend_chart .sap_viz_ext_timelinelegend_dateoverview .sap_viz_ext_timelinelegend_dateoverview_axis .tick line{
+	stroke-width: 1px;
+	stroke: #222;
+	fill: none;
+}
+
+.sap_viz_ext_timelinelegend_chart .sap_viz_ext_timelinelegend_dateoverview_brush .extent {
+  stroke: #000;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.sap_viz_ext_scrollgantt-container{
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-radius: 4px;
+}
+
+foreignobject.sap_viz_ext_timelinelegend_forobj{
+	width: 100%;
+    height: 100%;
+}
+
+.sap_viz_ext_timelinelegend_dateoverview_background{
+	fill: #ddd;
+}
+ 
+.sap_viz_ext_timelinelegend_bar {
+	fill: #33b5e5;
+}
+.sap_viz_ext_timelinelegend_rect{
+    stroke-width = 1;
+    stroke = #fff;
+}
+.sap_viz_ext_timelinelegend_tootip{
+	font-size: .9em;
+    opacity : 0;
+}
+.sap_viz_ext_timelinelegend_tootip rect.timelinelegend_tootip_label {
+    fill: #444;
+    rx: 3;
+    ry: 3;
+}
+.sap_viz_ext_timelinelegend_tootip g.timelinelegend_tootip_label_detail text{
+    fill: #fff;
+    font-size: 1.1em;
+}
+/*.sap_viz_ext_timelinelegend_bar-failed {*/
+/*	fill: #CC0000;*/
+/*}*/
+ 
+/*.sap_viz_ext_timelinelegend_bar-running {*/
+/*	fill: #669900;*/
+/*}*/
+ 
+/*.sap_viz_ext_timelinelegend_bar-succeeded {*/
+/*	fill: #33b5e5;*/
+/*}*/
+ 
+/*.sap_viz_ext_timelinelegend_bar-killed {*/
+/*	fill: #ffbb33;*/
+/*}*/

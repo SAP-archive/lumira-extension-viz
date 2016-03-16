@@ -1,5 +1,5 @@
-define("sap_viz_ext_timelinescrollbar-src/js/module", ["sap_viz_ext_timelinescrollbar-src/js/render",
-	"sap_viz_ext_timelinescrollbar-src/js/dataMapping"
+define("sap_viz_ext_timelinelegend-src/js/module", ["sap_viz_ext_timelinelegend-src/js/render",
+	"sap_viz_ext_timelinelegend-src/js/dataMapping"
 ], function(render, processData) {
 	// Extension module implementation
 	var moduleFunc = {

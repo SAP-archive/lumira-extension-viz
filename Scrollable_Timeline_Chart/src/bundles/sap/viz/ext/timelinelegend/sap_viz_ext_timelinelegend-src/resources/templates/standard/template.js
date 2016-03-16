@@ -2,8 +2,12 @@ var sampleTemplate = {
 	"id": "standard",
 	"name": "Standard",
 	"properties": {
-		"sap.viz.ext.timelinescrollbar": {
-
+		"sap.viz.ext.timelinelegend": {
+			"legend": {
+				"title": {
+					"visible": true
+				}
+			}
 		}
 	}
 };

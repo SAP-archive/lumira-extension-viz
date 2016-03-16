@@ -1,4 +1,4 @@
-define("sap_viz_ext_timelinescrollbar-src/js/dataMapping", ["sap_viz_ext_timelinescrollbar-src/js/utils/util"], function(util) {
+define("sap_viz_ext_timelinelegend-src/js/dataMapping", ["sap_viz_ext_timelinelegend-src/js/utils/util"], function(util) {
 	var processData = function(data, feeds, done) {
 		// Build name index so that dimension/measure sets can be accessed by name
 		util.buildNameIdx(feeds);

@@ -1,9 +1,9 @@
 {
 	"metadataVersion": "1.0",
-	"id": "sap.viz.ext.timelinescrollbar",
-	"name": "Timeline Scroll Bar",
+	"id": "sap.viz.ext.timelinelegend",
+	"name": "Timeline Legend Chart",
 	"description": " ",
-	"version": "1.0.2",
+	"version": "1.0.4",
 	"vendor": {
 		"name": "Xin Wen",
 		"url": "www.wenwebdz.com"
@@ -13,7 +13,7 @@
 		"version": "5.6.0"
 	}],
 	"bundles": [{
-		"id": "sap.viz.ext.timelinescrollbar",
-		"version": "1.0.2"
+		"id": "sap.viz.ext.timelinelegend",
+		"version": "1.0.4"
 	}]
 }
