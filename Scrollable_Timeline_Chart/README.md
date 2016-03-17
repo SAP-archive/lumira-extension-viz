@@ -25,7 +25,7 @@ Files(New legend version without scroll bar)
 
 Files(Added tooltip animation + on task overlap, chart height reduced by half)
 ------
-* `sap.viz.ext.timelinelegend_1.0.3.zip` - Extension file with new features
+* `sap.viz.ext.timelinelegend1.0.6.zip` - Extension file with new features
 
 
 Data Binding
