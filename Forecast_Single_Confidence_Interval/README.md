@@ -2,7 +2,7 @@ Forecast with Single Confidence Interval Band
 =============================================
 By [Jay Thoden van Velzen](http://scn.sap.com/people/jay.thodenvanvelzen)
 
-![Forecast with Single Confidence Interval](https://github.com/SAP/lumira-extension-viz/blob/master/Forecast%20with%20Single%20Confidence%20Interval/ForecastSingleConfidence.PNG)
+![Forecast with Single Confidence Interval](https://github.com/SAP/lumira-extension-viz/blob/master/Forecast_Single_Confidence_Interval/ForecastSingleConfidence.PNG)
 
 This chart shows the visualization of actuals and forecast with a single confidence interval. Note that this chart doesn't
 perform the forecast itself, but a visualization extension that allows to show the results of such forecast with the appropriate
