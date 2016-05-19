@@ -1,4 +1,4 @@
-Mini Donut Chart & Mini Area Chart - SAP Lumira visualization extension
+Mini Donut Chart - SAP Lumira visualization extension
 =================================================
 * By [Mustafa Aydogdu](http://scn.sap.com/people/mustafa.aydogdu)
 * Based on the [D3.js library](http://d3js.org/)
