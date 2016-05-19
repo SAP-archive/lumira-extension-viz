@@ -5,7 +5,7 @@ Mini Donut Chart & Mini Area Chart - SAP Lumira visualization extension
  
 Mini Donut Chart
 ------------------
-![Mini Donut Chart](https://github.com/SAP/lumira-extension-viz/blob/master/Mini%20Charts/Mini%20Donut%20Chart/MiniDonutChart.PNG)
+![Mini Donut Chart](https://github.com/SAP/lumira-extension-viz/blob/master/Mini_Donut_Chart/MiniDonutChart.PNG)
 
 Files
 -----------
