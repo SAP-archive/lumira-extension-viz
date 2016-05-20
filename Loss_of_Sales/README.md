@@ -2,7 +2,7 @@ Loss of Sales Chart - SAP Lumira visualization extension
 =================================================
 * By [Ankush Mehta](http://scn.sap.com/people/ankush.mehta)<br>
 
-![Loss of Sales](https://github.com/SAP/lumira-extension-viz/blob/master/Loss%20of%20Sales/LossOfSales.PNG)
+![Loss of Sales](https://github.com/SAP/lumira-extension-viz/blob/master/Loss_of_Sales/LossOfSales.PNG)
 
 Files
 -----------
