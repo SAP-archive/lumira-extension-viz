@@ -4,7 +4,7 @@
 
 This extension displays a 3D world where you can map your longitude/latitude data, as well as put two indicators on them (size/color).
 
-![3D World](https://github.com/SAP/lumira-extension-viz/blob/master/3D_World/3dworld.PNG)
+![3D World](https://github.com/SAP/lumira-extension-viz/blob/master/3D_World/3dWorld.gif)
 
 Files
 -----------
