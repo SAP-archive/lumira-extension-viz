@@ -2,7 +2,7 @@ Competition Chart
 =================================================
 By [Florian Stumpe](http://scn.sap.com/people/florian.stumpe)<br>
 
-![Competition Chart](https://github.com/SAP/lumira-extension-viz/blob/master/Competition_Chart/competitionchart.png)
+![Competition Chart](https://github.com/SAP/lumira-extension-viz/blob/master/Competition_Chart/competitionchart.gif)
 
 Files
 -----------
