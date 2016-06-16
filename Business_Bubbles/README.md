@@ -3,7 +3,7 @@ Business Bubbles
 By <strong>Team Business Bubbles</strong><br>
 From the [SAP Lumira BizViz Hackathon - September 2015](http://scn.sap.com/community/lumira/blog/2015/09/22/the-lumira-bizviz-hackathon-54-hours-9-breakouts-92-red-bulls--and-lots-of-fun)
 
-![Business Bubbles](https://github.com/SAP/lumira-extension-viz/blob/master/Business_Bubbles/Business Bubbles.PNG)
+![Business Bubbles](https://github.com/SAP/lumira-extension-viz/blob/master/Business_Bubbles/BusinessBubbles.gif)
 
 Files
 ------------
