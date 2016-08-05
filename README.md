@@ -31,6 +31,7 @@ List of current visualization extensions in the repo
 * Business Bubbles
 * Capacity Planning Chart
 * Chord Chart
+* CompaRatio Chart
 * Competition Chart
 * Country Visas (Chart with Tooltip and Image)
 * Custom Choropleth Map of Japan

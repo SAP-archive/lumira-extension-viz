@@ -1,0 +1,35 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+.sap_viz_ext_comparatiochart_rect {
+  fill: #F7F5F0;
+}
+
+.sap_viz_ext_comparatiochart_text{
+  fill: #69767F;
+  font: 14px sans-serif;
+  white-space: auto;
+}
+
+.sap_viz_ext_comparatiochart_numtext {
+  fill: #69767F;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.sap_viz_ext_comparatiochart_line {
+	stroke:#69767F;
+	stroke-width:2;
+}
+
+.sap_viz_ext_comparatiochart_horizontal_line {
+	stroke:#69767F;
+	stroke-width:0.3;
+	stroke-dasharray:5,5;
+	d:M5 20 l215 0;
+}
+
+.sap_viz_ext_comparatiochart-forobj-div-container {
+	overflow: auto;
+}
