@@ -8,7 +8,7 @@ This extension visualizes an employee's current salary divided by the mid point 
 
 Download Extension
 -----------
-[CompaRatio Chart](https://github.com/SAP/lumira-extension-viz/blob/master/CompaRatio_Chart/sap.viz.ext.comparatiochart.zip)
+[CompaRatio Chart](https://github.com/SAP/lumira-extension-viz/blob/master/CompaRatio_Chart/sap.viz.ext.comparatiochart.zip?raw=true)
 
 Files
 -----------
