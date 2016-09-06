@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.electionparty",
+	"name": "ElectionParty",
+	"description": "An extension to visualize expenditure by time, president and party",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Niklas Schoenberger",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.6.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.electionparty",
+		"version": "1.0.0"
+	}]
+}

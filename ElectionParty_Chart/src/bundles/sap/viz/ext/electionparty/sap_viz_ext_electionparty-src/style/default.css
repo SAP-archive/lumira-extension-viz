@@ -1,0 +1,89 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+.sap_viz_ext_electionparty_axis path,
+.sap_viz_ext_electionparty_axis line {
+    fill: none;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+    stroke: black;
+}
+
+.sap_viz_ext_electionparty_axis > .tick line {
+	stroke: white;
+	stroke-dasharray: 2,5;
+}
+
+.sap_viz_ext_electionparty_axis text {
+	font-size: 1.4vmin;
+}
+
+.sap_viz_ext_electionparty_backgroundText {
+	font-size: 3vmin;
+	dominant-baseline: middle;
+}
+
+.sap_viz_ext_electionparty_legendText {
+	font-size: 0.85vw;
+	dominant-baseline: middle;
+}
+
+  .sap_viz_ext_electionparty_tick line{
+    opacity: 0.2;
+  }
+  
+  
+  .sap_viz_ext_electionparty_bgAreaOverlay {
+  	opacity: 0.4;
+  	transition: opacity 0.4s;
+  }
+  
+    .sap_viz_ext_electionparty_bgAreaOverlayTransparent {
+  	opacity: 0.0;
+  	transition: opacity 0.4s;
+  }
+  
+#sap_viz_ext_electionparty_triangle {
+    display: block;
+    position: absolute;
+}
+#sap_viz_ext_electionparty_triangle.left {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 10px 9px 0;
+    border-color: transparent #334450 transparent transparent;
+    left: -9px;
+    float: left;
+}
+#sap_viz_ext_electionparty_triangle.right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 10px;
+    border-color: transparent transparent transparent #334450;
+    right: -9px;
+}
+#sap_viz_ext_electionparty_t-tip {
+    position: absolute;
+    z-index: 10;
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    font-family: helvetica;
+}
+
+.sap_viz_ext_electionparty_att-inner {
+    background: #334450;
+    height: auto;
+    padding: 10px;
+    border-radius: 1px;
+    width: auto;
+}
+
+.sap_viz_ext_electionparty-forobj-div-container {
+	overflow-x: auto;
+	overflow-y: hidden;
+	z-index: 1;
+}
