@@ -15,7 +15,7 @@ define("sap_viz_ext_electionparty-src/js/render", [], function() {
 			height = this.height(),
 			margin = {
 				top: 20,
-				right: 40 + 0.1*width,
+				right: 45 + 0.1*width,
 				bottom: 40,
 				left: 50
 			},
@@ -40,12 +40,11 @@ define("sap_viz_ext_electionparty-src/js/render", [], function() {
 		data = data.sort(function(a, b) {
 			return a[dim_0] - b[dim_0];
 		});
-		container.selectAll('svg').remove();
-		var divContainer = container.append("foreignObject")
-			.attr("width", width + "px")
-			.attr("height", height + "px")
-			.attr("class", "sap_viz_ext_electionparty_forobj")
-			.append("xhtml:div")
+		
+		//to enable scroll functionality, the extension type is set to "DIV" instead of svg. Now we can add a div to the container with overflow: auto; style
+		//property set and then add the actual SVG-Container to that div. This avoids using a foreignobject div and all the problems coming with it.
+		container.selectAll("*").remove();
+		var divContainer = container.append("div")
 			.attr("class", "sap_viz_ext_electionparty-forobj-div-container")
 			.style("width", width + "px")
 			.style("height", height + "px")
