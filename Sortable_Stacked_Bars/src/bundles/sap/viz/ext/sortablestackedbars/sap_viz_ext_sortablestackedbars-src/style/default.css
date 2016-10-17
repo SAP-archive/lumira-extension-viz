@@ -1,0 +1,86 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+#sap_viz_ext_sortablestackedbars_SortableStackedBarsYAxis > path.domain {
+    fill: none;
+    stroke: #737373;
+    shape-rendering: crispEdges;
+}
+#sap_viz_ext_sortablestackedbars_SortableStackedBarsYAxis > .tick > line {
+    stroke: #737373;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+#sap_viz_ext_sortablestackedbars_SortableStackedBarsXAxis > .tick > line {
+    fill: none;
+    stroke: #737373;
+    shape-rendering: crispEdges;
+    stroke-width: 1px;
+}
+#sap_viz_ext_sortablestackedbars_SortableStackedBarsXAxis > path.domain {
+    display: none;
+}
+#sap_viz_ext_sortablestackedbars_SortableStackedBarsYAxis,
+#sap_viz_ext_sortablestackedbars_SortableStackedBarsXAxis> .tick > text {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    fill: #737373;
+    font-size: 10px;
+    font-weight: normal;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+.sap_viz_ext_sortablestackedbars_labelXAxis,
+.sap_viz_ext_sortablestackedbars_labelYAxis {
+    font-size: 12px;
+}
+#sap_viz_ext_sortablestackedbars_t-tip {
+    position: absolute;
+    z-index: 10;
+    position: absolute;
+    font-size: 16px;
+    font-family: helvetica;
+    transform: translate(-50%, -120%);
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    box-shadow: rgb(175, 175, 175) 1px 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+}
+.sap_viz_ext_sortablestackedbars_att-inner {
+    height: auto;
+    width: auto;
+}
+.sap_viz_ext_sortablestackedbars_tooltipItemName {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 7px;
+    padding-bottom: 7px;
+    color: #737373;
+}
+.sap_viz_ext_sortablestackedbars_tooltipItemValue {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 7px;
+    padding-bottom: 7px;
+    color: #000000;
+}
+.sap_viz_ext_sortablestackedbars_barRectHover {
+    opacity: 0.0;
+}
+.sap_viz_ext_sortablestackedbars_barRectHover.hover {
+	opacity: 0.4;
+}
+.sap_viz_ext_sortablestackedbars_legendItemHover:hover {
+	opacity: 0.6;
+}
