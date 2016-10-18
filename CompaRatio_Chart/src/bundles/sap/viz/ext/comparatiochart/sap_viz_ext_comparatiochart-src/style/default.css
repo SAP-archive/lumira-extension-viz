@@ -3,19 +3,27 @@
 /* For example, adding the extension id as prefix of CSS class name. */
 
 .sap_viz_ext_comparatiochart_rect {
-  fill: #F7F5F0;
+  fill: #e4decd;
 }
 
 .sap_viz_ext_comparatiochart_text{
   fill: #69767F;
   font: 14px sans-serif;
   white-space: auto;
+  text-align: right;
 }
 
 .sap_viz_ext_comparatiochart_numtext {
   fill: #69767F;
   font: 10px sans-serif;
-  text-anchor: middle;
+}
+
+.sap_viz_ext_comparatiochart_numtext_leftaligned {
+	text-anchor: start;
+}
+
+.sap_viz_ext_comparatiochart_numtext_rightaligned {
+	text-anchor: end;
 }
 
 .sap_viz_ext_comparatiochart_line {
