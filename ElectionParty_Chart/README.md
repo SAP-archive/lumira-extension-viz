@@ -2,7 +2,7 @@ ElectionParty Chart
 =================================================
  * By [Niklas Schoenberger](http://scn.sap.com/people/niklas.schoenberger)
 
-This extension visualizes the relationship between defense spending and the party in charge for a given period in the US history. It includes an indicator line and a color indication for the political party
+This extension visualizes the relationship between, for example, state expenditure and the party in charge for a given period in the history. It includes an indicator line and a color indication for the political party
 
 ![ElectionParty Chart](https://github.com/SAP/lumira-extension-viz/blob/master/ElectionParty_Chart/ElectionParty_Chart.gif)
 
@@ -28,4 +28,4 @@ Data Binding
 
 Resources
 -----------
-* Blog post - Coming soon
+* [Blog Post] (https://blogs.sap.com/2016/09/08/combining-the-electionparty-extension-and-quandl-connector-to-win-the-election/)

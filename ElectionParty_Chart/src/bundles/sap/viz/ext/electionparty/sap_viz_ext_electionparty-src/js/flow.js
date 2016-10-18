@@ -4,7 +4,7 @@ define("sap_viz_ext_electionparty-src/js/flow", ["sap_viz_ext_electionparty-src/
 			id: "sap.viz.ext.electionparty",
 			name: "ElectionParty",
 			dataModel: "sap.viz.api.data.CrosstableDataset",
-			type: "BorderSVGFlow"
+			type: "DIV"
 		});
 
 		var titleElement = sap.viz.extapi.Flow.createElement({

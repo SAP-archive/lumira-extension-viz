@@ -16,7 +16,7 @@ define("electionparty-bundle", ["sap_viz_ext_electionparty-src/js/flow", "css!sa
 		};
 		var vizExtBundle = sap.bi.framework.declareBundle({
 			"id": "sap.viz.ext.electionparty",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"components": [{
 				"id": "sap.viz.ext.electionparty",
 				"provide": "sap.viz.impls",
