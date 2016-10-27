@@ -130,7 +130,7 @@ define("sap_viz_ext_comparatiochart-src/js/render", [], function() {
             .attr("r", (barHeight -numHeight)/2)
             .style("fill", function(d) {
                 if (d[current] < d[min]) {return "#E52929";}
-                else if (d[current] >= (d[max] + d[min]) / 2) {return "#008A11";}
+                else if (d[current] >= (d[max] + d[min]) / 2 && d[current] <= d[max] ) {return "#008A11";}
                 else { return "#F0AB00"; }
             });
         
