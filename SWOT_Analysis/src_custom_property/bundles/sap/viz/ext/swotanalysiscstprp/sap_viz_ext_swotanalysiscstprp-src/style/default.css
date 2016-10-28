@@ -27,8 +27,8 @@ div.sap_viz_ext_swotanalysis{
     top: 100px;
     text-align: center;
 	background-image:url('Arrow_nostroke.svg');
-	background-size:100% 100%;
 	background-repeat:no-repeat;
+	background-position: left center;
 	height:18%;
 	display:table;
 	font-weight: bold;
@@ -38,9 +38,17 @@ div.sap_viz_ext_swotanalysis{
 	left:90%;
     width: 10%;
     top: 10px;
-	height:20%;
+	height:100%;
 	font-weight: bold;
+	opacity: 0.0;
+	transition: opacity 0.3s ease;
 }
+
+.sap_viz_ext_swotanalysis_checkbox:hover {
+  background-color: white;
+  opacity: 0.8;
+}
+
 .sap_viz_ext_swotanalysis_checkbox label{
 	padding-left: 10px;
 	font-family: Arial,sans-serif;
@@ -52,7 +60,7 @@ div.sap_viz_ext_swotanalysis{
 	font-size:1.4em;
 	display:table-cell; 
 	text-align: left;
-	padding-left: 5px;
+	padding-left: 0px;
 	vertical-align:middle;
 	color:#fff;
 }
@@ -70,6 +78,7 @@ div.sap_viz_ext_swotanalysis{
 	border-style:solid;
 	border-width:medium;
 	position:relative;
+	text-overflow: ellipsis;
 }
 .sap_viz_ext_swotanalysis p{
 	font-size: 1.2em;
@@ -81,7 +90,7 @@ div.sap_viz_ext_swotanalysis{
 	font-family:Verdana,Sans-serif;
 	text-align: left;
 	padding-left: 1em;
-	font-size: 2em;
+	font-size: 1.9vw;
 	color: #222;
 	/*background: #007ea7;*/
 	padding: 10px 0 10px 20px;
@@ -91,7 +100,7 @@ div.sap_viz_ext_swotanalysis{
 
 .sap_viz_ext_swotanalysis ul.description li{
 	color: #222;
-	font-size: 1.2em;
+	font-size: 1.6vmin;
 	font-family: Arial,sans-serif;
 	text-align: left;
 	padding: 0.4em 1em 0.4em 0.2em;
@@ -107,7 +116,6 @@ div.sap_viz_ext_swotanalysis{
 	width:30%;
 	height:20%;
 	margin-top:10px;
-	font-size:5em;
 	color:#222;
 	font-weight:bold;
 	font-family: Arial,sans-serif;
@@ -156,8 +164,8 @@ div.sap_viz_ext_swotanalysis{
 	    top: 100px;
 	    text-align: center;
 		background-image:url('Arrow_nostroke.svg');
-		background-size:100% 100%;
 		background-repeat:no-repeat;
+		background-position: left center;
 		height:20%;
 		display:table;
 	}
