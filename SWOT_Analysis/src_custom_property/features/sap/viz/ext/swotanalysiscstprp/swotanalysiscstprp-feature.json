@@ -3,7 +3,7 @@
 	"id": "sap.viz.ext.swotanalysiscstprp",
 	"name": "SWOT Analysis Custom Property",
 	"description": " ",
-	"version": "1.0.2",
+	"version": "1.0.1",
 	"vendor": {
 		"name": "SAP",
 		"url": "www.sap.com"
@@ -14,6 +14,6 @@
 	}],
 	"bundles": [{
 		"id": "sap.viz.ext.swotanalysiscstprp",
-		"version": "1.0.2"
+		"version": "1.0.1"
 	}]
 }
