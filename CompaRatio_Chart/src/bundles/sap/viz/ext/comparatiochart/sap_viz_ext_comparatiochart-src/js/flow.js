@@ -4,7 +4,7 @@ define("sap_viz_ext_comparatiochart-src/js/flow", ["sap_viz_ext_comparatiochart-
 			id: "sap.viz.ext.comparatiochart",
 			name: "CompaRatioChart",
 			dataModel: "sap.viz.api.data.CrosstableDataset",
-			type: "BorderSVGFlow"
+			type: "DIV"
 		});
 
 		var titleElement = sap.viz.extapi.Flow.createElement({

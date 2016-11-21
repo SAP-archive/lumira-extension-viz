@@ -11,8 +11,6 @@ define("sap_viz_ext_comparatiochart-src/js/render", [], function() {
 	 *   measures info:      data.meta.measures()
 	 */
     var render = function(data, container) {
-        // TODO: add your own visualization implementation code below ...
-        console.debug("data", data);
         
         //data mapping
         var measures = data.meta.measures(0);
@@ -24,32 +22,29 @@ define("sap_viz_ext_comparatiochart-src/js/render", [], function() {
         
         var margin = {
                 top: 20,
-                right: 20,
+                right: 10,
                 bottom: 40,
-                left: 20
+                left: 10
             };
-        var nameWidth = 50;
+        var nameWidth = 60;
         var barHeight = 45;
         var numHeight = 20;
         var linePaddingLength = 10;
-        var width = this.width(),
+        var width = this.width() - margin.left - margin.right,
             height = barHeight * data.length;
             
-        container.selectAll("svg").remove();
+        container.selectAll("*").remove();
         
-        var divContainer = container.append("foreignObject")
-			.attr("width", width + "px")
-			.attr("height", height + "px")
-			.attr("class", "sap_viz_ext_comparatiochart_forobj")
-			.append("xhtml:div")
+        var divContainer = container
+			.append("div")
 			.attr("class", "sap_viz_ext_comparatiochart-forobj-div-container")
-			.style("width", width + "px")
-			.style("height", height + "px")
+			.style("width", this.width() + "px")
+			.style("height", this.height() + "px")
 			.style("left", "0px")
 			.style("top", 20 + "px");
-        
-        var vis = divContainer.append("svg").attr("width", width - margin.left - margin.right).attr("height", barHeight * (data.length + 1))
-            .append("g").attr("class", "vis").attr("width", width - margin.left - margin.right).attr("height", barHeight * (data.length + 1));
+			
+        var vis = divContainer.append("svg").attr("width", width).attr("height", barHeight * (data.length + 1))
+            .append("g").attr("class", "vis").attr("width", width).attr("height", barHeight * (data.length + 1));
             
         
         // transform plot area
@@ -101,7 +96,7 @@ define("sap_viz_ext_comparatiochart-src/js/render", [], function() {
             .attr("y1", barHeight - linePaddingLength * 0.85)
             .attr("y2", barHeight - linePaddingLength * 0.85)
             .attr("x1", 0)
-            .attr("x2", width - margin.right);
+            .attr("x2", width);
 
         svg.append("foreignObject")
             .attr("class", "sap_viz_ext_comparatiochart_text")
@@ -113,14 +108,14 @@ define("sap_viz_ext_comparatiochart-src/js/render", [], function() {
             .text(function(d) { return d[name]; });     
         
         svg.append("text")
-            .attr("class", "sap_viz_ext_comparatiochart_numtext")
+            .attr("class", "sap_viz_ext_comparatiochart_numtext sap_viz_ext_comparatiochart_numtext_rightaligned")
             .attr("x", function(d) { return x(d[max]) + nameWidth; })
             .attr("y", barHeight - linePaddingLength * 1.5)
             .attr("dy", ".35em")
             .text(function(d) { return "$" + d[max].toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"); });
                    
         svg.append("text")
-            .attr("class", "sap_viz_ext_comparatiochart_numtext")
+            .attr("class", "sap_viz_ext_comparatiochart_numtext sap_viz_ext_comparatiochart_numtext_leftaligned")
             .attr("x", function(d) { return x(d[min]) + nameWidth; })
             .attr("y", barHeight - linePaddingLength * 1.5)
             .attr("dy", ".35em")
@@ -135,7 +130,7 @@ define("sap_viz_ext_comparatiochart-src/js/render", [], function() {
             .attr("r", (barHeight -numHeight)/2)
             .style("fill", function(d) {
                 if (d[current] < d[min]) {return "#E52929";}
-                else if (d[current] >= (d[max] + d[min]) / 2) {return "#008A11";}
+                else if (d[current] >= (d[max] + d[min]) / 2 && d[current] <= d[max] ) {return "#008A11";}
                 else { return "#F0AB00"; }
             });
         

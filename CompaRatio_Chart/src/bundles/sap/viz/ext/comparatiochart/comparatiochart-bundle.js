@@ -16,7 +16,7 @@ define("comparatiochart-bundle", ["sap_viz_ext_comparatiochart-src/js/flow", "cs
 		};
 		var vizExtBundle = sap.bi.framework.declareBundle({
 			"id": "sap.viz.ext.comparatiochart",
-			"version": "1.0.0",
+			"version": "1.0.2",
 			"components": [{
 				"id": "sap.viz.ext.comparatiochart",
 				"provide": "sap.viz.impls",

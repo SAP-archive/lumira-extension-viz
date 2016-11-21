@@ -64,6 +64,7 @@ List of current visualization extensions in the repo
 * Sample Bar Chart
 * Sankey Diagram (based on Google visualization API)
 * Scrollable Timeline Chart
+* Sortable Stacked Bars Chart
 * Stacked Column with Line Chart
 * Sunburst Clock Chart
 * Sunburst Sequence
