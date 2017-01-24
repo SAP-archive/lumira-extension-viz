@@ -1,5 +1,5 @@
 #ABC Analysis
-by [Denzale Reese](https://people.sap.com/denzalereese)
+by [Wolf (Denzale) Reese](https://people.sap.com/denzalereese)
 
 ![ABC Analysis Chart](abc-chart.png)
 
