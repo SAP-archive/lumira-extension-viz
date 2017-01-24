@@ -55,7 +55,7 @@ This extension is built on top of an existing one: [Extended Bar Chart](https://
 ##Resources
 
 Blog Post -
-[SAP Lumira Extensions: ABC Analysis](https://github.com/denzalereese/lumira-extension-viz/blob/master/ABC_Analysis/sap.viz.ext.abcanalysis.zip?raw=true)
+[SAP Lumira Extensions: ABC Analysis](https://blogs.sap.com/2017/01/24/modifying-sap-lumira-extensions-abc-analysis/)
 
 
 
