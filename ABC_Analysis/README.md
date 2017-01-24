@@ -7,7 +7,7 @@ ABC Analysis is an inventory categorization technique that divides items into 3 
 
 ##Download
 
-[ABC Analysis](https://github.com/SAP/lumira-extension-viz/blob/master/ABC_Analysis/sap.viz.ext.abcanalysis.zip?raw=true)
+[ABC Analysis](https://github.com/denzalereese/lumira-extension-viz/raw/master/ABC_Analysis/sap.viz.ext.abcanalysis.zip)
 
 ##Files
 <ul>
