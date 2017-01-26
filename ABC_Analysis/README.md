@@ -5,7 +5,7 @@ by [Wolf (Denzale) Reese](https://people.sap.com/denzalereese)
 
 ABC Analysis is an inventory categorization technique that divides items into 3 categories: A, B, and C. A items are the most significant: making up the top ~70-80% of the inventory value and only ~10-20% of the total items. B items make up ~15-25% of the value and ~30% of the items, and C items are the least important: making up ~5% of the value and ~50% of the items. This technique allows managers to determine which inventory items should be tracked very closely, and which can be more loosely controlled
 
-This extension is built on top of an existing one: [Extended Bar Chart](https://github.com/SAP/lumira-extension-viz/tree/master/Extended_Bar_Chart) by [Jay Thoden van Velzen](https://people.sap.com/jay.thodenvanvelzen) and showcases modifying open-source SAP Lumira visualization extensions to fit a specific need. The chart shows the percentage of total items each classification comprises on the x-axis (represented by the width of the bars), and the percentage of the inventory value on the y-axis (represented by the height of the bars). 
+This extension is built on top of an existing one: [Extended Bar Chart](https://github.com/SAP/lumira-extension-viz/tree/master/Extended_Bar_Chart) by [Jay Thoden van Velzen](https://people.sap.com/jay.thodenvanvelzen) and showcases modifying open-source SAP Lumira visualization extensions to fit a specific need. The chart shows the percentage of total items each classification comprises on the x-axis (represented by the width of the bars), and the percentage of the inventory value on the y-axis (represented by the height of the bars).
 
 ##Download
 
