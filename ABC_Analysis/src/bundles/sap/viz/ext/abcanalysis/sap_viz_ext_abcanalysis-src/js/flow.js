@@ -18,7 +18,7 @@ define("sap_viz_ext_abcanalysis-src/js/flow", ["sap_viz_ext_abcanalysis-src/js/m
 			"id": "sap.viz.ext.abcanalysis.PlotModule.DS1",
 			"name": "Value, Classification (ABC)",
 			"type": "Dimension",
-			"min": 0, //minimum number of data container
+			"min": 2, //minimum number of data container
 			"max": 2, //maximum number of data container
 			"aaIndex": 1
 		};
@@ -28,7 +28,7 @@ define("sap_viz_ext_abcanalysis-src/js/flow", ["sap_viz_ext_abcanalysis-src/js/m
 			"id": "sap.viz.ext.abcanalysis.PlotModule.MS1",
 			"name": "Measures (any)",
 			"type": "Measure",
-			"min": 0, //minimum number of measures
+			"min": 1, //minimum number of measures
 			"max": Infinity, //maximum number of measures
 			"mgIndex": 1
 		};
