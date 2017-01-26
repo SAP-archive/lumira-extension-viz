@@ -10,7 +10,7 @@ define("sap_viz_ext_abcanalysis-src/js/render", [], function() {
 	 *   dimensions info:    data.meta.dimensions()
 	 *   measures info:      data.meta.measures()
 	 */
-	 var render = function(data, container) {
+     var render = function(data, container) {
 
      //stores dimension names in variables
      //(column names for "usage value" and "classification" may differ per dataset)
