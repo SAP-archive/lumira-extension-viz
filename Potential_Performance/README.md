@@ -1,7 +1,7 @@
 #Potential-Performance
 by [Wolf (Denzale) Reese](https://people.sap.com/denzalereese)
 
-![ABC Analysis Chart](potential-performance.png)
+![Potential-Performance](potential-performance.PNG)
 
 This visualization extension for SAP Lumira is a chart that categorizes employees based on their performance level and potential for growth. It is built on top of an existing extension: [SWOT Analysis](https://github.com/SAP/lumira-extension-viz/tree/master/SWOT_Analysis) by [Wendy (Xin Win)](http://scn.sap.com/people/wendy.xin.wen) and showcases modifying open-source SAP Lumira visualization extensions to fit a specific need. 
 
