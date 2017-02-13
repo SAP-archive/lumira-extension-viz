@@ -1,0 +1,158 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+.sap_viz_ext_potentialperformance {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.sap_viz_ext_potentialperformance_form{
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    height:90%;
+    width: 90%;
+    box-shadow: -10px 20px 40px rgba(0,0,0,0.3);
+}
+
+.sap_viz_ext_potentialperformance_content-section {
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;  /* Firefox */ 
+	-webkit-box-sizing:border-box; /* Safari */
+	text-align: center;
+	word-wrap: break-word;
+	overflow-y: auto;
+	font-size: 0.89em;
+	color: #003459;
+	border-color: #000;
+	border-style:solid;
+	border-width:1px;
+	position:relative;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.sap_viz_ext_potentialperformance_content-section:hover{
+   box-shadow: -10px 20px 40px rgba(0,0,0,0.3);
+}
+
+.sap_viz_ext_potentialperformance_employee-list, ul, li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sap_viz_ext_potentialperformance_enlarged {
+	text-align: center;
+	overflow-y: auto;
+    transition: box-shadow 0.3s ease-in-out;
+    font-size: 0.89em;
+}
+
+.sap_viz_ext_potentialperformance_enlarged:hover {
+	box-shadow: -10px 20px 40px rgba(0,0,0,0.3);
+}
+
+.sap_viz_ext_potentialperformance_enlarged-detail {
+	width: 50%;
+	height: 80%;
+	float: left;
+}
+
+.sap_viz_ext_potentialperformance_enlarged-employee-list {
+	margin-top: 20%;
+}
+
+.sap_viz_ext_potentialperformance_axis {
+	font-size: 0.8em;
+}
+
+#sap_viz_ext_potentialperformance_x-axis {
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;  /* Firefox */ 
+	-webkit-box-sizing:border-box; /* Safari */
+	width: 90%;
+	height: 10.1%;
+	background-color: white;
+	border: 1px solid black;
+	border-left: 0px;
+	margin-left: 10%;
+}
+
+.sap_viz_ext_potentialperformance_x-axis-label {
+	display: inline-block;
+	height: 50%;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+#sap_viz_ext_potentialperformance_x-axis h1 {
+	height: 40%;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 2%;
+}
+
+#sap_viz_ext_potentialperformance_y-axis {
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;  /* Firefox */ 
+	-webkit-box-sizing:border-box; /* Safari */
+	width: 10%;
+	height: 100%;
+	float: left;
+	border: 1px solid black;
+	border-right: 0px;
+	position: relative;
+}
+
+#sap_viz_ext_potentialperformance_y-axis h1 {
+	width: 100%;
+	transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    position: absolute;
+    top: 40%;
+    right: 20%;
+}
+
+.sap_viz_ext_potentialperformance_y-axis-label {
+	transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    position: absolute;
+    left: 40%;
+}
+
+@media screen and (max-width:599px) {
+ .sap_viz_ext_potentialperformance_content-section{
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;  /* Firefox */ 
+		-webkit-box-sizing:border-box; /* Safari */
+		text-align: center;
+		word-wrap: break-word;
+		overflow-y: auto;
+		font-size: 0.69em;
+		color: #003459;
+		border-color: #fff;
+		border-style:solid;
+		border-width:medium;
+		position:relative;
+ }
+
+ .sap_viz_ext_potentialperformance_axis {
+	font-size: 0.6em;
+}	
+ 
+ .sap_viz_ext_potentialperformance_enlarged {
+	text-align: center;
+	overflow-y: auto;
+    transition: box-shadow 0.3s ease-in-out;
+    font-size: 0.69em;
+   }
+}
