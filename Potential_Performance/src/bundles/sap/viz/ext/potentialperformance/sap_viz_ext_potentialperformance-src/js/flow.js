@@ -29,7 +29,7 @@ define("sap_viz_ext_potentialperformance-src/js/flow", ["sap_viz_ext_potentialpe
 			"name": "ID",
 			"type": "Measure",
 			"min": 1, //minimum number of measures
-			"max": Infinity, //maximum number of measures
+			"max": 1, //maximum number of measures
 			"mgIndex": 1
 		};
 		element.addFeed(ms1);

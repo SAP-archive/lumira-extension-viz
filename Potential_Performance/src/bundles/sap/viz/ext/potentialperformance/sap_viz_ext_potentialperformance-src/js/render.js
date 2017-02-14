@@ -14,6 +14,7 @@ define("sap_viz_ext_potentialperformance-src/js/render", [], function() {
         // TODO: add your own visualization implementation code below ...
 		
 		//store these column names in variables as they may differ per dataset
+		var employeeMetric = data.meta.dimensions()[0];
 		var potentialMetric = data.meta.dimensions()[1];
 		var performanceMetric = data.meta.dimensions()[2];
         
@@ -109,11 +110,11 @@ define("sap_viz_ext_potentialperformance-src/js/render", [], function() {
                 data.forEach(function(d) {
                     //if the performance/potential for this record is the same as the title of the box,
                     //increase employeeCount for this category by one and add the employee's name to the list
-                    if (d.Performance + "/" + d.Potential == contentTitle) {
+                    if (d[performanceMetric] + "/" + d[potentialMetric] == contentTitle) {
                         employeeCount += 1;
 
                         employeeList.append("li")
-                            .text(d.Employee);
+                            .text(d[employeeMetric]);
                     }
                 });
 
