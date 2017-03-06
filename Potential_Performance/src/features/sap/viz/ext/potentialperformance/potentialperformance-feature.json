@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.potentialperformance",
+	"name": "Potential Performance",
+	"description": "A chart that categorizes employees based on their performance level and potential for growth",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "Wolf Denzale Reese",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.6.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.potentialperformance",
+		"version": "1.0.0"
+	}]
+}
