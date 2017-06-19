@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "sap.viz.ext.forecastsingle",
+	"name": "Forecast Single Confidence",
+	"description": "Visualizes actuals and forecasts with a single confidence interval band",
+	"version": "2.0.0",
+	"vendor": {
+		"name": "Wolf Denzale Reese",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.6.0"
+	}],
+	"bundles": [{
+		"id": "sap.viz.ext.forecastsingle",
+		"version": "2.0.0"
+	}]
+}

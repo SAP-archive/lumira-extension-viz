@@ -1,2 +1,2 @@
-Lumira Visualization Extension - Forecast with Single Confidence Interval
+Lumira Visualization Extension - Forecast Single Confidence Interval
 Copyright (c) 2015 SAP SE or an SAP affiliate company. All rights reserved.

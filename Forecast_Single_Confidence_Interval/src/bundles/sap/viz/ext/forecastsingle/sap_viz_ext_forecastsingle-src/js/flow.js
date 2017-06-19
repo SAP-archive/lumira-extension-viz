@@ -1,34 +1,34 @@
-define("sap_viz_ext_forecastsingleconfidence-src/js/flow", ["sap_viz_ext_forecastsingleconfidence-src/js/module"], function(moduleFunc) {
+define("sap_viz_ext_forecastsingle-src/js/flow", ["sap_viz_ext_forecastsingle-src/js/module"], function(moduleFunc) {
 	var flowRegisterFunc = function() {
 		var flow = sap.viz.extapi.Flow.createFlow({
-			id: "sap.viz.ext.forecastsingleconfidence",
-			name: "ForecastSingleConfidence",
+			id: "sap.viz.ext.forecastsingle",
+			name: "Forecast Single Confidence",
 			dataModel: "sap.viz.api.data.CrosstableDataset",
 			type: "BorderSVGFlow"
 		});
 
 		var element = sap.viz.extapi.Flow.createElement({
-			id: "sap.viz.ext.forecastsingleconfidence.PlotModule",
-			name: "ForecastSingleConfidence Module"
+			id: "sap.viz.ext.forecastsingle.PlotModule",
+			name: "Forecast Single Confidence Module"
 		});
 		element.implement("sap.viz.elements.common.BaseGraphic", moduleFunc);
 
 		/*Feeds Definition*/
 		var ds1 = {
-			"id": "sap.viz.ext.forecastsingleconfidence.PlotModule.DS1",
-			"name": "Dimension",
+			"id": "sap.viz.ext.forecastsingle.PlotModule.DS1",
+			"name": "Date, Type",
 			"type": "Dimension",
-			"min": 0, //minimum number of data container
+			"min": 2, //minimum number of data container
 			"max": 2, //maximum number of data container
 			"aaIndex": 1
 		};
 		element.addFeed(ds1);
 
 		var ms1 = {
-			"id": "sap.viz.ext.forecastsingleconfidence.PlotModule.MS1",
-			"name": "Measures",
+			"id": "sap.viz.ext.forecastsingle.PlotModule.MS1",
+			"name": "Measure, Lower, Upper, Extras",
 			"type": "Measure",
-			"min": 0, //minimum number of measures
+			"min": 3, //minimum number of measures
 			"max": Infinity, //maximum number of measures
 			"mgIndex": 1
 		};
@@ -47,7 +47,7 @@ define("sap_viz_ext_forecastsingleconfidence-src/js/flow", ["sap_viz_ext_forecas
 		});
 		sap.viz.extapi.Flow.registerFlow(flow);
 	};
-	flowRegisterFunc.id = "sap.viz.ext.forecastsingleconfidence";
+	flowRegisterFunc.id = "sap.viz.ext.forecastsingle";
 	return {
 		id: flowRegisterFunc.id,
 		init: flowRegisterFunc

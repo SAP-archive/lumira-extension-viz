@@ -1,5 +1,5 @@
-define("sap_viz_ext_forecastsingleconfidence-src/js/module", ["sap_viz_ext_forecastsingleconfidence-src/js/render",
-	"sap_viz_ext_forecastsingleconfidence-src/js/dataMapping"
+define("sap_viz_ext_forecastsingle-src/js/module", ["sap_viz_ext_forecastsingle-src/js/render",
+	"sap_viz_ext_forecastsingle-src/js/dataMapping"
 ], function(render, processData) {
 	// Extension module implementation
 	var moduleFunc = {
