@@ -2,7 +2,7 @@ var sampleTemplate = {
 	"id": "standard",
 	"name": "Standard",
 	"properties": {
-		"sap.viz.ext.forecastsingleconfidence": {
+		"sap.viz.ext.forecastsingle": {
 
 		}
 	}

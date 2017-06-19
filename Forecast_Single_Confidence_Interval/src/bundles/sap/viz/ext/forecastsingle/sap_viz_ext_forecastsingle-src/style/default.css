@@ -1,0 +1,50 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+
+.sap_viz_ext_forecastsingle_actual-line {
+  fill: none;
+  stroke: #03A9F4;
+  stroke-width: 2px;
+}
+
+.sap_viz_ext_forecastsingle_forecast-area {
+	fill: #C5CAE9;
+}
+
+.sap_viz_ext_forecastsingle_forecast-line {
+  fill: none;
+  stroke: #303F9F;
+  stroke-width: 2px;
+}
+
+.sap_viz_ext_forecastsingle_measure-line {
+	fill: none;
+    stroke-dasharray: 3;
+    stroke-width: 2px;
+}
+
+.sap_viz_ext_forecastsingle_tooltip-text {
+	font-size: 1.2em;
+	font-family: Geneva;
+	font-weight: bold;
+}

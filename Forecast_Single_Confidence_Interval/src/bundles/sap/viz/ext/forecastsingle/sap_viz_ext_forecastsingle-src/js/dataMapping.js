@@ -1,10 +1,10 @@
-define("sap_viz_ext_forecastsingleconfidence-src/js/dataMapping", ["sap_viz_ext_forecastsingleconfidence-src/js/utils/util"], function(util) {
+define("sap_viz_ext_forecastsingle-src/js/dataMapping", ["sap_viz_ext_forecastsingle-src/js/utils/util"], function(util) {
 	var processData = function(data, feeds, done) {
 		// Build name index so that dimension/measure sets can be accessed by name
 		util.buildNameIdx(feeds);
 		/*
-		 * mapper function is optional and used to customize your data conversion logic, for example,
-		 * you can map from object array to a simplified x-y value array as below,
+		 * mapper function is optional and used to customize your data conversion logic, for example, 
+		 * you can map from object array to a simplified x-y value array as below, 
 		 *
 		 *     var mapper = function(d, meta) {
 		 *         var val = parseFloat(d[meta.measures(0, 0)]);
