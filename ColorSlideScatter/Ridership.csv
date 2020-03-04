@@ -1,0 +1,59 @@
+City,App,Car Type (Color Code),Miles
+Washington DC,Hitch,Gas Only,14.5
+Honolulu,Flywheel,Gas Only,45.5
+Philadelphia,Flywheel,Gas Only,23
+Oakland,Flywheel,Gas Only,236.767
+Oakland,Lyft,Gas Only,11
+Oakland,Sidecar,Hybrid,22.75
+Oakland,Gett,Gas Only,35.5
+New Orleans,Flywheel,Gas Only,311
+New Orleans,Sidecar,Gas Only,23
+New Orleans,Gett,Gas Only,28
+Bridgeport,Carma,Electric,182.25
+Bridgeport,Trees for Cars,Electric,63.5
+Bridgeport,Zimride,Hybrid,32.5
+Macon,Trees for Cars,Electric,77
+Macon,Hitch,Electric,75.534
+Worcester,Trees for Cars,Hybrid,69.25
+Worcester,Hitch,Electric,46.284
+Portland,Trees for Cars,Hybrid,200.75
+Portland,Hitch,Electric,342.619
+Detroit,Trees for Cars,Hybrid,135.75
+Detroit,Zimride,Hybrid,127.25
+Madison,Uber,Gas Only,558.5
+Madison,Gett,Gas Only,1279.483
+San Francisco,Lyft,Electric,277
+San Francisco,RideScout,Electric,1024.131
+Austin,Sidecar,Electric,104.5
+Austin,RideScout,Electric,173
+San Jose,Lyft,Electric,143.75
+Boston,Carma,Hybrid,299
+Boston,Trees for Cars,Gas Only,100.5
+New York City,Sidecar,Hybrid,249.25
+New York City,Carma,Hybrid,55.25
+Seattle,Sidecar,Hybrid,248
+Seattle,Carma,Hybrid,80.25
+Tacoma,Sidecar,Hybrid,14
+Bethesda,UberX,Gas Only,188.5
+Stamford,Lyft,Electric,188
+Stamford,UberX,Electric,274.25
+Stamford,Zimride,Electric,154.983
+Atlanta,UberX,Hybrid,38
+Pittsburgh,Lyft,Hybrid,132.5
+Providence,Lyft,Hybrid,14.5
+Saint Louis,Lyft,Gas Only,17.5
+Saint Louis,UberX,Electric,321.25
+Saint Louis,Zimride,Electric,49.5
+Los Angeles,Trees for Cars,Gas Only,15.5
+Minneapolis,Uber,Gas Only,47.75
+Minneapolis,Hitch,Gas Only,37.017
+Saint Paul,Uber,Electric,340.5
+Saint Paul,Hitch,Electric,163.102
+Burlington,Carma,Hybrid,226.25
+Burlington,Trees for Cars,Electric,94
+Burlington,Zimride,Gas Only,18
+Denver,Uber,Hybrid,38
+Denver,Hitch,Gas Only,32.034
+Nashville,Uber,Gas Only,83.25
+Nashville,Hitch,Gas Only,153.085
+Richmond,Flywheel,Gas Only,15
